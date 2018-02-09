@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#53;&amp;#48;&amp;#x33;&amp;#54;&amp;#49;&amp;#x30;&amp;#x33;&amp;#50;&amp;#x36;&amp;#64;&amp;#x71;&amp;#x71;&amp;#x2e;&amp;#x63;&amp;#1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lightquant.com">
+<meta property="og:url" content="http://gaojindeng.com/about/index.html">
+<meta property="og:site_name" content="lightquant.com">
+<meta property="og:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#53;&amp;#48;&amp;#x33;&amp;#54;&amp;#49;&amp;#x30;&amp;#x33;&amp;#50;&amp;#x36;&amp;#64;&amp;#x71;&amp;#x71;&amp;#x2e;&amp;#x63;&amp;#1">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://gaojindeng.com/images/weixin.jpg">
+<meta property="og:updated_time" content="2018-02-09T14:59:33.578Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="lightquant.com">
+<meta name="twitter:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#53;&amp;#48;&amp;#x33;&amp;#54;&amp;#49;&amp;#x30;&amp;#x33;&amp;#50;&amp;#x36;&amp;#64;&amp;#x71;&amp;#x71;&amp;#x2e;&amp;#x63;&amp;#1">
+<meta name="twitter:image" content="http://gaojindeng.com/images/weixin.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.0.0',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://gaojindeng.com/about/"/>
+
+
+
+
+
+  <title>Shiro在SpringBoot中配置 | lightquant.com</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fd86d42046a41c5baa100cbf6081bed6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">lightquant.com</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/01/08/Shiro在SpringBoot中配置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lightquant">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lightquant.com">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Shiro在SpringBoot中配置</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-08T18:01:10+08:00">2018-01-08</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/安全认证框架/" itemprop="url" rel="index">
+                    <span itemprop="name">安全认证框架</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、什么是Shiro"><a href="#一、什么是Shiro" class="headerlink" title="一、什么是Shiro"></a>一、什么是Shiro</h2><p>​    Shiro是一个很易用与Java项目的的安全框架，主要提供了提供了认证、授权、加密、会话管理功能。</p>
+<h2 id="二、Shiro主要记住哪些"><a href="#二、Shiro主要记住哪些" class="headerlink" title="二、Shiro主要记住哪些"></a>二、Shiro主要记住哪些</h2><ul>
+<li>ShiroFilterFactory Shiro核心类</li>
+<li>SecurityManager 用于管理所有的Subject </li>
+<li>Subject 当前用户操作 </li>
+<li>Realms 用于进行权限信息的验证，也是我们需要自己实现的。</li>
+</ul>
+<h2 id="三、步骤："><a href="#三、步骤：" class="headerlink" title="三、步骤："></a>三、步骤：</h2><h3 id="1-pom-xml中添加Shiro依赖"><a href="#1-pom-xml中添加Shiro依赖" class="headerlink" title="1.pom.xml中添加Shiro依赖"></a>1.pom.xml中添加Shiro依赖</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>  </span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.shiro<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>  </span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>shiro-spring<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>  </span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.3.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-注入ShiroFilterFactory和SecurityManager"><a href="#2-注入ShiroFilterFactory和SecurityManager" class="headerlink" title="2.注入ShiroFilterFactory和SecurityManager"></a>2.注入ShiroFilterFactory和SecurityManager</h3><font size="2"><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * shiro配置</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span>:</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: gaojindeng</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Time</span>: 2018年1月6日 下午4:31:00</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ShiroConfig</span> </span>&#123;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * ShiroFilterFactoryBean 处理拦截资源文件问题。</span></span><br><span class="line"><span class="comment">	 * 注意：单独一个ShiroFilterFactoryBean配置是或报错的，以为在</span></span><br><span class="line"><span class="comment">	 * 初始化ShiroFilterFactoryBean的时候需要注入：SecurityManager</span></span><br><span class="line"><span class="comment">	 *</span></span><br><span class="line"><span class="comment">	 * Filter Chain定义说明 1、一个URL可以配置多个Filter，使用逗号分隔 2、当设置多个过滤器时，全部验证通过，才视为通过</span></span><br><span class="line"><span class="comment">	 * 3、部分过滤器可指定参数，如perms，roles</span></span><br><span class="line"><span class="comment">	 *</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> ShiroFilterFactoryBean <span class="title">shirFilter</span><span class="params">(SecurityManager securityManager)</span> </span>&#123;</span><br><span class="line">		ShiroFilterFactoryBean shiroFilterFactoryBean = <span class="keyword">new</span> ShiroFilterFactoryBean();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 必须设置 SecurityManager</span></span><br><span class="line">		shiroFilterFactoryBean.setSecurityManager(securityManager);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面</span></span><br><span class="line">		shiroFilterFactoryBean.setLoginUrl(<span class="string">"/login"</span>);</span><br><span class="line">		<span class="comment">// 登录成功后要跳转的链接</span></span><br><span class="line">		shiroFilterFactoryBean.setSuccessUrl(<span class="string">"/index"</span>);</span><br><span class="line">		<span class="comment">// 未授权界面;</span></span><br><span class="line">		shiroFilterFactoryBean.setUnauthorizedUrl(<span class="string">"/error"</span>);</span><br><span class="line">		<span class="comment">// 拦截器.</span></span><br><span class="line">		Map&lt;String, String&gt; filterChainDefinitionMap = <span class="keyword">new</span> LinkedHashMap&lt;String, String&gt;();</span><br><span class="line">		<span class="comment">// 配置不会被拦截的链接 顺序判断</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 配置退出过滤器,其中的具体的退出代码Shiro已经替我们实现了</span></span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/logout"</span>, <span class="string">"logout"</span>);</span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/css/**"</span>, <span class="string">"anon"</span>);</span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/fonts/**"</span>, <span class="string">"anon"</span>);</span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/image/**"</span>, <span class="string">"anon"</span>);</span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/js/**"</span>, <span class="string">"anon"</span>);</span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/favicon.ico"</span>, <span class="string">"anon"</span>);</span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/"</span>, <span class="string">"anon"</span>);</span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/register"</span>, <span class="string">"anon"</span>);</span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/index/**"</span>, <span class="string">"anon"</span>); <span class="comment">// 首页</span></span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/charts/**"</span>, <span class="string">"anon"</span>);<span class="comment">// 图表</span></span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/statistics/**"</span>, <span class="string">"anon"</span>);<span class="comment">// 统计</span></span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/about/**"</span>, <span class="string">"anon"</span>);<span class="comment">// 关于</span></span><br><span class="line">		<span class="comment">// filterChainDefinitionMap.put("/setup/**", "authc");</span></span><br><span class="line">		<span class="comment">// filterChainDefinitionMap.put("/capital/entrustment",</span></span><br><span class="line">		<span class="comment">// "perms[user:admin:*]");</span></span><br><span class="line">		<span class="comment">// filterChainDefinitionMap.put("/capital/entrustment", "authc");</span></span><br><span class="line">		<span class="comment">// &lt;!-- 过滤链定义，从上向下顺序执行，一般将 /**放在最为下边 --&gt;:这是一个坑呢，一不小心代码就不好使了;</span></span><br><span class="line">		<span class="comment">// &lt;!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问--&gt;</span></span><br><span class="line">		filterChainDefinitionMap.put(<span class="string">"/**"</span>, <span class="string">"authc"</span>);</span><br><span class="line">		shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);</span><br><span class="line">		System.out.println(<span class="string">"Shiro拦截器工厂类注入成功"</span>);</span><br><span class="line">		<span class="keyword">return</span> shiroFilterFactoryBean;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> SecurityManager <span class="title">securityManager</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		DefaultWebSecurityManager securityManager = <span class="keyword">new</span> DefaultWebSecurityManager();</span><br><span class="line">		<span class="comment">// 设置realm.</span></span><br><span class="line">		securityManager.setRealm(myShiroRealm());</span><br><span class="line">		<span class="keyword">return</span> securityManager;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 身份认证realm; (这个需要自己写，账号密码校验；权限等)</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> MyShiroRealm <span class="title">myShiroRealm</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		MyShiroRealm myShiroRealm = <span class="keyword">new</span> MyShiroRealm();</span><br><span class="line">		myShiroRealm.setCredentialsMatcher(hashedCredentialsMatcher());</span><br><span class="line">		<span class="keyword">return</span> myShiroRealm;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 开启shiro aop注解支持. 使用代理方式;所以需要开启代码支持;</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> securityManager</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> AuthorizationAttributeSourceAdvisor <span class="title">authorizationAttributeSourceAdvisor</span><span class="params">(SecurityManager securityManager)</span> </span>&#123;</span><br><span class="line">		AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor = <span class="keyword">new</span> AuthorizationAttributeSourceAdvisor();</span><br><span class="line">		authorizationAttributeSourceAdvisor.setSecurityManager(securityManager);</span><br><span class="line">		<span class="keyword">return</span> authorizationAttributeSourceAdvisor;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 该方法不加上，权限认证也可以通过</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="comment">/* @Bean</span></span><br><span class="line"><span class="comment">	 public static LifecycleBeanPostProcessor getLifecycleBeanPostProcessor()</span></span><br><span class="line"><span class="comment">	 &#123;</span></span><br><span class="line"><span class="comment">	 return new LifecycleBeanPostProcessor();</span></span><br><span class="line"><span class="comment">	 &#125;*/</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 不加上这个 权限注解通过不了</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DefaultAdvisorAutoProxyCreator <span class="title">getDefaultAdvisorAutoProxyCreator</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> DefaultAdvisorAutoProxyCreator();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 凭证匹配器 （由于我们的密码校验交给Shiro的SimpleAuthenticationInfo进行处理了</span></span><br><span class="line"><span class="comment">	 * 所以我们需要修改下doGetAuthenticationInfo中的代码; ）</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> HashedCredentialsMatcher <span class="title">hashedCredentialsMatcher</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		HashedCredentialsMatcher hashedCredentialsMatcher = <span class="keyword">new</span> HashedCredentialsMatcher();</span><br><span class="line">		hashedCredentialsMatcher.setHashAlgorithmName(<span class="string">"md5"</span>);<span class="comment">// 散列算法:这里使用MD5算法;</span></span><br><span class="line">		hashedCredentialsMatcher.setHashIterations(<span class="number">2</span>);<span class="comment">// 散列的次数，比如散列两次，相当于</span></span><br><span class="line">														<span class="comment">// md5(md5(""));</span></span><br><span class="line">		<span class="keyword">return</span> hashedCredentialsMatcher;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><br></font><br>注入ShiroFactory==&gt;SecurityManager==&gt;Realm<br>Realm是实现权限认证、授权的，所有要自己手动新建这个类<br><br>### 3.Realm代码<br><br><font size="2"><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyShiroRealm</span> <span class="keyword">extends</span> <span class="title">AuthorizingRealm</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span></span><br><span class="line">	<span class="keyword">private</span> IUserSV userSV;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 认证信息.(身份验证) : Authentication 是用来验证用户身份</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> token</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@throws</span> AuthenticationException</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> AuthenticationInfo <span class="title">doGetAuthenticationInfo</span><span class="params">(AuthenticationToken token)</span> <span class="keyword">throws</span> AuthenticationException </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 获取用户的输入的账号.</span></span><br><span class="line">		String username = (String) token.getPrincipal();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 通过username从数据库中查找 User对象，如果找到，没找到.</span></span><br><span class="line">		<span class="comment">// 实际项目中，这里可以根据实际情况做缓存，如果不做，Shiro自己也是有时间间隔机制，2分钟内不会重复执行该方法</span></span><br><span class="line">		User userInfo = userSV.queryByName(username);</span><br><span class="line">		<span class="keyword">if</span> (userInfo == <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// 加密方式;</span></span><br><span class="line">		<span class="comment">// 交给AuthenticatingRealm使用CredentialsMatcher进行密码匹配，如果觉得人家的不好可以自定义实现</span></span><br><span class="line">		SimpleAuthenticationInfo authenticationInfo = <span class="keyword">new</span> SimpleAuthenticationInfo(userInfo, <span class="comment">// 用户名</span></span><br><span class="line">				userInfo.getPassword(), <span class="comment">// 密码</span></span><br><span class="line">				ByteSource.Util.bytes(userInfo.getSalt()), <span class="comment">// //salt=username+salt</span></span><br><span class="line">				getName() <span class="comment">// realm name</span></span><br><span class="line">		);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 明文: 若存在，将此用户存放到登录认证info中，无需自己做密码对比，Shiro会为我们进行密码对比校验</span></span><br><span class="line">		<span class="comment">// SimpleAuthenticationInfo authenticationInfo = new</span></span><br><span class="line">		<span class="comment">// SimpleAuthenticationInfo(</span></span><br><span class="line">		<span class="comment">// userInfo, //用户名</span></span><br><span class="line">		<span class="comment">// userInfo.getPassword(), //密码</span></span><br><span class="line">		<span class="comment">// getName() //realm name</span></span><br><span class="line">		<span class="comment">// );</span></span><br><span class="line">		<span class="keyword">return</span> authenticationInfo;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 此方法调用 hasRole,hasPermission的时候才会进行回调.</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * 权限信息.(授权): 1、如果用户正常退出，缓存自动清空； 2、如果用户非正常退出，缓存自动清空；</span></span><br><span class="line"><span class="comment">	 * 3、如果我们修改了用户的权限，而用户不退出系统，修改的权限无法立即生效。 （需要手动编程进行实现；放在service进行调用）</span></span><br><span class="line"><span class="comment">	 * 在权限修改后调用realm中的方法，realm已经由spring管理，所以从spring中获取realm实例， 调用clearCached方法；</span></span><br><span class="line"><span class="comment">	 * :Authorization 是授权访问控制，用于对用户进行的操作授权，证明该用户是否允许进行当前操作，如访问某个链接，某个资源文件等。</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> principals</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> AuthorizationInfo <span class="title">doGetAuthorizationInfo</span><span class="params">(PrincipalCollection principals)</span> </span>&#123;</span><br><span class="line">		<span class="comment">/*</span></span><br><span class="line"><span class="comment">		 * 当没有使用缓存的时候，不断刷新页面的话，这个代码会不断执行， 当其实没有必要每次都重新设置权限信息，所以我们需要放到缓存中进行管理；</span></span><br><span class="line"><span class="comment">		 * 当放到缓存中时，这样的话，doGetAuthorizationInfo就只会执行一次了， 缓存过期之后会再次执行。</span></span><br><span class="line"><span class="comment">		 */</span></span><br><span class="line">		System.out.println(<span class="string">"权限配置--&gt;MyShiroRealm.doGetAuthorizationInfo()"</span>);</span><br><span class="line"></span><br><span class="line">		SimpleAuthorizationInfo authorizationInfo = <span class="keyword">new</span> SimpleAuthorizationInfo();</span><br><span class="line">		User userInfo = (User) principals.getPrimaryPrincipal();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 实际项目中，这里可以根据实际情况做缓存，如果不做，Shiro自己也是有时间间隔机制，2分钟内不会重复执行该方法</span></span><br><span class="line">		<span class="comment">// UserInfo userInfo = userInfoService.findByUsername(username)</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 权限单个添加;</span></span><br><span class="line">		<span class="comment">// authorizationInfo.addRole("admin");</span></span><br><span class="line">		<span class="comment">// 添加权限</span></span><br><span class="line">		<span class="comment">// authorizationInfo.addStringPermission("userInfo:query");</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (Role role : userInfo.getRoles()) &#123;</span><br><span class="line">			authorizationInfo.addRole(role.getType());</span><br><span class="line">			<span class="keyword">for</span> (Permission p : role.getPermissions()) &#123;</span><br><span class="line">				authorizationInfo.addStringPermission(p.getPermission());</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> authorizationInfo;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><br></font>
+
+<h3 id="4-controller层代码"><a href="#4-controller层代码" class="headerlink" title="4.controller层代码"></a>4.controller层代码</h3><font size="2"><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 登录提交地址和配置文件的登录url一致 </span></span><br><span class="line">	<span class="meta">@RequestMapping</span>(value = <span class="string">"/login"</span>, method = RequestMethod.POST)</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">login</span><span class="params">(HttpServletRequest request, Map&lt;String, Object&gt; map)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"HomeController.login()"</span>);</span><br><span class="line">		<span class="comment">// 登录失败从request中获取shiro处理的异常信息。</span></span><br><span class="line">		<span class="comment">// shiroLoginFailure:就是shiro异常类的全类名.</span></span><br><span class="line">		String exception = (String) request.getAttribute(<span class="string">"shiroLoginFailure"</span>);</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"exception="</span> + exception);</span><br><span class="line">		String msg = <span class="string">""</span>;</span><br><span class="line">		<span class="keyword">if</span> (exception != <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (UnknownAccountException.class.getName().equals(exception)) &#123;</span><br><span class="line">				System.out.println(<span class="string">"UnknownAccountException -- &gt; 账号不存在："</span>);</span><br><span class="line">				msg = <span class="string">"UnknownAccountException -- &gt; 账号不存在："</span>;</span><br><span class="line">			&#125; <span class="keyword">else</span> <span class="keyword">if</span> (IncorrectCredentialsException.class.getName().equals(exception)) &#123;</span><br><span class="line">				System.out.println(<span class="string">"IncorrectCredentialsException -- &gt; 密码不正确："</span>);</span><br><span class="line">				msg = <span class="string">"IncorrectCredentialsException -- &gt; 密码不正确："</span>;</span><br><span class="line">			&#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="string">"kaptchaValidateFailed"</span>.equals(exception)) &#123;</span><br><span class="line">				System.out.println(<span class="string">"kaptchaValidateFailed -- &gt; 验证码错误"</span>);</span><br><span class="line">				msg = <span class="string">"kaptchaValidateFailed -- &gt; 验证码错误"</span>;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				msg = <span class="string">"else &gt;&gt; "</span> + exception;</span><br><span class="line">				System.out.println(<span class="string">"else -- &gt;"</span> + exception);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		map.put(<span class="string">"msg"</span>, msg);</span><br><span class="line">		<span class="comment">// 此方法不处理登录成功,由shiro进行处理.</span></span><br><span class="line">		<span class="keyword">return</span> <span class="string">"/login"</span>;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure><br><br></font>
+
+<h3 id="5-没有权限页面跳转"><a href="#5-没有权限页面跳转" class="headerlink" title="5.没有权限页面跳转"></a>5.没有权限页面跳转</h3><p>​    新建全局异常类<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ControllerAdvice</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ExceptionHandle</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@ExceptionHandler</span>(value = UnauthorizedException.class) <span class="comment">// 处理访问方法时权限不足问题</span></span><br><span class="line">	<span class="meta">@ResponseBody</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">handle</span><span class="params">(Exception e)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">"&lt;script&gt;alert('没有权限访问！');window.history.back();&lt;/script&gt;"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="四、其他"><a href="#四、其他" class="headerlink" title="四、其他"></a>四、其他</h2><h3 id="1-获取密文："><a href="#1-获取密文：" class="headerlink" title="1.获取密文："></a>1.获取密文：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object obj = <span class="keyword">new</span> SimpleHash(<span class="string">"md5"</span>, user.getPassword(), ByteSource.Util.bytes(user.getSalt()) , <span class="number">2</span>);	<span class="comment">//获取MD5加密后的密文 2是加密次数</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-错误页面处理"><a href="#2-错误页面处理" class="headerlink" title="2.错误页面处理"></a>2.错误页面处理</h3><p>​    新建error文件夹，404，500错误会自动找到该页面</p>
+<p>​    springBoot错误，也可以新建error.html视图，也会自动找该页面</p>
+<h3 id="3-为什么要用盐"><a href="#3-为什么要用盐" class="headerlink" title="3.为什么要用盐"></a>3.为什么要用盐</h3><p>​    希望即使两个原始密码相同，加密得到的两个字符串也不同。</p>
+<h3 id="4-前端怎么传值过来"><a href="#4-前端怎么传值过来" class="headerlink" title="4.前端怎么传值过来"></a>4.前端怎么传值过来</h3><p>​    表单中的参数固定name写法是username、password、rememberMe。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/weixin.jpg" alt="lightquant wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您订阅灯塔量化公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Shiro/" rel="tag"># Shiro</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/07/MyBatis多对一、多对多注解方式/" rel="next" title="MyBatis多对一、多对多注解方式实现">
+                <i class="fa fa-chevron-left"></i> MyBatis多对一、多对多注解方式实现
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/08/Linux常用命令/" rel="prev" title="Linux常用 150 个命令汇总">
+                Linux常用 150 个命令汇总 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDA1MC8xMDU4OA"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/head.jpg"
+                alt="lightquant" />
+            
+              <p class="site-author-name" itemprop="name">lightquant</p>
+              <p class="site-description motion-element" itemprop="description">你得拼命奔跑，才能留在原地！</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/gaojindeng/gaojindeng.github.io" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:503610326@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、什么是Shiro"><span class="nav-number">1.</span> <span class="nav-text">一、什么是Shiro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、Shiro主要记住哪些"><span class="nav-number">2.</span> <span class="nav-text">二、Shiro主要记住哪些</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、步骤："><span class="nav-number">3.</span> <span class="nav-text">三、步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-pom-xml中添加Shiro依赖"><span class="nav-number">3.1.</span> <span class="nav-text">1.pom.xml中添加Shiro依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-注入ShiroFilterFactory和SecurityManager"><span class="nav-number">3.2.</span> <span class="nav-text">2.注入ShiroFilterFactory和SecurityManager</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-controller层代码"><span class="nav-number">3.3.</span> <span class="nav-text">4.controller层代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-没有权限页面跳转"><span class="nav-number">3.4.</span> <span class="nav-text">5.没有权限页面跳转</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、其他"><span class="nav-number">4.</span> <span class="nav-text">四、其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-获取密文："><span class="nav-number">4.1.</span> <span class="nav-text">1.获取密文：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-错误页面处理"><span class="nav-number">4.2.</span> <span class="nav-text">2.错误页面处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-为什么要用盐"><span class="nav-number">4.3.</span> <span class="nav-text">3.为什么要用盐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-前端怎么传值过来"><span class="nav-number">4.4.</span> <span class="nav-text">4.前端怎么传值过来</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">lightquant</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
