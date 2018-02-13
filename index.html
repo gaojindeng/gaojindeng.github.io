@@ -75,17 +75,19 @@
 
 
 
-<meta name="description" content="你得拼命奔跑，才能留在原地！">
+<meta name="description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#49;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#x40;&amp;#113;&amp;#113;&amp;#46;&amp;#99;&amp;#">
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://gaojindeng.com/tags/index.html">
+<meta property="og:title" content="lightquant.com">
+<meta property="og:url" content="http://gaojindeng.com/about/index.html">
 <meta property="og:site_name" content="lightquant.com">
-<meta property="og:description" content="你得拼命奔跑，才能留在原地！">
+<meta property="og:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#49;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#x40;&amp;#113;&amp;#113;&amp;#46;&amp;#99;&amp;#">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-09T14:15:09.703Z">
+<meta property="og:image" content="http://gaojindeng.com/images/weixin.jpg">
+<meta property="og:updated_time" content="2018-02-09T14:59:33.578Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="你得拼命奔跑，才能留在原地！">
+<meta name="twitter:title" content="lightquant.com">
+<meta name="twitter:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#49;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#x40;&amp;#113;&amp;#113;&amp;#46;&amp;#99;&amp;#">
+<meta name="twitter:image" content="http://gaojindeng.com/images/weixin.jpg">
 
 
 
@@ -117,7 +119,7 @@
 
 
 
-  <link rel="canonical" href="http://gaojindeng.com/tags/"/>
+  <link rel="canonical" href="http://gaojindeng.com/about/"/>
 
 
 
@@ -305,6 +307,508 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/02/12/activeMQ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lightquant">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lightquant.com">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/12/activeMQ/" itemprop="url">activeMQ</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-12T23:55:10+08:00">2018-02-12</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中间件/" itemprop="url" rel="index">
+                    <span itemprop="name">中间件</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="安装部署："><a href="#安装部署：" class="headerlink" title="安装部署："></a>安装部署：</h2><p>wget http：//archive.apache.org/dist/activemq/apache-activemq/5.9.0/apache-activemq-5.9.0-bin.tar.gz<br>解压<br>运行：activemq start<br>（1）普通启动./activemq start<br>（2）启动并指定日志文件./activemq start&gt; tmp / smlog<br>（3）后台启动方式nohup ./activemq start&gt; / tmp / smlog<br>管理后台为：<br><a href="http://ip:8161/admin/" target="_blank" rel="noopener">http://ip:8161/admin/</a><br>连接默认端口61616</p>
+<h2 id="安全配置"><a href="#安全配置" class="headerlink" title="安全配置"></a>安全配置</h2><p>jetty.xml中<br><code>&lt;property name=&quot;authenticate&quot; value=&quot;true&quot; /&gt;</code> //开启认证<br><code>&lt;property name=&quot;port&quot; value=&quot;8191&quot; /&gt;</code> //修改端口<br>jetty-realm.properties中修改密码</p>
+<blockquote>
+<p>username: password [,rolename …]<br>用户名 : 密码 ,角色名<br>如：admin: admin, admin</p>
+</blockquote>
+<h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-activemq<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>	<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>springMVC<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.activemq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>activemq-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.7.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-jms<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;spring.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#==================activemq Config Start==================</span><br><span class="line">spring.activemq.broker-url=tcp://127.0.0.1:61616?jms.prefetchPolicy.all=2</span><br><span class="line">spring.activemq.in-memory=true</span><br><span class="line">spring.activemq.password=admin</span><br><span class="line">spring.activemq.user=admin</span><br><span class="line">#如果为True，则是Topic；如果是false或者默认，则是queue</span><br><span class="line">spring.jms.pub-sub-domain=false </span><br><span class="line">spring.activemq.packages.trust-all=false</span><br><span class="line">spring.activemq.packages.trusted=</span><br><span class="line">spring.activemq.pool.configuration.*=</span><br><span class="line">spring.activemq.pool.enabled=false</span><br><span class="line">spring.activemq.pool.expiry-timeout=0</span><br><span class="line">spring.activemq.pool.idle-timeout=30000</span><br><span class="line">spring.activemq.pool.max-connections=1</span><br><span class="line">#==================activemq Config End  ==================</span><br></pre></td></tr></table></figure>
+<p>springMVC配置<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">context:annotation-config</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">amq:connectionFactory</span> <span class="attr">id</span>=<span class="string">"amqConnectionFactory"</span>   </span></span><br><span class="line"><span class="tag">       <span class="attr">brokerURL</span>=<span class="string">"tcp://localhost:61616"</span>   </span></span><br><span class="line"><span class="tag">       <span class="attr">userName</span>=<span class="string">"admin"</span>   </span></span><br><span class="line"><span class="tag">       <span class="attr">password</span>=<span class="string">"admin"</span> /&gt;</span>  </span><br><span class="line">     </span><br><span class="line">   <span class="comment">&lt;!-- 配置JMS连接工长 --&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"connectionFactory"</span>  </span></span><br><span class="line"><span class="tag">       <span class="attr">class</span>=<span class="string">"org.springframework.jms.connection.CachingConnectionFactory"</span>&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">ref</span>=<span class="string">"amqConnectionFactory"</span> /&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"sessionCacheSize"</span> <span class="attr">value</span>=<span class="string">"100"</span> /&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;/<span class="name">bean</span>&gt;</span>  </span><br><span class="line">   <span class="comment">&lt;!--spring jms 为我们提供的连接池--&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"connectionFactory"</span> <span class="attr">class</span>=<span class="string">"org.springframework.jms.connection.SingleConnectionFactory"</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"targetConnectionFactory"</span> <span class="attr">ref</span>=<span class="string">"targetConnectionFactory"</span> /&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--一个队列的目的地，点对点的--&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"queueDestionation"</span> <span class="attr">class</span>=<span class="string">"org.apache.activemq.command.ActiveMQQueue"</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">value</span>=<span class="string">"queue"</span> /&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--一个主题，发布订阅--&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"topicDestionation"</span> <span class="attr">class</span>=<span class="string">"org.apache.activemq.command.ActiveMQTopic"</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">value</span>=<span class="string">"topic"</span> /&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 配置JMS模板（Queue），Spring提供的JMS工具类，它发送、接收消息。 --&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"jmsTemplate"</span> <span class="attr">class</span>=<span class="string">"org.springframework.jms.core.JmsTemplate"</span>&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"connectionFactory"</span> <span class="attr">ref</span>=<span class="string">"connectionFactory"</span> /&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"defaultDestination"</span> <span class="attr">ref</span>=<span class="string">"demoQueueDestination"</span> /&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"receiveTimeout"</span> <span class="attr">value</span>=<span class="string">"10000"</span> /&gt;</span>  </span><br><span class="line">       <span class="comment">&lt;!-- true是topic，false是queue，默认是false，此处显示写出false --&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"pubSubDomain"</span> <span class="attr">value</span>=<span class="string">"false"</span> /&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;/<span class="name">bean</span>&gt;</span>  </span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"com.imooc.jms.producer.ProducerServiceImpl"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">     <span class="comment">&lt;!--加入监听器  --&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"queueMessageListener"</span> <span class="attr">class</span>=<span class="string">"com.qqw.active.QueueMessageListener"</span> /&gt;</span>  </span><br><span class="line">      </span><br><span class="line">    <span class="comment">&lt;!-- 显示注入消息监听容器（Queue），配置连接工厂，监听的目标是demoQueueDestination，监听器是上面定义的监听器 --&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"queueListenerContainer"</span>  </span></span><br><span class="line"><span class="tag">       <span class="attr">class</span>=<span class="string">"org.springframework.jms.listener.DefaultMessageListenerContainer"</span>&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"connectionFactory"</span> <span class="attr">ref</span>=<span class="string">"connectionFactory"</span> /&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"destination"</span> <span class="attr">ref</span>=<span class="string">"queueDestionation"</span> /&gt;</span>  </span><br><span class="line">       <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"messageListener"</span> <span class="attr">ref</span>=<span class="string">"queueMessageListener"</span> /&gt;</span>  </span><br><span class="line">   <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="监听"><a href="#监听" class="headerlink" title="监听"></a>监听</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   <span class="meta">@JmsListener</span>(destination=<span class="string">"SPEED_DOWN"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">receive</span><span class="params">(String msg)</span> </span>&#123;</span><br><span class="line">	System.out.println(msg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QueueMessageListener</span> <span class="keyword">implements</span> <span class="title">MessageListener</span> </span>&#123;  </span><br><span class="line">  </span><br><span class="line">      </span><br><span class="line">    <span class="comment">//当收到消息后，自动调用该方法  </span></span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onMessage</span><span class="params">(Message message)</span> </span>&#123;  </span><br><span class="line">          </span><br><span class="line">        TextMessage tm = (TextMessage) message;  </span><br><span class="line">        <span class="keyword">try</span> &#123;  </span><br><span class="line">            System.out.println(<span class="string">"QueueMessageListener监听到了文本消息：\t"</span>  </span><br><span class="line">                    + tm.getText());            </span><br><span class="line">  </span><br><span class="line">            Person fromJson = JSON.parseObject(tm.getText(), Person.class);  </span><br><span class="line">            System.out.println(fromJson.toString());  </span><br><span class="line">  </span><br><span class="line">           <span class="comment">//do something ...  </span></span><br><span class="line">        &#125; <span class="keyword">catch</span> (JMSException e)&#123; e.printStackTrace();   </span><br><span class="line">        &#125;   </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="发送"><a href="#发送" class="headerlink" title="发送"></a>发送</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Destination destination = <span class="keyword">new</span> ActiveMQQueue(<span class="string">"SPEED_DOWN"</span>);<span class="comment">// 这里定义了Queue的key</span></span><br><span class="line">jsmTemplate.convertAndSend(destination, string+price);</span><br><span class="line"><span class="comment">//首先要注入jmsTemplate</span></span><br></pre></td></tr></table></figure>
+<p>springMVC<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">实现类</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProducerServiceImpl</span> <span class="keyword">implements</span> <span class="title">ProducerService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    JmsTemplate jmsTemplate;</span><br><span class="line">    <span class="meta">@Resource</span>(name = <span class="string">"queueDestionation"</span>)</span><br><span class="line">    Destination destination;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sendMessage</span><span class="params">(<span class="keyword">final</span> String message)</span> </span>&#123;</span><br><span class="line">        jmsTemplate.send(destination, <span class="keyword">new</span> MessageCreator() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> Message <span class="title">createMessage</span><span class="params">(Session session)</span> <span class="keyword">throws</span> JMSException </span>&#123;</span><br><span class="line">                TextMessage textMessage = session.createTextMessage(message);</span><br><span class="line">                System.out.println(<span class="string">"发送消息："</span>+textMessage.getText());</span><br><span class="line">                <span class="keyword">return</span> textMessage;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>队列模式：生产者先发送消息，消费者后消费消息，消息被平均消费掉<br>主题模式：消费者先订阅消息，生产者产出的消息才可以被消费者接收到，而且是全部接收到的</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/02/11/springBoot/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lightquant">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lightquant.com">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/11/springBoot/" itemprop="url">springBoot</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-11T23:45:10+08:00">2018-02-11</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java框架/" itemprop="url" rel="index">
+                    <span itemprop="name">java框架</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="thymeleaf"><a href="#thymeleaf" class="headerlink" title="thymeleaf"></a>thymeleaf</h2><p><strong>依赖：</strong><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>配置:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"># THYMELEAF (ThymeleafAutoConfiguration)</span><br><span class="line">#开启模板缓存（默认值：true）</span><br><span class="line">spring.thymeleaf.cache=true </span><br><span class="line">#Check that the template exists before rendering it.</span><br><span class="line">spring.thymeleaf.check-template=true </span><br><span class="line">#检查模板位置是否正确（默认值:true）</span><br><span class="line">spring.thymeleaf.check-template-location=true</span><br><span class="line">#Content-Type的值（默认值：text/html）</span><br><span class="line">spring.thymeleaf.content-type=text/html</span><br><span class="line">#开启MVC Thymeleaf视图解析（默认值：true）</span><br><span class="line">spring.thymeleaf.enabled=true</span><br><span class="line">#模板编码</span><br><span class="line">spring.thymeleaf.encoding=UTF-8</span><br><span class="line">#要被排除在解析之外的视图名称列表，用逗号分隔</span><br><span class="line">spring.thymeleaf.excluded-view-names=</span><br><span class="line">#要运用于模板之上的模板模式。另见StandardTemplate-ModeHandlers(默认值：HTML5)</span><br><span class="line">spring.thymeleaf.mode=HTML5</span><br><span class="line">#在构建URL时添加到视图名称前的前缀（默认值：classpath:/templates/）</span><br><span class="line">spring.thymeleaf.prefix=classpath:/templates/</span><br><span class="line">#在构建URL时添加到视图名称后的后缀（默认值：.html）</span><br><span class="line">spring.thymeleaf.suffix=.html</span><br><span class="line">#Thymeleaf模板解析器在解析器链中的顺序。默认情况下，它排第一位。顺序从1开始，只有在定义了额外的TemplateResolver Bean时才需要设置这个属性。</span><br><span class="line">spring.thymeleaf.template-resolver-order=</span><br><span class="line">#可解析的视图名称列表，用逗号分隔</span><br><span class="line">spring.thymeleaf.view-names=</span><br></pre></td></tr></table></figure></p>
+<p><strong>常见使用：</strong><br>1、在html页面中引入thymeleaf命名空间，即<code>&lt;html xmlns:th=http://www.thymeleaf.org&gt;&lt;/html&gt;</code>，此时在html模板文件中动态的属性使用th:命名空间修饰 </p>
+<p>2、引用静态资源文件，比如CSS和JS文件，语法格式为”@{}”，如@{/js/blog/blog.js}会引入/static目录下的/js/blog/blog.js文件 </p>
+<p>3、访问spring-mvc中model的属性，语法格式为”${}”，如${user.id}可以获取model里的user对象的id属性 </p>
+<p>4、循环<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tr</span>  <span class="attr">th:each</span>=<span class="string">"collect,iterStat : $&#123;collects&#125;"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">th</span> <span class="attr">scope</span>=<span class="string">"row"</span> <span class="attr">th:text</span>=<span class="string">"$&#123;collect.id&#125;"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> &gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">img</span> <span class="attr">th:src</span>=<span class="string">"$&#123;collect.webLogo&#125;"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">th:text</span>=<span class="string">"$&#123;collect.url&#125;"</span>&gt;</span>Mark<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">th:text</span>=<span class="string">"$&#123;collect.title&#125;"</span>&gt;</span>Otto<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">th:text</span>=<span class="string">"$&#123;collect.description&#125;"</span>&gt;</span>@mdo<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">th:text</span>=<span class="string">"$&#123;terStat.index&#125;"</span>&gt;</span>index<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>iterStat称作状态变量，属性有：<br>index:当前迭代对象的index（从0开始计算）<br>count: 当前迭代对象的index(从1开始计算)<br>size:被迭代对象的大小<br>current:当前迭代变量<br>even/odd:布尔值，当前循环是否是偶数/奇数（从0开始计算）<br>first:布尔值，当前循环是否是第一个<br>last:布尔值，当前循环是否是最后一个</p>
+</blockquote>
+<p>5、判断，在html标签中，加入th:if=”表达式”可以根据条件显示html元素<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">th:if</span>=<span class="string">"$&#123;not #lists.isEmpty(blog.publishTime)&#125;"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"publishtime"</span> <span class="attr">th:text</span>=<span class="string">"$&#123;#dates.format(blog.publishTime, 'yyyy-MM-dd HH:mm:ss')&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>以上代码表示若blog.publishTime时间不为空，则显示时间 </p>
+<p>6、时间的格式化，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;#dates.format(blog.publishTime,&apos;yyyy-MM-dd HH:mm:ss&apos;)&#125;</span><br></pre></td></tr></table></figure></p>
+<p>表示将时间格式化为”yyyy-MM-dd HH:mm:ss”格式化写法与Java格式化Date的写法是一致的。 </p>
+<p>7、字符串拼接，有两种形式<br>比如拼接这样一个URL:/blog/delete/{blogId}<br>第一种：<code>th:href=&quot;&#39;/blog/delete/&#39; + ${blog.id }&quot;</code><br>第二种：<code>th:href=&quot;${&#39;/blog/delete/&#39; + blog.id }&quot;</code> </p>
+<p>8、布局<br>定义代码片段：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">footer</span> <span class="attr">th:fragment</span>=<span class="string">"copy"</span>&gt;</span> </span><br><span class="line">? 2016</span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>在页面任何地方引入：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:include</span>=<span class="string">"footer :: copy"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:replace</span>=<span class="string">"footer :: copy"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:insert</span>=<span class="string">"footer :: copy"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p> th:include 和 th:replace区别，include只是加载，replace是替换</p>
+<p>也可以在引用模版的时候传参:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span> <span class="attr">th:include</span>=<span class="string">"layout :: htmlhead"</span> <span class="attr">th:with</span>=<span class="string">"title='Hello'"</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>layout 是文件地址，如果有文件夹可以这样写 fileName/layout:htmlhead<br>htmlhead 是指定义的代码片段 如 th:fragment=”copy”</p>
+<blockquote>
+<p>下面是一个常用的后台页面布局，将整个页面分为头部，尾部、菜单栏、隐藏栏，点击菜单只改变content区域的页面<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">class</span>=<span class="string">"layout-fixed"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:fragment</span>=<span class="string">"navbar"</span>  <span class="attr">class</span>=<span class="string">"wrapper"</span>  <span class="attr">role</span>=<span class="string">"navigation"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:replace</span>=<span class="string">"fragments/header :: header"</span>&gt;</span>Header<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:replace</span>=<span class="string">"fragments/left :: left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:replace</span>=<span class="string">"fragments/sidebar :: sidebar"</span>&gt;</span>sidebar<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">layout:fragment</span>=<span class="string">"content"</span> <span class="attr">id</span>=<span class="string">"content"</span> &gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">th:replace</span>=<span class="string">"fragments/footer :: footer"</span>&gt;</span>footer<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>任何页面想使用这样的布局值只需要替换中见的 content模块即可<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">xmlns:th</span>=<span class="string">"http://www.thymeleaf.org"</span> <span class="attr">layout:decorator</span>=<span class="string">"layout"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">div</span> <span class="attr">layout:fragment</span>=<span class="string">"content"</span>&gt;</span>我是内容<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>9、点击事件：<br><code>th:onclick=&quot;&#39;javascript:toxueqiu(\&#39;&#39;+${todayBuy.code}+&#39;\&#39;)&#39;&quot;</code><br><strong>JS中使用</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script th:inline=<span class="string">"javascript"</span>&gt;</span><br><span class="line"><span class="keyword">var</span> data = [[$&#123;data&#125;]]</span><br><span class="line"><span class="comment">//var dd="&amp;&amp;"+"&lt;";</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>10、th:style<br>根据属性值改变背景<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"media-object resource-card-image"</span> <span class="attr">th:style</span>=<span class="string">"'background:url(' + @&#123;($&#123;collect.webLogo&#125;=='' ? 'img/favicon.png' : $&#123;collect.webLogo&#125;)&#125; + ')'"</span> &gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>11、内嵌变量<br>为了模板更加易用，Thymeleaf还提供了一系列Utility对象（内置于Context中），可以通过#直接访问：</p>
+<blockquote>
+<p>dates ： java.util.Date的功能方法类。<br>calendars : 类似#dates，面向java.util.Calendar<br>numbers : 格式化数字的功能方法类<br>strings : 字符串对象的功能类，contains,startWiths,prepending/appending等等。<br>objects: 对objects的功能类操作。<br>bools: 对布尔值求值的功能方法。<br>arrays：对数组的功能类方法。<br>lists: 对lists功能类方法<br>sets<br>maps<br>…<br>举例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$&#123;#dates.format(date, &apos;dd/MMM/yyyy HH:mm&apos;)&#125;</span><br><span class="line">$&#123;#dates.arrayFormat(datesArray, &apos;dd/MMM/yyyy HH:mm&apos;)&#125;</span><br><span class="line">$&#123;#dates.listFormat(datesList, &apos;dd/MMM/yyyy HH:mm&apos;)&#125;</span><br><span class="line">$&#123;#dates.setFormat(datesSet, &apos;dd/MMM/yyyy HH:mm&apos;)&#125;</span><br><span class="line">$&#123;#dates.createNow()&#125;</span><br><span class="line">$&#123;#dates.createToday()&#125;</span><br><span class="line">$&#123;#strings.isEmpty(name)&#125;</span><br><span class="line">$&#123;#strings.arrayIsEmpty(nameArr)&#125;</span><br><span class="line">$&#123;#strings.listIsEmpty(nameList)&#125;</span><br><span class="line">$&#123;#strings.setIsEmpty(nameSet)&#125;</span><br><span class="line">$&#123;#strings.startsWith(name,&apos;Don&apos;)&#125;    </span><br><span class="line">$&#123;#strings.endsWith(name,endingFragment)&#125;  </span><br><span class="line">$&#123;#strings.length(str)&#125;</span><br><span class="line">$&#123;#strings.equals(str)&#125;</span><br><span class="line">$&#123;#strings.equalsIgnoreCase(str)&#125;</span><br><span class="line">$&#123;#strings.concat(str)&#125;</span><br><span class="line">$&#123;#strings.concatReplaceNulls(str)&#125;</span><br><span class="line">$&#123;#strings.randomAlphanumeric(count)&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">一、代码实例</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HttpAspect</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LoggerFactory.getLogger(HttpAspect.class);</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Pointcut</span>(<span class="string">"execution(public * com.gjd.controller.GirlController.*(..))"</span>)		<span class="comment">//该类下所有方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">log</span><span class="params">()</span></span>&#123;		</span><br><span class="line">	<span class="comment">//定义一个全局的切入点  下面 可以直接 log()引用</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Before</span>(<span class="string">"log()"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doBefore</span><span class="params">(JoinPoint joinPoint)</span></span>&#123;		<span class="comment">//之前执行</span></span><br><span class="line"></span><br><span class="line">        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();</span><br><span class="line">        HttpServletRequest request = attributes.getRequest();		<span class="comment">//获取request对象</span></span><br><span class="line">        <span class="comment">//url</span></span><br><span class="line">        logger.info(<span class="string">"url=&#123;&#125;"</span>, request.getRequestURL());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//method</span></span><br><span class="line">        logger.info(<span class="string">"method=&#123;&#125;"</span>, request.getMethod());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//ip</span></span><br><span class="line">        logger.info(<span class="string">"ip=&#123;&#125;"</span>, request.getRemoteAddr());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//类方法</span></span><br><span class="line">        logger.info(<span class="string">"class_method=&#123;&#125;"</span>, joinPoint.getSignature().getDeclaringTypeName() + <span class="string">"."</span> + joinPoint.getSignature().getName());</span><br><span class="line">						<span class="comment">//通过JoinPoint对象获取类方法的对象</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//参数</span></span><br><span class="line">        logger.info(<span class="string">"args=&#123;&#125;"</span>, joinPoint.getArgs());</span><br><span class="line">						<span class="comment">//通过JoinPoint对象获取传入的对象</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@After</span>(<span class="string">"log()"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doAfter</span><span class="params">()</span> </span>&#123;			<span class="comment">//之后执行</span></span><br><span class="line">        logger.info(<span class="string">"222222222222"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@AfterReturning</span>(returning = <span class="string">"object"</span>, pointcut = <span class="string">"log()"</span>)		</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doAfterReturning</span><span class="params">(Object object)</span> </span>&#123;		<span class="comment">//获取 返回的信息参数</span></span><br><span class="line">        logger.info(<span class="string">"response=&#123;&#125;"</span>, object.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><p><strong>一、设置项目启动的日志等级</strong><br>1 在运行命令后加入–debug标志，如：$ java -jar springTest.jar –debug<br>2 在application.properties中配置debug=true，该属性置为true的时候，核心Logger<br>（包含嵌入式容器、hibernate、spring）会输出更多内容，但是你自己应用的日志并不会输出为DEBUG级别。</p>
+<p><strong>二、日志输出路径</strong><br>默认情况下，Spring Boot将日志输出到控制台，不会写到日志文件。如果要编写除控制台输出之外的日志文件，则需在application.properties中设置logging.file或logging.path属性。</p>
+<p>1 logging.file，设置文件，可以是绝对路径，也可以是相对路径。如：logging.file=my.log</p>
+<p>2 logging.path，设置目录，会在该目录下创建spring.log文件，并写入日志内容，如：logging.path=/var/log</p>
+<pre><code>如果只配置 logging.file，会在项目的当前路径下生成一个 xxx.log 日志文件。
+如果只配置 logging.path，在 /var/log文件夹生成一个日志文件为 spring.log
+</code></pre><p>注：二者不能同时使用，如若同时使用，则只有logging.file生效</p>
+<p><strong>三、日志级别控制</strong></p>
+<p>1 logging.level.com.dudu=DEBUG：com.dudu包下所有class以DEBUG级别输出<br>2 logging.level.root=WARN：root日志以WARN级别输出</p>
+<p><strong>四、自定义日志配置</strong><br>使用logback，建议使用官方名称logback-spring.xml, logback-spring.groovy, logback.xml, logback.groovy；<br>spring boot可以为它添加一些spring boot特有的配置项。<br>如果你即想完全掌控日志配置，但又不想用logback.xml作为Logback配置的名字，可以通过logging.config属性指定自定义的名字：<br>logging.config=classpath:logging-config.xml</p>
+<p><strong>五、logback例子</strong><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>  <span class="attr">scan</span>=<span class="string">"true"</span> <span class="attr">scanPeriod</span>=<span class="string">"60 seconds"</span> <span class="attr">debug</span>=<span class="string">"false"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">contextName</span>&gt;</span>logback<span class="tag">&lt;/<span class="name">contextName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"log.path"</span> <span class="attr">value</span>=<span class="string">"E:\\test\\logback.log"</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--输出到控制台--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">appender</span> <span class="attr">name</span>=<span class="string">"console"</span> <span class="attr">class</span>=<span class="string">"ch.qos.logback.core.ConsoleAppender"</span>&gt;</span></span><br><span class="line">       <span class="comment">&lt;!-- &lt;filter class="ch.qos.logback.classic.filter.ThresholdFilter"&gt;</span></span><br><span class="line"><span class="comment">            &lt;level&gt;ERROR&lt;/level&gt;</span></span><br><span class="line"><span class="comment">        &lt;/filter&gt;--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">encoder</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">pattern</span>&gt;</span>%d&#123;HH:mm:ss.SSS&#125; %contextName [%thread] %-5level %logger&#123;36&#125; - %msg%n<span class="tag">&lt;/<span class="name">pattern</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">encoder</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">appender</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--输出到文件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">appender</span> <span class="attr">name</span>=<span class="string">"file"</span> <span class="attr">class</span>=<span class="string">"ch.qos.logback.core.rolling.RollingFileAppender"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">file</span>&gt;</span>$&#123;log.path&#125;<span class="tag">&lt;/<span class="name">file</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">rollingPolicy</span> <span class="attr">class</span>=<span class="string">"ch.qos.logback.core.rolling.TimeBasedRollingPolicy"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">fileNamePattern</span>&gt;</span>logback.%d&#123;yyyy-MM-dd&#125;.log<span class="tag">&lt;/<span class="name">fileNamePattern</span>&gt;</span></span><br><span class="line">		 <span class="tag">&lt;<span class="name">maxHistory</span>&gt;</span>30<span class="tag">&lt;/<span class="name">maxHistory</span>&gt;</span></span><br><span class="line">		  <span class="comment">&lt;!--表示只保留最近30天的日志--&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">totalSizeCap</span>&gt;</span>1GB<span class="tag">&lt;/<span class="name">totalSizeCap</span>&gt;</span></span><br><span class="line">		  <span class="comment">&lt;!--设置为1GB的话，那么到了这个值，就会删除旧的日志。--&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">rollingPolicy</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">encoder</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">pattern</span>&gt;</span>%d&#123;HH:mm:ss.SSS&#125; %contextName [%thread] %-5level %logger&#123;36&#125; - %msg%n<span class="tag">&lt;/<span class="name">pattern</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">encoder</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">appender</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">root</span> <span class="attr">level</span>=<span class="string">"info"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">appender-ref</span> <span class="attr">ref</span>=<span class="string">"console"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">appender-ref</span> <span class="attr">ref</span>=<span class="string">"file"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">root</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- logback为java中的包 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">logger</span> <span class="attr">name</span>=<span class="string">"com.dudu.controller"</span>/&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--logback.LogbackDemo：类的全路径 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">logger</span> <span class="attr">name</span>=<span class="string">"com.dudu.controller.LearnController"</span> <span class="attr">level</span>=<span class="string">"WARN"</span> <span class="attr">additivity</span>=<span class="string">"false"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">appender-ref</span> <span class="attr">ref</span>=<span class="string">"console"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">logger</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>注：<br>scan:当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true。<br>scanPeriod:设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟。<br>debug:当此属性设置为true时，将打印出logback内部日志信息，实时查看logback运行状态。默认值为false。</p>
+<p>2 <encoder>表示对日志进行编码：<br>%d{HH: mm:ss.SSS}——日志输出时间<br>%thread——输出日志的进程名字，这在Web应用以及异步任务处理中很有用<br>%-5level——日志级别，并且使用5个字符靠左对齐<br>%logger{36}——日志输出者的名字<br>%msg——日志消息<br>%n——平台的换行符</encoder></p>
+<p><strong>六、开发，测试环境切换</strong><br>1 必须在该文件名logback-spring.xml文件写<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 测试环境+开发环境. 多个使用逗号隔开. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">springProfile</span> <span class="attr">name</span>=<span class="string">"test,dev"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">logger</span> <span class="attr">name</span>=<span class="string">"com.dudu.controller"</span> <span class="attr">level</span>=<span class="string">"info"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">springProfile</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 生产环境. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">springProfile</span> <span class="attr">name</span>=<span class="string">"prod"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">logger</span> <span class="attr">name</span>=<span class="string">"com.dudu.controller"</span> <span class="attr">level</span>=<span class="string">"ERROR"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">springProfile</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>2 可以启动服务的时候指定 profile （如不指定使用默认），如指定prod 的方式为：<br><code>java -jar xxx.jar –spring.profiles.active=prod</code></p>
+<h2 id="热部署"><a href="#热部署" class="headerlink" title="热部署"></a>热部署</h2><p>pom文件添加<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="加载文件"><a href="#加载文件" class="headerlink" title="加载文件"></a>加载文件</h2><p><strong>资源文件</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@PropertySource</span>(<span class="string">"classpath:test.properties"</span>)</span><br></pre></td></tr></table></figure></p>
+<p><strong>xml文件</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@ImportResource</span>(locations=&#123;<span class="string">"classpath:application-bean.xml"</span>&#125;)</span><br><span class="line"><span class="comment">//locations= &#123;"file:d:/test/application-bean1.xml"&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h2><p>跟springMVC类似 配置从xml转向注解<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> MultipartConfigElement <span class="title">multipartConfigElement</span><span class="params">()</span> </span>&#123; </span><br><span class="line">        MultipartConfigFactory factory = <span class="keyword">new</span> MultipartConfigFactory();</span><br><span class="line">        <span class="comment">//// 设置文件大小限制 ,超了，页面会抛出异常信息，这时候就需要进行异常信息的处理了;</span></span><br><span class="line">        factory.setMaxFileSize(<span class="string">"128KB"</span>); <span class="comment">//KB,MB</span></span><br><span class="line">        <span class="comment">/// 设置总上传数据总大小</span></span><br><span class="line">        factory.setMaxRequestSize(<span class="string">"256KB"</span>); </span><br><span class="line">        <span class="comment">//Sets the directory location where files will be stored.</span></span><br><span class="line">        <span class="comment">//factory.setLocation("路径地址");</span></span><br><span class="line">        returnfactory.createMultipartConfig(); </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/02/11/nginx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lightquant">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lightquant.com">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/11/nginx/" itemprop="url">nginx</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-11T23:03:10+08:00">2018-02-11</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="一、nginx依赖的包"><a href="#一、nginx依赖的包" class="headerlink" title="一、nginx依赖的包"></a>一、nginx依赖的包</h2><ol>
+<li>gcc<br>安装nginx需要先将官网下载的源码进行编译，编译依赖gcc环境，如果没有gcc环境，需要安装gcc：<br><code>yum install gcc-c++</code> </li>
+<li>PCRE<br>PCRE(Perl Compatible Regular Expressions)是一个Perl库，包括 perl 兼容的正则表达式库。<br>nginx的http模块使用pcre来解析正则表达式，所以需要在linux上安装pcre库。<br><code>yum install -y pcre pcre-devel</code><br>注：pcre-devel是使用pcre开发的一个二次开发库。nginx也需要此库。</li>
+<li>zlib<br>zlib库提供了很多种压缩和解压缩的方式，nginx使用zlib对http包的内容进行gzip，所以需要在linux上安装zlib库。<br><code>yum install -y zlib zlib-devel</code></li>
+<li>openssl<br>OpenSSL 是一个强大的安全套接字层密码库，囊括主要的密码算法、常用的密钥和证书封装管理功能及SSL协议，并提供丰富的应用程序供测试或其它目的使用。nginx不仅支持http协议，还支持https（即在ssl协议上传输http），所以需要在linux安装openssl库。<br><code>yum install -y openssl openssl-devel</code><br>或者<br><code>wget https://www.openssl.org/source/openssl-1.1.0g.tar.gz</code><br>//<a href="https://www.openssl.org/source" target="_blank" rel="noopener">https://www.openssl.org/source</a></li>
+</ol>
+<h2 id="二、安装步骤"><a href="#二、安装步骤" class="headerlink" title="二、安装步骤"></a>二、安装步骤</h2><blockquote>
+<p>第一步：把nginx的源码上传到linux系统<br>第二步：把压缩包解压缩。<br>第三步：进行configure。<br>第四步：make<br>第五步：make install<br>同时编译nginx+openssl:<br><code>./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_gzip_static_module --with-http_ssl_module --with-openssl=/usr/local/openssl-1.1.0g 
+ make &amp;&amp; make install</code><br>生成证书：<br><code>openssl req -new -x509 -nodes -out server.crt -keyout server.key</code></p>
+</blockquote>
+<h2 id="三、启停服务"><a href="#三、启停服务" class="headerlink" title="三、启停服务"></a>三、启停服务</h2><p><strong>关闭nginx：</strong><br>可以使用kill命令，但是不推荐使用。<br>推荐使用：./nginx -s stop<br><strong>刷新配置：</strong><br>./nginx -s reload</p>
+<h2 id="四、配置文件"><a href="#四、配置文件" class="headerlink" title="四、配置文件"></a>四、配置文件</h2><p>配置文件主要由四部分组成：main(全区设置)，server(主机配置)，upstream(负载均衡服务器设置)，和location(URL匹配特定位置设置)。<br><strong>1）全局变量</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Nginx的worker进程运行用户以及用户组</span></span><br><span class="line"><span class="comment">#user  nobody nobody;</span></span><br><span class="line"><span class="comment">#Nginx开启的进程数</span></span><br><span class="line">worker_processes  1;</span><br><span class="line"><span class="comment">#worker_processes auto;</span></span><br><span class="line"><span class="comment">#以下参数指定了哪个cpu分配给哪个进程，一般来说不用特殊指定。如果一定要设的话，用0和1指定分配方式.</span></span><br><span class="line"><span class="comment">#这样设就是给1-4个进程分配单独的核来运行，出现第5个进程是就是随机分配了。</span></span><br><span class="line">eg:</span><br><span class="line"><span class="comment">#worker_processes 4     #4核CPU </span></span><br><span class="line"><span class="comment">#worker_cpu_affinity 0001 0010 0100 1000</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#定义全局错误日志定义类型，[debug|info|notice|warn|crit]</span></span><br><span class="line"><span class="comment">#error_log  logs/error.log  info;</span></span><br><span class="line"><span class="comment">#指定进程ID存储文件位置</span></span><br><span class="line"><span class="comment">#pid        logs/nginx.pid;</span></span><br><span class="line"><span class="comment">#一个nginx进程打开的最多文件描述符数目，理论值应该是最多打开文件数（ulimit -n）与nginx进程数相除，但是nginx分配请求并不是那么均匀，所以最好与ulimit -n的值保持一致。</span></span><br><span class="line"><span class="comment">#vim /etc/security/limits.conf</span></span><br><span class="line"><span class="comment">#  *                soft    nproc          65535</span></span><br><span class="line"><span class="comment">#  *                hard    nproc          65535</span></span><br><span class="line"><span class="comment">#  *                soft    nofile         65535</span></span><br><span class="line"><span class="comment">#  *                hard    nofile         65535</span></span><br><span class="line">worker_rlimit_nofile 65535;</span><br></pre></td></tr></table></figure></p>
+<p><strong>2）事件配置</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">events &#123;</span><br><span class="line">    <span class="comment">#use [ kqueue | rtsig | epoll | /dev/poll | select | poll ]; epoll模型是Linux 2.6以上版本内核中的高性能网络I/O模型，如果跑在FreeBSD上面，就用kqueue模型。</span></span><br><span class="line">    use epoll;</span><br><span class="line">    <span class="comment">#每个进程可以处理的最大连接数，理论上每台nginx服务器的最大连接数为worker_processes*worker_connections。理论值：worker_rlimit_nofile/worker_processes</span></span><br><span class="line">    <span class="comment">#注意：最大客户数也由系统的可用socket连接数限制（~ 64K），所以设置不切实际的高没什么好处</span></span><br><span class="line">    worker_connections  65535;    </span><br><span class="line">    <span class="comment">#worker工作方式：串行（一定程度降低负载，但服务器吞吐量大时，关闭使用并行方式）</span></span><br><span class="line">    <span class="comment">#multi_accept on; </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>3）http参数</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#文件扩展名与文件类型映射表</span></span><br><span class="line">    include mime.types;</span><br><span class="line">    <span class="comment">#默认文件类型</span></span><br><span class="line">    default_type application/octet-stream;</span><br><span class="line"></span><br><span class="line"><span class="comment">#日志相关定义</span></span><br><span class="line">    <span class="comment">#log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span></span><br><span class="line">    <span class="comment">#                  '$status $body_bytes_sent "$http_referer" '</span></span><br><span class="line">    <span class="comment">#                  '"$http_user_agent" "$http_x_forwarded_for"';</span></span><br><span class="line">    <span class="comment">#定义日志的格式。后面定义要输出的内容。</span></span><br><span class="line">    <span class="comment">#1.$remote_addr 与$http_x_forwarded_for 用以记录客户端的ip地址；</span></span><br><span class="line">    <span class="comment">#2.$remote_user ：用来记录客户端用户名称；</span></span><br><span class="line">    <span class="comment">#3.$time_local ：用来记录访问时间与时区；</span></span><br><span class="line">    <span class="comment">#4.$request  ：用来记录请求的url与http协议；</span></span><br><span class="line">    <span class="comment">#5.$status ：用来记录请求状态； </span></span><br><span class="line">    <span class="comment">#6.$body_bytes_sent ：记录发送给客户端文件主体内容大小；</span></span><br><span class="line">    <span class="comment">#7.$http_referer ：用来记录从那个页面链接访问过来的；</span></span><br><span class="line">    <span class="comment">#8.$http_user_agent ：记录客户端浏览器的相关信息</span></span><br><span class="line">    <span class="comment">#连接日志的路径，指定的日志格式放在最后。</span></span><br><span class="line">    <span class="comment">#access_log  logs/access.log  main;</span></span><br><span class="line">    <span class="comment">#只记录更为严重的错误日志，减少IO压力</span></span><br><span class="line">    error_log logs/error.log crit;</span><br><span class="line">    <span class="comment">#关闭日志</span></span><br><span class="line">    <span class="comment">#access_log  off;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#默认编码</span></span><br><span class="line">    <span class="comment">#charset utf-8;</span></span><br><span class="line">    <span class="comment">#服务器名字的hash表大小</span></span><br><span class="line">    server_names_hash_bucket_size 128;</span><br><span class="line">    <span class="comment">#客户端请求单个文件的最大字节数</span></span><br><span class="line">    client_max_body_size 8m;</span><br><span class="line">    <span class="comment">#指定来自客户端请求头的hearerbuffer大小</span></span><br><span class="line">    client_header_buffer_size 32k;</span><br><span class="line">    <span class="comment">#指定客户端请求中较大的消息头的缓存最大数量和大小。</span></span><br><span class="line">    large_client_header_buffers 4 64k;</span><br><span class="line">    <span class="comment">#开启高效传输模式。</span></span><br><span class="line">    sendfile        on;</span><br><span class="line">    <span class="comment">#防止网络阻塞</span></span><br><span class="line">    tcp_nopush on;</span><br><span class="line">    tcp_nodelay on;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#客户端连接超时时间，单位是秒</span></span><br><span class="line">    keepalive_timeout 60;</span><br><span class="line">    <span class="comment">#客户端请求头读取超时时间</span></span><br><span class="line">    client_header_timeout 10;</span><br><span class="line">    <span class="comment">#设置客户端请求主体读取超时时间</span></span><br><span class="line">    client_body_timeout 10;</span><br><span class="line">    <span class="comment">#响应客户端超时时间</span></span><br><span class="line">    send_timeout 10;</span><br><span class="line"></span><br><span class="line"><span class="comment">#FastCGI相关参数是为了改善网站的性能：减少资源占用，提高访问速度。</span></span><br><span class="line">    fastcgi_connect_timeout 300;</span><br><span class="line">    fastcgi_send_timeout 300;</span><br><span class="line">    fastcgi_read_timeout 300;</span><br><span class="line">    fastcgi_buffer_size 64k;</span><br><span class="line">    fastcgi_buffers 4 64k;</span><br><span class="line">    fastcgi_busy_buffers_size 128k;</span><br><span class="line">    fastcgi_temp_file_write_size 128k;</span><br><span class="line"></span><br><span class="line"><span class="comment">#gzip模块设置</span></span><br><span class="line">    <span class="comment">#开启gzip压缩输出</span></span><br><span class="line">    gzip on; </span><br><span class="line">    <span class="comment">#最小压缩文件大小</span></span><br><span class="line">    gzip_min_length 1k; </span><br><span class="line">    <span class="comment">#压缩缓冲区</span></span><br><span class="line">    gzip_buffers 4 16k;</span><br><span class="line">    <span class="comment">#压缩版本（默认1.1，前端如果是squid2.5请使用1.0）</span></span><br><span class="line">    gzip_http_version 1.0;</span><br><span class="line">    <span class="comment">#压缩等级 1-9 等级越高，压缩效果越好，节约宽带，但CPU消耗大</span></span><br><span class="line">    gzip_comp_level 2;</span><br><span class="line">    <span class="comment">#压缩类型，默认就已经包含text/html，所以下面就不用再写了，写上去也不会有问题，但是会有一个warn。</span></span><br><span class="line">    gzip_types text/plain application/x-javascript text/css application/xml;</span><br><span class="line">    <span class="comment">#前端缓存服务器缓存经过压缩的页面</span></span><br><span class="line">    </span><br><span class="line">gzip_vary on;</span><br></pre></td></tr></table></figure></p>
+<p><strong>4）虚拟主机基本设置</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#虚拟主机定义</span></span><br><span class="line">    server &#123;</span><br><span class="line">        <span class="comment">#监听端口</span></span><br><span class="line">        listen       80;</span><br><span class="line">        <span class="comment">#访问域名</span></span><br><span class="line">        server_name  localhost;</span><br><span class="line">        <span class="comment">#编码格式，若网页格式与此不同，将被自动转码</span></span><br><span class="line">        <span class="comment">#charset koi8-r;</span></span><br><span class="line">        <span class="comment">#虚拟主机访问日志定义</span></span><br><span class="line">        <span class="comment">#access_log  logs/host.access.log  main;</span></span><br><span class="line">        <span class="comment">#对URL进行匹配</span></span><br><span class="line">        location / &#123;</span><br><span class="line">            <span class="comment">#访问路径，可相对也可绝对路径</span></span><br><span class="line">            root   html;</span><br><span class="line">            <span class="comment">#首页文件。以下按顺序匹配</span></span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#错误信息返回页面</span></span><br><span class="line">        <span class="comment">#error_page  404              /404.html;</span></span><br><span class="line">        <span class="comment"># redirect server error pages to the static page /50x.html</span></span><br><span class="line">        <span class="comment">#</span></span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#访问URL以.php结尾则自动转交给127.0.0.1</span></span><br><span class="line">        <span class="comment"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span></span><br><span class="line">        <span class="comment">#</span></span><br><span class="line">        <span class="comment">#location ~ \.php$ &#123;</span></span><br><span class="line">        <span class="comment">#    proxy_pass   http://127.0.0.1;</span></span><br><span class="line">        <span class="comment">#&#125;</span></span><br><span class="line"><span class="comment">#php脚本请求全部转发给FastCGI处理</span></span><br><span class="line">        <span class="comment"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span></span><br><span class="line">        <span class="comment">#</span></span><br><span class="line">        <span class="comment">#location ~ \.php$ &#123;</span></span><br><span class="line">        <span class="comment">#    root           html;</span></span><br><span class="line">        <span class="comment">#    fastcgi_pass   127.0.0.1:9000;</span></span><br><span class="line">        <span class="comment">#    fastcgi_index  index.php;</span></span><br><span class="line">        <span class="comment">#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span></span><br><span class="line">        <span class="comment">#    include        fastcgi_params;</span></span><br><span class="line">        <span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#禁止访问.ht页面 （需ngx_http_access_module模块）</span></span><br><span class="line">        <span class="comment"># deny access to .htaccess files, if Apache's document root</span></span><br><span class="line">        <span class="comment"># concurs with nginx's one</span></span><br><span class="line">        <span class="comment">#</span></span><br><span class="line">        <span class="comment">#location ~ /\.ht &#123;</span></span><br><span class="line">        <span class="comment">#    deny  all;</span></span><br><span class="line">        <span class="comment">#&#125;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">#HTTPS虚拟主机定义</span></span><br><span class="line">    <span class="comment"># HTTPS server</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment">#server &#123;</span></span><br><span class="line">    <span class="comment">#    listen       443 ssl;</span></span><br><span class="line">    <span class="comment">#    server_name  localhost;</span></span><br><span class="line">    <span class="comment">#    ssl_certificate      cert.pem;</span></span><br><span class="line">    <span class="comment">#    ssl_certificate_key  cert.key;</span></span><br><span class="line">    <span class="comment">#    ssl_session_cache    shared:SSL:1m;</span></span><br><span class="line">    <span class="comment">#    ssl_session_timeout  5m;</span></span><br><span class="line">    <span class="comment">#    ssl_ciphers  HIGH:!aNULL:!MD5;</span></span><br><span class="line">    <span class="comment">#    ssl_prefer_server_ciphers  on;</span></span><br><span class="line">    <span class="comment">#    location / &#123;</span></span><br><span class="line">    <span class="comment">#        root   html;</span></span><br><span class="line">    <span class="comment">#        index  index.html index.htm;</span></span><br><span class="line">    <span class="comment">#    &#125;</span></span><br><span class="line">    <span class="comment">#&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>5）Nignx状态监控</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Nginx运行状态，StubStatus模块获取Nginx自启动的工作状态（编译时要开启对应功能）</span></span><br><span class="line">        <span class="comment">#location /NginxStatus &#123;</span></span><br><span class="line">        <span class="comment">#    #启用StubStatus的工作访问状态    </span></span><br><span class="line">        <span class="comment">#    stub_status    on;</span></span><br><span class="line">        <span class="comment">#    #指定StubStaus模块的访问日志文件</span></span><br><span class="line">        <span class="comment">#    access_log    logs/Nginxstatus.log;</span></span><br><span class="line">        <span class="comment">#    #Nginx认证机制（需Apache的htpasswd命令生成）</span></span><br><span class="line">        <span class="comment">#    #auth_basic    "NginxStatus";</span></span><br><span class="line">        <span class="comment">#    #用来认证的密码文件</span></span><br><span class="line">        <span class="comment">#    #auth_basic_user_file    ../htpasswd;    </span></span><br><span class="line">        <span class="comment">#&#125;</span></span><br><span class="line">访问：http://IP/NginxStatus(测试就不加密码验证相关)</span><br></pre></td></tr></table></figure></p>
+<p><strong>6）反向代理</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#以下配置追加在HTTP的全局变量中</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#nginx跟后端服务器连接超时时间(代理连接超时)</span></span><br><span class="line">proxy_connect_timeout      5;</span><br><span class="line"><span class="comment">#后端服务器数据回传时间(代理发送超时)</span></span><br><span class="line">proxy_send_timeout         5;</span><br><span class="line"><span class="comment">#连接成功后，后端服务器响应时间(代理接收超时)</span></span><br><span class="line">proxy_read_timeout         60;</span><br><span class="line"><span class="comment">#设置代理服务器（nginx）保存用户头信息的缓冲区大小</span></span><br><span class="line">proxy_buffer_size          16k;</span><br><span class="line"><span class="comment">#proxy_buffers缓冲区，网页平均在32k以下的话，这样设置</span></span><br><span class="line">proxy_buffers              4 32k;</span><br><span class="line"><span class="comment">#高负荷下缓冲大小（proxy_buffers*2）</span></span><br><span class="line">proxy_busy_buffers_size    64k;</span><br><span class="line"><span class="comment">#设定缓存文件夹大小，大于这个值，将从upstream服务器传</span></span><br><span class="line">proxy_temp_file_write_size 64k;</span><br><span class="line"><span class="comment">#反向代理缓存目录</span></span><br><span class="line">proxy_cache_path /data/proxy/cache levels=1:2 keys_zone=cache_one:500m inactive=1d max_size=1g;</span><br><span class="line"><span class="comment">#levels=1:2 设置目录深度，第一层目录是1个字符，第2层是2个字符</span></span><br><span class="line"><span class="comment">#keys_zone:设置web缓存名称和内存缓存空间大小</span></span><br><span class="line"><span class="comment">#inactive:自动清除缓存文件时间。</span></span><br><span class="line"><span class="comment">#max_size:硬盘空间最大可使用值。</span></span><br><span class="line"><span class="comment">#指定临时缓存文件的存储路径(路径需和上面路径在同一分区)</span></span><br><span class="line">proxy_temp_path </span><br><span class="line">/data/proxy/temp</span><br><span class="line"></span><br><span class="line"><span class="comment">#服务配置</span></span><br><span class="line">server &#123;</span><br><span class="line">    <span class="comment">#侦听的80端口</span></span><br><span class="line">    listen       80;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    location / &#123;</span><br><span class="line">        <span class="comment">#反向代理缓存设置命令(proxy_cache zone|off,默认关闭所以要设置)</span></span><br><span class="line">        proxy_cache cache_one;</span><br><span class="line">        <span class="comment">#对不同的状态码缓存不同时间</span></span><br><span class="line">        proxy_cache_valid 200 304 12h;</span><br><span class="line">        <span class="comment">#设置以什么样参数获取缓存文件名</span></span><br><span class="line">        proxy_cache_key <span class="variable">$host</span><span class="variable">$uri</span><span class="variable">$is_args</span><span class="variable">$args</span>;</span><br><span class="line">        <span class="comment">#后7端的Web服务器可以通过X-Forwarded-For获取用户真实IP</span></span><br><span class="line">        proxy_set_header Host <span class="variable">$host</span>;</span><br><span class="line">        proxy_set_header X-Real-IP <span class="variable">$remote_addr</span>; </span><br><span class="line">        proxy_set_header X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>; </span><br><span class="line">  </span><br><span class="line">        <span class="comment">#代理设置</span></span><br><span class="line">        proxy_pass   http://IP; </span><br><span class="line">        <span class="comment">#文件过期时间控制</span></span><br><span class="line">        expires    1d;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">#配置手动清楚缓存(实现此功能需第三方模块 ngx_cache_purge)</span></span><br><span class="line">    <span class="comment">#http://www.123.com/2017/0316/17.html访问</span></span><br><span class="line">    <span class="comment">#http://www.123.com/purge/2017/0316/17.html清楚URL缓存</span></span><br><span class="line">    location ~ /purge(/.*) &#123;</span><br><span class="line">        allow    127.0.0.1;</span><br><span class="line">        deny    all;</span><br><span class="line">        proxy_cache_purge    cache_one    <span class="variable">$host</span><span class="variable">$1</span><span class="variable">$is_args</span><span class="variable">$args</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">#设置扩展名以.jsp、.php、.jspx结尾的动态应用程序不做缓存</span></span><br><span class="line">    location ~.*\.(jsp|php|jspx)?$ &#123; </span><br><span class="line">        proxy_set_header Host <span class="variable">$host</span>; </span><br><span class="line">        proxy_set_header X-Real-IP <span class="variable">$remote_addr</span>; </span><br><span class="line">        proxy_set_header X-Forwarded-For <span class="variable">$proxy_add_x_forwarded_for</span>; </span><br><span class="line">  </span><br><span class="line">        proxy_pass http://http://IP;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>7）负载均衡</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#负载均衡服务器池</span></span><br><span class="line">upstream my_server_pool &#123;</span><br><span class="line">    <span class="comment">#调度算法</span></span><br><span class="line">    <span class="comment">#1.轮循（默认）（weight轮循权值）</span></span><br><span class="line">    <span class="comment">#2.ip_hash：根据每个请求访问IP的hash结果分配。（会话保持）</span></span><br><span class="line">    <span class="comment">#3.fair:根据后端服务器响应时间最短请求。（upstream_fair模块）</span></span><br><span class="line">    <span class="comment">#4.url_hash:根据访问的url的hash结果分配。（需hash软件包）</span></span><br><span class="line">    <span class="comment">#参数：</span></span><br><span class="line">    <span class="comment">#down：表示不参与负载均衡</span></span><br><span class="line">    <span class="comment">#backup:备份服务器</span></span><br><span class="line">    <span class="comment">#max_fails:允许最大请求错误次数</span></span><br><span class="line">    <span class="comment">#fail_timeout:请求失败后暂停服务时间。</span></span><br><span class="line">    server 192.168.1.109:80 weight=1 max_fails=2 fail_timeout=30;</span><br><span class="line">    server 192.168.1.108:80 weight=2 max_fails=2 fail_timeout=30;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#负载均衡调用</span></span><br><span class="line">server &#123;</span><br><span class="line">    ...</span><br><span class="line">    location / &#123;</span><br><span class="line">    proxy_pass http://my_server_pool;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>8）URL重写</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#根据不同的浏览器URL重写</span></span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$http_user_agent</span> ~ Firefox)&#123;</span><br><span class="line">rewrite ^(.*)$  /firefox/<span class="variable">$1</span> <span class="built_in">break</span>; </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$http_user_agent</span> ~ MSIE)&#123;</span><br><span class="line">rewrite ^(.*)$  /msie/<span class="variable">$1</span> <span class="built_in">break</span>; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">#实现域名跳转</span></span><br><span class="line">location / &#123;</span><br><span class="line">    rewrite ^/(.*)$ https://web8.example.com<span class="variable">$1</span> permanent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>9）IP限制</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#限制IP访问</span><br><span class="line">location / &#123;</span><br><span class="line">    deny 192.168.0.2；</span><br><span class="line">    allow 192.168.0.0/24;</span><br><span class="line">    allow 192.168.1.1;</span><br><span class="line">    deny all;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>10）Nginx相关命令</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#启动nginx</span><br><span class="line">nginx </span><br><span class="line">#关闭nginx</span><br><span class="line">nginx -s stop</span><br><span class="line">#平滑重启</span><br><span class="line">kill -HUP `cat /usr/local/nginx/logs/nginx.pid`</span><br></pre></td></tr></table></figure></p>
+<p><strong>11）Nginx启动脚本</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#chkconfig: 2345 80 90</span></span><br><span class="line"><span class="comment">#description:auto_run</span></span><br><span class="line">PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/<span class="built_in">local</span>/bin:/usr/<span class="built_in">local</span>/sbin:~/bin</span><br><span class="line"><span class="built_in">export</span> PATH</span><br><span class="line"><span class="comment"># Check if user is root</span></span><br><span class="line"><span class="keyword">if</span> [ $(id -u) != <span class="string">"0"</span> ]; <span class="keyword">then</span></span><br><span class="line">   <span class="built_in">echo</span> <span class="string">"Error: You must be root to run this script!\n"</span></span><br><span class="line">   <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line">NGINXDAEMON=/usr/<span class="built_in">local</span>/nginx/sbin/nginx</span><br><span class="line">PIDFILE=/usr/<span class="built_in">local</span>/nginx/logs/nginx.pid</span><br><span class="line">function_start()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[32;49;1mStarting nginx......\n"</span></span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[39;49;0m"</span>  </span><br><span class="line">   <span class="keyword">if</span> [ -f <span class="variable">$PIDFILE</span> ]; <span class="keyword">then</span></span><br><span class="line">     <span class="built_in">printf</span> <span class="string">"Nginx is runing!\n"</span></span><br><span class="line">     <span class="built_in">exit</span> 1</span><br><span class="line">   <span class="keyword">else</span>  </span><br><span class="line">       <span class="variable">$NGINXDAEMON</span></span><br><span class="line">       <span class="built_in">printf</span> <span class="string">"Nginx is the successful start!\n"</span></span><br><span class="line">   <span class="keyword">fi</span></span><br><span class="line">&#125;</span><br><span class="line">function_stop()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[32;49;1mStoping nginx......\n"</span></span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[39;49;0m"</span></span><br><span class="line">   <span class="keyword">if</span>  [ -f <span class="variable">$PIDFILE</span> ]; <span class="keyword">then</span></span><br><span class="line">       <span class="built_in">kill</span> `cat <span class="variable">$PIDFILE</span>`</span><br><span class="line">       <span class="built_in">printf</span> <span class="string">"Nginx program is stoped\n"</span></span><br><span class="line">   <span class="keyword">else</span>  </span><br><span class="line">       <span class="built_in">printf</span>  <span class="string">"Nginx program is not runing!\n"</span></span><br><span class="line">   <span class="keyword">fi</span></span><br><span class="line">&#125;</span><br><span class="line">function_reload()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[32;49;1mReload nginx......\n"</span></span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[39;49;0m"</span></span><br><span class="line">   function_stop</span><br><span class="line">   function_start</span><br><span class="line">&#125;</span><br><span class="line">function_restart()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[32;49;1mRestart nginx......\n"</span></span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[39;49;0m"</span></span><br><span class="line">   <span class="built_in">printf</span> <span class="string">"Reload Nginx configure...\n"</span></span><br><span class="line">   <span class="variable">$NGINXDAEMON</span> -t</span><br><span class="line">   <span class="built_in">kill</span> -HUP `cat <span class="variable">$PIDFILE</span>`</span><br><span class="line">   <span class="built_in">printf</span> <span class="string">"Nginx program is reloding!\n"</span></span><br><span class="line">&#125;</span><br><span class="line">function_kill()</span><br><span class="line">&#123;</span><br><span class="line">   killall nginx</span><br><span class="line">&#125;</span><br><span class="line">function_status()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">if</span> ! ps -ef|grep -v grep|grep <span class="string">'nginx:'</span> &gt; /dev/null 2&gt;&amp;1</span><br><span class="line">   <span class="keyword">then</span></span><br><span class="line">       <span class="built_in">printf</span> <span class="string">"Nginx is down!!!\n"</span></span><br><span class="line">   <span class="keyword">else</span></span><br><span class="line">       <span class="built_in">printf</span> <span class="string">"Nginx is running now!\n"</span></span><br><span class="line">   <span class="keyword">fi</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$1</span>"</span> = <span class="string">"start"</span> ]; <span class="keyword">then</span></span><br><span class="line">   function_start</span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$1</span>"</span> = <span class="string">"stop"</span> ]; <span class="keyword">then</span></span><br><span class="line">   function_stop</span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$1</span>"</span> = <span class="string">"reload"</span> ]; <span class="keyword">then</span></span><br><span class="line">   function_reload</span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$1</span>"</span> = <span class="string">"restart"</span> ]; <span class="keyword">then</span></span><br><span class="line">   function_restart</span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$1</span>"</span> = <span class="string">"kill"</span> ]; <span class="keyword">then</span></span><br><span class="line">   function_kill</span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$1</span>"</span> = <span class="string">"status"</span> ]; <span class="keyword">then</span></span><br><span class="line">   function_status</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[32;49;1m Usage: nginx &#123;start|stop|reload|restart|kill|status&#125;\n"</span></span><br><span class="line">   <span class="built_in">echo</span> -en <span class="string">"\033[39;49;0m"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/02/10/SSM框架整合/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -404,13 +908,16 @@
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="编写Controller代码"><a href="#编写Controller代码" class="headerlink" title="编写Controller代码"></a>编写Controller代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line">	<span class="meta">@RequestMapping</span>(<span class="string">"/mvc"</span>)</span><br><span class="line">	<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">mvcController</span> </span>&#123;</span><br><span class="line"> </span><br><span class="line">    	<span class="meta">@RequestMapping</span>(<span class="string">"/hello"</span>)</span><br><span class="line">   	 <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span></span>&#123;        </span><br><span class="line">        	<span class="keyword">return</span> <span class="string">"hello"</span>;</span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h3><p><strong>@Controller</strong><br>负责注册一个bean 到spring 上下文中<br><strong>@RequestMapping</strong><br>注解为控制器指定可以处理哪些 URL 请求<br><strong>@ResponseBody</strong><br>返回json<br><strong>@ModelAttribute</strong><br>在方法定义上使用@ModelAttribute注解：Spring MVC 在调用目标处理方法前，会先逐个调用在方法级上标注了@ModelAttribute 的方法<br>在方法的入参前使用 @ModelAttribute 注解：可以从隐含对象中获取隐含的模型数据中获取对象，再将请求参数 –绑定到对象中，再传入入参将方法入参对象添加到模型中<br><strong>@RequestParam</strong>　<br>在处理方法入参处使用 @RequestParam 可以把请求参 数传递给请求方法<br><code>@RequestParam(value=&quot;name&quot;,defaultValue=&quot;Guest&quot;)</code>//修饰在方法参数里面<br><strong>@PathVariable</strong><br>绑定 URL 占位符到入参<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/path/&#123;language&#125;/&#123;id&#125;"</span>)</span><br><span class="line">   	<span class="function"><span class="keyword">public</span> String <span class="title">documentView</span><span class="params">(Model model,</span></span></span><br><span class="line"><span class="function"><span class="params">            @PathVariable(value = <span class="string">"language"</span>)</span> String language,</span></span><br><span class="line"><span class="function">            @<span class="title">PathVariable</span><span class="params">(value = <span class="string">"id"</span>)</span> Long id</span></span><br><span class="line"><span class="function">            ) </span>&#123;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
 <p><strong>@ExceptionHandler</strong><br>注解到方法上，出现异常时会执行该方法</p>
-<p><strong>@ControllerAdvice</strong><br>使一个Contoller成为全局的异常处理类，类中用@ExceptionHandler方法注解的方法可以处理所有Controller发生的异常<br><strong>@Configuration</strong><br>把一个类作为一个IoC容器，它的某个方法头上如果注册了@Bean，就会作为这个Spring容器中的Bean。<br><strong>@Component</strong><br>组件<br>@EnableScheduling<br>启动定时任务</p>
-<h3 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数"></a>传递参数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/show"</span>)	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">showPerson</span><span class="params">(Map&lt;String,Object&gt; map)</span></span>&#123;</span><br><span class="line">    	Person p =<span class="keyword">new</span> Person();</span><br><span class="line">    	map.put(<span class="string">"p"</span>, p);</span><br><span class="line">    	p.setAge(<span class="number">20</span>);</span><br><span class="line">    	p.setName(<span class="string">"jayjay"</span>);</span><br><span class="line">    	<span class="keyword">return</span> <span class="string">"show"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//前台可在Request域中取到"p"</span></span><br></pre></td></tr></table></figure>
+<p><strong>@ControllerAdvice</strong><br>使一个Contoller成为全局的异常处理类，类中用@ExceptionHandler方法注解的方法可以处理所有Controller发生的异常<br><strong>@Configuration</strong><br>把一个类作为一个IoC容器，它的某个方法头上如果注册了@Bean，就会作为这个Spring容器中的Bean。<br><strong>@Component</strong><br>组件<br><strong>@EnableScheduling</strong><br>启动定时任务</p>
+<h3 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数"></a>传递参数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/show"</span>)	</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">showPerson</span><span class="params">(Map&lt;String,Object&gt; map)</span></span>&#123;</span><br><span class="line">   	Person p =<span class="keyword">new</span> Person();</span><br><span class="line">   	map.put(<span class="string">"p"</span>, p);</span><br><span class="line">   	p.setAge(<span class="number">20</span>);</span><br><span class="line">   	p.setName(<span class="string">"jayjay"</span>);</span><br><span class="line">   	<span class="keyword">return</span> <span class="string">"show"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//前台可在Request域中取到"p"</span></span><br></pre></td></tr></table></figure>
 <ol>
-<li>Model model这个放在方法里面的参数，然后就可以model.addAttibute(“key”,value);页面可以获取到<br>//Model model, Map<string,object> model2, ModelMap model3都是同一个对象</string,object></li>
-<li>request传统方式<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public String view(HttpServletRequest req,HttpSession session)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">```	</span><br><span class="line">### 使用redirect方式处理请求</span><br><span class="line">```java</span><br><span class="line">//redirect </span><br><span class="line">	@RequestMapping(&quot;/redirect&quot;)</span><br><span class="line">	public String redirect()&#123;</span><br><span class="line">    	return &quot;redirect:hello&quot;;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<li><p>Model model这个放在方法里面的参数，然后就可以model.addAttibute(“key”,value);页面可以获取到<br>Model model, Map<string,object> model2, ModelMap model3都是同一个对象</string,object></p>
+</li>
+<li><p>request传统方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">view</span><span class="params">(HttpServletRequest req,HttpSession session)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<h3 id="使用redirect方式处理请求"><a href="#使用redirect方式处理请求" class="headerlink" title="使用redirect方式处理请求"></a>使用redirect方式处理请求</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//redirect </span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/redirect"</span>)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">redirect</span><span class="params">()</span></span>&#123;</span><br><span class="line">   	<span class="keyword">return</span> <span class="string">"redirect:hello"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="异常的处理"><a href="#异常的处理" class="headerlink" title="异常的处理"></a>异常的处理</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ExceptionHandler</span>(value = UnauthorizedException.class) <span class="comment">// 处理访问方法时权限不足问题</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">handle</span><span class="params">(Exception e)</span> </span>&#123;</span><br><span class="line">	ModelAndView mv = <span class="keyword">new</span> ModelAndView(<span class="string">"error"</span>);</span><br><span class="line">	    mv.addObject(<span class="string">"exception"</span>, ex);</span><br><span class="line">	    System.out.println(<span class="string">"in testExceptionHandler"</span>);</span><br><span class="line">	    <span class="keyword">return</span> mv;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//ModelAndView 跳转加设置参数</span></span><br></pre></td></tr></table></figure>
 <h3 id="自定义拦截器"><a href="#自定义拦截器" class="headerlink" title="自定义拦截器"></a>自定义拦截器</h3><p>创建一个MyInterceptor类，并实现HandlerInterceptor接口<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">建一个MyInterceptor类，并实现HandlerInterceptor接口</span><br><span class="line">	    <span class="meta">@Override</span></span><br><span class="line">	    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">afterCompletion</span><span class="params">(HttpServletRequest arg0,</span></span></span><br><span class="line"><span class="function"><span class="params">	            HttpServletResponse arg1, Object arg2, Exception arg3)</span></span></span><br><span class="line"><span class="function">	            <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">	        System.out.println(<span class="string">"afterCompletion"</span>);</span><br><span class="line">	    &#125;</span><br><span class="line">	    <span class="meta">@Override</span></span><br><span class="line">	    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">postHandle</span><span class="params">(HttpServletRequest arg0, HttpServletResponse arg1,</span></span></span><br><span class="line"><span class="function"><span class="params">	            Object arg2, ModelAndView arg3)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">	        System.out.println(<span class="string">"postHandle"</span>);</span><br><span class="line">	    &#125;</span><br><span class="line">	    <span class="meta">@Override</span></span><br><span class="line">	    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">preHandle</span><span class="params">(HttpServletRequest arg0, HttpServletResponse arg1,		//先執行,</span></span></span><br><span class="line"><span class="function"><span class="params">	            Object arg2)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">	        System.out.println(<span class="string">"preHandle"</span>);</span><br><span class="line">	        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">	    &#125;</span><br></pre></td></tr></table></figure></p>
 <ol>
@@ -1553,552 +2060,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/01/09/shell脚本常用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lightquant">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lightquant.com">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/09/shell脚本常用/" itemprop="url">shell脚本常用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-09T23:11:10+08:00">2018-01-09</time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="一-内部常用命令"><a href="#一-内部常用命令" class="headerlink" title="一.内部常用命令"></a>一.内部常用命令</h3><blockquote>
-<ol>
-<li>echo 在屏幕上输出<br>-n    不会换行<br>-e    会识别换行符\n</li>
-<li>printf    产生各种格式的输出</li>
-<li>export 定义全局变量  export 变量名=变量值</li>
-<li>read        读入数据<br>read -p “我是提示语句” file<br>-t 指定等待时间<br>-n指定字符串长度<br>-s 隐藏输入的数据<br>-p：输入提示符        </li>
-<li>exec<br>如：exec echo $a<br>shell里，作为独立进程去执行该命令</li>
-<li>expr<br>expr length “this is a test”<br>expr substr “this is a test” 3 5<br>expr index “sarasara”  a<br>expr 10 + 10      //+、-、<em>、/、%<br>expr 30 \</em> 3       //乘用  反斜杠*表示</li>
-</ol>
-</blockquote>
-<h3 id="二、控制、循环语句"><a href="#二、控制、循环语句" class="headerlink" title="二、控制、循环语句"></a>二、控制、循环语句</h3><h4 id="1-if语句"><a href="#1-if语句" class="headerlink" title="1. if语句"></a>1. if语句</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">cd ..</span><br><span class="line">if [ -f test1.txt ]</span><br><span class="line">then</span><br><span class="line">	echo test.txt is a fail;</span><br><span class="line">       cat test1.txt</span><br><span class="line">elif [ -d shell ]</span><br><span class="line">then</span><br><span class="line"> 		echo in shell is dir;</span><br><span class="line">    	dir shell 				#打印出shell目录中的内容</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
-<p><strong>注意：</strong></p>
-<blockquote>
-<p>数值判断：<br>    -eq    等于<br>    -ge    大于等于<br>    -gt    大于<br>    -le    小于等于<br>    -lt    小于<br>    -ne    不等于<br>字符串判断（两边有个空格）<br>    =    等于<br>    !=    不等于<br>    -z    字符串长度为零<br>    -n    字符串长度不为零<br>文件测试<br>    -d    如果文件存在且为目录，则为真<br>    -e    如果文件存在<br>    -f    如果文件存在且为普通文件<br>    -r    ….且可读<br>    -w    ….且可写<br>    -x    ….且可执行<br>   -s    ….且至少有一个字符</p>
-</blockquote>
-<h4 id="2-switch语句"><a href="#2-switch语句" class="headerlink" title="2.switch语句"></a>2.switch语句</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">cd ..</span><br><span class="line">echo "please choice to display is file";</span><br><span class="line">echo "1:display test.txt";</span><br><span class="line">echo "2:display test1.txt";</span><br><span class="line">echo enter your choice;</span><br><span class="line">read -p "please in num:" var</span><br><span class="line">case $var in</span><br><span class="line">       	1) cat test.txt;;</span><br><span class="line">       	2) cat test1.txt;;</span><br><span class="line">       	*) echo error;;</span><br><span class="line">esac</span><br></pre></td></tr></table></figure>
-<h4 id="3-for语句"><a href="#3-for语句" class="headerlink" title="3.for语句"></a>3.for语句</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">for num in 1 2 3 4 5 6 7 8 9 10	</span><br><span class="line">do</span><br><span class="line">	echo $num is:</span><br><span class="line">	expr $num \* $num</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
-<h4 id="4-while语句"><a href="#4-while语句" class="headerlink" title="4.while语句"></a>4.while语句</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">echo "please input number(gt 100 will quit)";</span><br><span class="line">  	read num;</span><br><span class="line">while [ $num -lt 100  ]</span><br><span class="line">do</span><br><span class="line">	echo result:</span><br><span class="line">	expr $num \* $num;</span><br><span class="line">	read num;</span><br><span class="line">       done</span><br></pre></td></tr></table></figure>
-<h4 id="5-until语句"><a href="#5-until语句" class="headerlink" title="5. until语句"></a>5. until语句</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">	echo "please input fileName:"</span><br><span class="line">	read filename;</span><br><span class="line">	echo "please input fileContent(in 'end! quit!!!'):"</span><br><span class="line">	read fileContent;</span><br><span class="line">	until [ $fileContent = "end!" ]</span><br><span class="line">	do</span><br><span class="line">    		$fileContent &gt;&gt; $filename  #写内容到这个文件去</span><br><span class="line">			echo "please input fileContent(in 'end! quit!!!'):"							read fileContent</span><br><span class="line">     done</span><br></pre></td></tr></table></figure>
-<h3 id="三、其他常用"><a href="#三、其他常用" class="headerlink" title="三、其他常用"></a>三、其他常用</h3><blockquote>
-<ol>
-<li>引号含义：<br>反引号：shell中 会首先执行反引号的代码<br>单引号：不是解释，原封不动打印出来<br>双引号：解释变量，而且保留空格<br>没有引号：解释变量，不会保留空格</li>
-<li>$符号含义<br>$#表示用户输入参数的个数<br>$0 是脚本本身的名字<br>$? 是显示最后命令的退出状态，0表示没有错误，其他表示有错误<br>$$ 是脚本运行的当前进程ID号<br>$@<br>$*<br>$! 后台运行程序的pid<br>都是代表说有， $@每一个会被区别对待<br>num#    8# 16# 2# 代表进制</li>
-<li>运算<br>sum=$(($sum<em>$i))  等于 let “sum=sum</em>i”  == s<br>$i == ${i}</li>
-<li><p>小括号，中括号，双括号，大括号区别<br>if ($i&lt;5)    </p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">if [ $i -lt 5 ]    </span><br><span class="line">if [ $a -ne 1 -a $a != 2 ]    </span><br><span class="line">if [ $a -ne 1] &amp;&amp; [ $a != 2 ]    </span><br><span class="line">if [[ $a != 1 &amp;&amp; $a != 2 ]]    </span><br><span class="line">for i in $(seq 0 4);do echo $i;done    </span><br><span class="line">for i in `seq 0 4`;do echo $i;done    </span><br><span class="line">for ((i=0;i&lt;5;i++));do echo $i;done    </span><br><span class="line">for i in &#123;0..4&#125;;do echo $i;done</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>注意<br>shell脚本对空格有严格的规定，赋值语句等号两边不能有空格，而字符串比较，等号两边必须有空格</p>
-</li>
-</ol>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/01/09/linux高级/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lightquant">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lightquant.com">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/09/linux高级/" itemprop="url">Linux高级</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-09T22:00:10+08:00">2018-01-09</time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="sed命令"><a href="#sed命令" class="headerlink" title="sed命令"></a>sed命令</h2><p>sed命令行格式为： sed [-nefri] ‘command’ 输入文本        </p>
-<ol>
-<li>常用选项：</li>
-</ol>
-<blockquote>
-<p>-n∶使用安静(silent)模式。在一般 sed 的用法中，所有来自 STDIN的资料一般都会被列出到萤幕上。但如果加上 -n 参数后，则只有经过sed 特殊处理的那一行(或者动作)才会被列出来。<br>    set -n ‘20,30p’ 文件    常与p结合使用<br>    set -参数 ‘/条件/ c\ sfdasf’ 文件<br>    -e∶直接在指令列模式上进行 sed 的动作编辑；<br>    set -e -n 20,30p’<br>    a 的后面可以接字串，而这些字串会在新的一行出现(目前的下一行)～<br>    sed ‘/100/ a bbb’ 文件<br>    c   ∶取代， c 的后面可以接字串，这些字串可以取代 n1,n2 之间的行！<br>    d   ∶删除，因为是删除啊，所以 d 后面通常不接任何咚咚；<br>    sed ‘/^9/d’ count.log<br>    sed ‘100d’ count.log<br>    sed ‘2,$d’ count.log<br>    i   ∶插入， i 的后面可以接字串，而这些字串会在新的一行出现(目前的上一行)；<br>    p  ∶列印，亦即将某个选择的资料印出。通常 p 会与参数 sed -n 一起运作～<br>    s  ∶取代，可以直接进行取代的工作哩！通常这个 s 的动作可以搭配正规表示法！例如 1,20s/old/new/g 就是啦！<br>    要替换时，如果“原内容”或“新内容”中含有特殊字符（比如”/”或者”#”等），可以使用其它符号把各部分隔开，比如以下几种格式都是正确的<br>    sed -i ‘s,原内容,新内容,g’ 文件<br>    sed -i ‘s#原内容#新内容#g’ 文件<br>    sed -i ‘s:原内容:新内容:g’ 文件<br>    sed -i ‘s~原内容~新内容~g’ 文件<br>    匹配规则：<br>    . 匹配任意一个字符<br>    * 匹配0 个或多个*前的字符<br>    ^ 匹配行开头<br>   $ 匹配行结尾</p>
-</blockquote>
-<h2 id="awk命令"><a href="#awk命令" class="headerlink" title="awk命令"></a>awk命令</h2><ol>
-<li><p>格式</p>
-<blockquote>
-<p>格式:awk  -F:  ‘BEGIN {处理文件前执行的代码块} ｛处理文件过程中执行的代码块} END {处理文件后执行的代码块}’   filename<br>如：<br>cat count.log|awk ‘BEGIN{a=1;b=2}{print $(a+b)}END{print $1}’<br>awk -F: ‘BEGIN {print “这是第一行”} {print $0} END {print “这是最后一行”}’<br>print $1,$2  打印多个用逗号，$0代表整行。<br>其中+和?只适用于awk而不适用于grep或sed:<br>+    匹配一个或一个以上前面的单字符<br>?    匹配0个或一个前面的单字符<br>举例:<br>/XY+Z/    匹配XYZ、XYYYYZ<br>/XY?Z/    匹配XYZ、XZ<br>~        匹配正则表达式<br>!~        不匹配正则表达式</p>
-</blockquote>
-</li>
-<li><p>awk有许多内置变量用来设置环境信息，常用的有</p>
-<blockquote>
-<p>ARGC        命令行参数个数<br>ARGV        命令行参数排列<br>ENVIRON        支持队列中系统环境变量的使用<br>FILENAME    awk读取的文件名<br>FNR            当前文件已处理的记录行数<br>FS            设置域分隔符，相当于-F<br>NF            域的列数<br>echo ‘/user/apache/conf/httpd.conf’|awk -F/ ‘{print $NF}’<br>NR            已处理的记录总行数<br>OFS            设置输出字段域分隔符<br>RS/ORS        换行符</p>
-</blockquote>
-</li>
-<li><p>举例</p>
-<blockquote>
-<p>awk ‘{name=$1;belts=$4;if(belts ~ /Yellow/) print name “is belt “belts}’ grade.txt<br>awk ‘{if($1==”ley”)$7=$7-40; print $0}’ grade.txt<br>awk ‘BEGIN{print “Name\tDifference”}{if ($6&lt;$7){$8=$7-$6;print $1,$8}}’ gra<em>    //模拟第8列出来<br>awk ‘BEGIN {print “Name\tDifference”} {if ($6 &lt; $7) {diff = $7 - $6; print $1,diff}}’ grade.txt    //同上，不模拟列，直接给变量<br>awk ‘total+=$6;END{print total}’ grade</em><br>awk ‘{total+=$6;END{print total}}’ grade*<br>//区别： 上面的所有内容就将会打印出来，下面的只会打印结果</p>
-</blockquote>
-</li>
-<li><p>函数</p>
-<blockquote>
-<p>awk有很多强大的字符串函数:<br>gsub(r,s,t)                在整个字符串t中用字符串s替代所有满足正则表达式r的字符串（如没指定t则默认为$0）<br>index(s,t)                返回字符串s中字符串t第一次出现的位置（如不存在则为0）<br>length(s)                返回s字符串的长度（如没指定s则默认为$0）<br>match(s,r)            返回第一个满足正则表达式r的字符串在s字符串里面的位置（如无匹配的则为0）<br>split(s,a,sep)            使用sep将字符串s分隔成为数组a的元素，返回数组元素的数量（如果没指定分隔符则默认与FS相同用法）<br>sprint(“fmt”,exp)        使用printf的格式说明对表达式exp 进行格式化输出<br>sub(r,s,t)                在字符串t中用s字符串替换满足正则表达式r的第一个字符串，返回1如果成功，否则返回0（如没指定t则默认为$0）<br>substr(s,p,n)            返回字符串s中以p位置开始长度为n的字符串（如果没指定n则返回从p位置开始的所有字符串）<br>tolower(s)            将字符串s中的所有大写字母转换为小写，返回转换后的字符串<br>toupper(s)            将字符串s中的所有小写字母转换为大写，返回转换后的字符串</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h2><ol>
-<li><p>插入命令</p>
-<blockquote>
-<p> i 在当前位置生前插入<br>I 在当前行首插入<br>a 在当前位置后插入<br>A 在当前行尾插入<br>o 在当前行之后插入一行<br>O 在当前行之前插入一行</p>
-</blockquote>
-</li>
-<li><p>查找命令</p>
-<blockquote>
-<p>ngg  12gg 跳转12行  或者 :12<br>/xxx  ?xxx  向上查找 向下查找<br>ctrl + f        向下翻页 同 page down.<br>ctrl + b        向上翻页 同 page up.<br>ctrl + d        向下翻半页 此比较有用<br>ctrl + u        向上翻半页 此比较有用<br>ctrl + e        向下翻一行<br>ctrl + y        向上一行<br>跳到文本的最后一行：按“G”,即“shift+g”</p>
-</blockquote>
-</li>
-<li><p>其他常用</p>
-<blockquote>
-<p>u 撤销（Undo）<br>Ctrl + r 重做（Rx 删除当前字符edo），即撤销的撤销。<br>x 删除当前字符<br>dd 删除当前行<br>10d 删除当前行开始的10行。</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="其他常用"><a href="#其他常用" class="headerlink" title="其他常用"></a>其他常用</h2><ol>
-<li><p>加载文件顺序</p>
-<blockquote>
-<p>etc/profile–&gt;~/.bash_profile–&gt;~/.bashrc–&gt;/etc/bashrc</p>
-</blockquote>
-</li>
-<li><p>source /etc/profile 重新加载该文件</p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/01/09/Linux常用命令进阶/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lightquant">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lightquant.com">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/09/Linux常用命令进阶/" itemprop="url">Linux常用命令进阶</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-09T12:30:10+08:00">2018-01-09</time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ol>
-<li><p>df命令（查看磁盘情况）</p>
-<font size="2"><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">df -i</span><br><span class="line">	以inode模式来显示磁盘使用情况</span><br><span class="line">df -t ext3</span><br><span class="line">	显示指定类型磁盘</span><br><span class="line">df -ia</span><br><span class="line">	列出各文件系统的i节点使用情况</span><br><span class="line">df -h</span><br><span class="line">	以更易读的方式显示目前磁盘空间和使用情况</span><br></pre></td></tr></table></figure><br><br></font>
-</li>
-<li><p>du命令</p>
-<font size="2"><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">du log30.tar.gz log31.tar.gz</span><br><span class="line">显示多个文件所占空间</span><br><span class="line">du -s	</span><br><span class="line">只显示总和的大小</span><br><span class="line">du -ah test</span><br><span class="line">文件和目录都显示</span><br><span class="line">du -c log30.tar.gz log31.tar.gz</span><br><span class="line">显示几个文件或目录各自占用磁盘空间的大小，还统计它们的总和</span><br></pre></td></tr></table></figure><br><br> </font>
-</li>
-<li><p>cp  -R  连目录一起复制</p>
-</li>
-<li><p>chmod命令</p>
-<font size="2"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">u ：目录或者文件的当前的用户</span><br><span class="line">g ：目录或者文件的当前的群组</span><br><span class="line">o ：除了目录或者文件的当前用户或群组之外的用户或者群组</span><br><span class="line">a ：所有的用户及群组</span><br><span class="line">chmod 751 file   </span><br><span class="line">	给file的属主分配读、写、执行(7)的权限，给file的所在组分配读、执行(5)的权限，给其他用户分配执行(1)的权限</span><br><span class="line">chmod u=rwx,g=rx,o=x file </span><br><span class="line">	同上</span><br></pre></td></tr></table></figure><br><br></font>   
-</li>
-<li><p>chown命令</p>
-<font size="2"><br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">chown [选项]... [所有者][:[组]] 文件...</span><br><span class="line">chown mail:mail log2012.log</span><br><span class="line">	改变拥有者和群组</span><br><span class="line">chown :mail log2012.log</span><br><span class="line">	改变文件群组</span><br><span class="line">chown -R root:mail test6</span><br><span class="line">	改变指定目录以及其子目录下的所有文件的拥有者和群组</span><br></pre></td></tr></table></figure><br><br></font>
-</li>
-<li><p>ftp命令</p>
-<font size="2"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ftp 192.168.1.1</span><br><span class="line">get 路径 //下载文件</span><br><span class="line">mget *.* //下载多个文件</span><br><span class="line">put 1.htm /usr/your/2.htm </span><br><span class="line">	把本地的1.htm传送到远端主机/usr/your,并改名为2.htm</span><br><span class="line">mput *.htm</span><br><span class="line">	将本地主机中一批文件传送至远端主机。</span><br><span class="line">bye </span><br><span class="line">	断开连接</span><br></pre></td></tr></table></figure><br><br></font>
-</li>
-<li><p>tar</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  -v ：压缩的过程中显示文件！这个常用</span><br><span class="line">-c 创建新的档案文件。如果用户想备份一个目录或是一些文件，就要选择这个选项。相当于打包。</span><br><span class="line">-f ：使用档名，请留意，在 f 之后要立即接档</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>grep 参数 查找条件 文件名。</p>
-<font size="2"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">主要参数：</span><br><span class="line">	－c：只输出匹配行的计数。</span><br><span class="line">	－I：不区分大 小写(只适用于单字符。</span><br><span class="line">	－l：查询多文件时只输出包含匹配字符的文件名。</span><br><span class="line">	－n：显示匹配行及 行号。</span><br><span class="line">	－s：不显示不存在或无匹配文本的错误信息。</span><br><span class="line">	－v：显示不包含匹配文本的所有行。</span><br><span class="line">	grep:</span><br><span class="line">	. 匹配任意一个字符</span><br><span class="line"> 	*  匹配0 个或多个*前的字符</span><br><span class="line">    ^ 匹配行开头</span><br><span class="line">    	$ 匹配行结尾</span><br><span class="line">    	[options]主要参数：</span><br><span class="line">    	\： 忽略正则表达式中特殊字符的原有含义。</span><br><span class="line">    	^：匹配正则表达式的开始行。</span><br><span class="line">    	$: 匹配正则表达式的结束行。</span><br><span class="line">    	\&lt;：从匹配正则表达 式的行开始。</span><br><span class="line">    	\&gt;：到匹配正则表达式的行结束。</span><br><span class="line">    	[ ]：单个字符，如[A]即A符合要求 。</span><br><span class="line">    	[ - ]：范围，如[A-Z]，即A、B、C一直到Z都符合要求 。</span><br><span class="line">    	.：所有的单个字符。</span><br><span class="line">    	* ：有字符，长度可以为0。</span><br></pre></td></tr></table></figure><br><br>     </font></li>
-<li><p>env 显示当前用户变量，set显示全局变量</p>
-</li>
-<li><p>cut</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-f列号：提取第几列</span><br><span class="line">-d分隔符：按照指定分隔符分隔列（默认是一个制表符当分隔符）</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>sort排序</p>
-<font size="2"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sort [选项]</span><br><span class="line">-f 忽略大小写</span><br><span class="line">-n 以数值型进行排序</span><br><span class="line">-r 反向排序</span><br><span class="line">-t 指定分隔符,默认是制表符</span><br><span class="line">-k n[,m] 按照指定的字段范围排序.从第n字段开始,m字段结束(默认到行尾)</span><br><span class="line"> sort -n -t &quot;:&quot; -k 3,3 /etc/passwd</span><br><span class="line"> sort -t &quot;:&quot; -k 3,3 /etc/passwd</span><br><span class="line"> sort -r /etc/passwd</span><br></pre></td></tr></table></figure><br><br></font>
-</li>
-<li><p>find</p>
-<font size="2"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">find . -size 25k</span><br><span class="line">	查找文件大小是25K的文件  </span><br><span class="line">	-25K 小于</span><br><span class="line">	25K 等于25K</span><br><span class="line">	+25K 大于</span><br><span class="line">find /etc -size +20K -a -size 50k</span><br><span class="line">	查找/etc下，大于20K并且小于50K文件</span><br><span class="line">	-a 逻辑与 and</span><br><span class="line">	-o 逻辑或 or</span><br><span class="line">find /etc -size +20K -a -size -50k -exec ls -lh &#123;&#125; \;</span><br><span class="line">	-exec 命令 &#123;&#125; \; 对搜索结果执行操作</span><br><span class="line">find /var/log/ -mtime +10</span><br><span class="line">	查找10天前修改的文件</span><br><span class="line">	-10 10天内修改文件</span><br><span class="line">	10  10天当天修改的文件</span><br><span class="line">	+10 10天前修改的文件</span><br><span class="line">	atime 文件访问时间</span><br><span class="line">	ctime 改变文件属性</span><br><span class="line">	mtime 修改文件内容</span><br></pre></td></tr></table></figure><br><br></font>
-</li>
-<li><p>crontab命令选项:</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-u指定一个用户</span><br><span class="line">-l列出某个用户的任务计划</span><br><span class="line">-r删除某个用户的任务</span><br><span class="line">-e编辑某个用户的任务</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>ssh</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ssh ip/用户名@ip	两种方式</span><br><span class="line">ssh ip -p 222  指定端口</span><br><span class="line">SCP[-r] 用户名@ip：文件路径 本地路径</span><br><span class="line">下载文件</span><br><span class="line">scp [-r] 本地文件 用户名@ip：上传路径</span><br><span class="line">上传文件</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>nohup </p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2153,7 +2114,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2175,7 +2136,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
