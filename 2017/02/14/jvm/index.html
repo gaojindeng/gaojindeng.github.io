@@ -123,7 +123,7 @@
 
 
 
-  <title>Linux常用 150 个命令汇总 | lightquant.com</title>
+  <title>JVM | lightquant.com</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/01/08/Linux常用命令/">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2017/02/14/jvm/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lightquant">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux常用 150 个命令汇总</h1>
+          <h1 class="post-title" itemprop="name headline">JVM</h1>
         
 
         <div class="post-meta">
@@ -333,7 +333,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-08T23:52:10+08:00">2018-01-08</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-14T19:20:10+08:00">2017-02-14</time>
             
 
             
@@ -354,8 +354,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
 
@@ -391,747 +391,14 @@
       
 
       
-        <table>
-<thead>
-<tr>
-<th>命令</th>
-<th>功能说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>线上查询及帮助命令 (2 个)</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>man</td>
-<td>查看命令帮助，命令的词典，更复杂的还有 info，但不常用。</td>
-</tr>
-<tr>
-<td>help</td>
-<td>查看 Linux 内置命令的帮助，比如 cd 命令。</td>
-</tr>
-<tr>
-<td><strong>文件和目录操作命令 (18 个)</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>ls</td>
-<td>全拼 list，功能是列出目录的内容及其内容属性信息。</td>
-</tr>
-<tr>
-<td>cd</td>
-<td>全拼 change directory，功能是从当前工作目录切换到指定的工作目录。</td>
-</tr>
-<tr>
-<td>cp</td>
-<td>全拼 copy，其功能为复制文件或目录。</td>
-</tr>
-<tr>
-<td>find</td>
-<td>查找的意思，用于查找目录及目录下的文件。</td>
-</tr>
-<tr>
-<td>mkdir</td>
-<td>全拼 make directories，其功能是创建目录。</td>
-</tr>
-<tr>
-<td>mv</td>
-<td>全拼 move，其功能是移动或重命名文件。</td>
-</tr>
-<tr>
-<td>pwd</td>
-<td>全拼 print working directory，其功能是显示当前工作目录的绝对路径。</td>
-</tr>
-<tr>
-<td>rename</td>
-<td>用于重命名文件。</td>
-</tr>
-<tr>
-<td>rm</td>
-<td>全拼 remove，其功能是删除一个或多个文件或目录。</td>
-</tr>
-<tr>
-<td>rmdir</td>
-<td>全拼 remove empty directories，功能是删除空目录。</td>
-</tr>
-<tr>
-<td>touch</td>
-<td>创建新的空文件，改变已有文件的时间戳属性。</td>
-</tr>
-<tr>
-<td>tree</td>
-<td>功能是以树形结构显示目录下的内容。</td>
-</tr>
-<tr>
-<td>basename</td>
-<td>显示文件名或目录名。</td>
-</tr>
-<tr>
-<td>dirname</td>
-<td>显示文件或目录路径。</td>
-</tr>
-<tr>
-<td>chattr</td>
-<td>改变文件的扩展属性。</td>
-</tr>
-<tr>
-<td>lsattr</td>
-<td>查看文件扩展属性。</td>
-</tr>
-<tr>
-<td>file</td>
-<td>显示文件的类型。</td>
-</tr>
-<tr>
-<td>md5sum</td>
-<td>计算和校验文件的 MD5 值。</td>
-</tr>
-<tr>
-<td><strong>查看文件及内容处理命令（21 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>cat</td>
-<td>全拼 concatenate，功能是用于连接多个文件并且打印到屏幕输出或重定向到指定文件中。</td>
-</tr>
-<tr>
-<td>tac</td>
-<td>tac 是 cat 的反向拼写，因此命令的功能为反向显示文件内容。</td>
-</tr>
-<tr>
-<td>more</td>
-<td>分页显示文件内容。</td>
-</tr>
-<tr>
-<td>less</td>
-<td>分页显示文件内容，more 命令的相反用法。</td>
-</tr>
-<tr>
-<td>head</td>
-<td>显示文件内容的头部。</td>
-</tr>
-<tr>
-<td>tail</td>
-<td>显示文件内容的尾部。</td>
-</tr>
-<tr>
-<td>cut</td>
-<td>将文件的每一行按指定分隔符分割并输出。</td>
-</tr>
-<tr>
-<td>split</td>
-<td>分割文件为不同的小片段。</td>
-</tr>
-<tr>
-<td>paste</td>
-<td>按行合并文件内容。</td>
-</tr>
-<tr>
-<td>sort</td>
-<td>对文件的文本内容排序。</td>
-</tr>
-<tr>
-<td>uniq</td>
-<td>去除重复行。oldboy</td>
-</tr>
-<tr>
-<td>wc</td>
-<td>统计文件的行数、单词数或字节数。</td>
-</tr>
-<tr>
-<td>iconv</td>
-<td>转换文件的编码格式。</td>
-</tr>
-<tr>
-<td>dos2unix</td>
-<td>将 DOS 格式文件转换成 UNIX 格式。</td>
-</tr>
-<tr>
-<td>diff</td>
-<td>全拼 difference，比较文件的差异，常用于文本文件。</td>
-</tr>
-<tr>
-<td>vimdiff</td>
-<td>命令行可视化文件比较工具，常用于文本文件。</td>
-</tr>
-<tr>
-<td>rev</td>
-<td>反向输出文件内容。</td>
-</tr>
-<tr>
-<td>grep/egrep</td>
-<td>过滤字符串，三剑客老三。</td>
-</tr>
-<tr>
-<td>join</td>
-<td>按两个文件的相同字段合并。</td>
-</tr>
-<tr>
-<td>tr</td>
-<td>替换或删除字符。</td>
-</tr>
-<tr>
-<td>vi/vim</td>
-<td>命令行文本编辑器。</td>
-</tr>
-<tr>
-<td><strong>文件压缩及解压缩命令（4 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>tar</td>
-<td>打包压缩。oldboy</td>
-</tr>
-<tr>
-<td>unzip</td>
-<td>解压文件。</td>
-</tr>
-<tr>
-<td>gzip</td>
-<td>gzip 压缩工具。</td>
-</tr>
-<tr>
-<td>zip</td>
-<td>压缩工具。</td>
-</tr>
-<tr>
-<td><strong>信息显示命令（11 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>uname</td>
-<td>显示操作系统相关信息的命令。</td>
-</tr>
-<tr>
-<td>hostname</td>
-<td>显示或者设置当前系统的主机名。</td>
-</tr>
-<tr>
-<td>dmesg</td>
-<td>显示开机信息，用于诊断系统故障。</td>
-</tr>
-<tr>
-<td>uptime</td>
-<td>显示系统运行时间及负载。</td>
-</tr>
-<tr>
-<td>stat</td>
-<td>显示文件或文件系统的状态。</td>
-</tr>
-<tr>
-<td>du</td>
-<td>计算磁盘空间使用情况。</td>
-</tr>
-<tr>
-<td>df</td>
-<td>报告文件系统磁盘空间的使用情况。</td>
-</tr>
-<tr>
-<td>top</td>
-<td>实时显示系统资源使用情况。</td>
-</tr>
-<tr>
-<td>free</td>
-<td>查看系统内存。</td>
-</tr>
-<tr>
-<td>date</td>
-<td>显示与设置系统时间。</td>
-</tr>
-<tr>
-<td>cal</td>
-<td>查看日历等时间信息。</td>
-</tr>
-<tr>
-<td><strong>搜索文件命令（4 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>which</td>
-<td>查找二进制命令，按环境变量 PATH 路径查找。</td>
-</tr>
-<tr>
-<td>find</td>
-<td>从磁盘遍历查找文件或目录。</td>
-</tr>
-<tr>
-<td>whereis</td>
-<td>查找二进制命令，按环境变量 PATH 路径查找。</td>
-</tr>
-<tr>
-<td>locate</td>
-<td>从数据库 (/var/lib/mlocate/mlocate.db) 查找命令，使用 updatedb 更新库。</td>
-</tr>
-<tr>
-<td><strong>用户管理命令（10 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>useradd</td>
-<td>添加用户。</td>
-</tr>
-<tr>
-<td>usermod</td>
-<td>修改系统已经存在的用户属性。</td>
-</tr>
-<tr>
-<td>userdel</td>
-<td>删除用户。</td>
-</tr>
-<tr>
-<td>groupadd</td>
-<td>添加用户组。</td>
-</tr>
-<tr>
-<td>passwd</td>
-<td>修改用户密码。</td>
-</tr>
-<tr>
-<td>chage</td>
-<td>修改用户密码有效期限。</td>
-</tr>
-<tr>
-<td>id</td>
-<td>查看用户的 uid,gid 及归属的用户组。</td>
-</tr>
-<tr>
-<td>su</td>
-<td>切换用户身份。</td>
-</tr>
-<tr>
-<td>visudo</td>
-<td>编辑 / etc/sudoers 文件的专属命令。</td>
-</tr>
-<tr>
-<td>sudo</td>
-<td>以另外一个用户身份（默认 root 用户）执行事先在 sudoers 文件允许的命令。</td>
-</tr>
-<tr>
-<td><strong>基础网络操作命令（11 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>telnet</td>
-<td>使用 TELNET 协议远程登录。</td>
-</tr>
-<tr>
-<td>ssh</td>
-<td>使用 SSH 加密协议远程登录。</td>
-</tr>
-<tr>
-<td>scp</td>
-<td>全拼 secure copy，用于不同主机之间复制文件。</td>
-</tr>
-<tr>
-<td>wget</td>
-<td>命令行下载文件。</td>
-</tr>
-<tr>
-<td>ping</td>
-<td>测试主机之间网络的连通性。</td>
-</tr>
-<tr>
-<td>route</td>
-<td>显示和设置 linux 系统的路由表。</td>
-</tr>
-<tr>
-<td>ifconfig</td>
-<td>查看、配置、启用或禁用网络接口的命令。</td>
-</tr>
-<tr>
-<td>ifup</td>
-<td>启动网卡。</td>
-</tr>
-<tr>
-<td>ifdown</td>
-<td>关闭网卡。</td>
-</tr>
-<tr>
-<td>netstat</td>
-<td>查看网络状态。</td>
-</tr>
-<tr>
-<td>ss</td>
-<td>查看网络状态。</td>
-</tr>
-<tr>
-<td><strong>深入网络操作命令（9 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>nmap</td>
-<td>网络扫描命令。</td>
-</tr>
-<tr>
-<td>lsof</td>
-<td>全名 list open files，也就是列举系统中已经被打开的文件。</td>
-</tr>
-<tr>
-<td>mail</td>
-<td>发送和接收邮件。</td>
-</tr>
-<tr>
-<td>mutt</td>
-<td>邮件管理命令。</td>
-</tr>
-<tr>
-<td>nslookup</td>
-<td>交互式查询互联网 DNS 服务器的命令。</td>
-</tr>
-<tr>
-<td>dig</td>
-<td>查找 DNS 解析过程。</td>
-</tr>
-<tr>
-<td>host</td>
-<td>查询 DNS 的命令。</td>
-</tr>
-<tr>
-<td>traceroute</td>
-<td>追踪数据传输路由状况。</td>
-</tr>
-<tr>
-<td>tcpdump</td>
-<td>命令行的抓包工具。</td>
-</tr>
-<tr>
-<td><strong>有关磁盘与文件系统的命令（16 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>mount</td>
-<td>挂载文件系统。</td>
-</tr>
-<tr>
-<td>umount</td>
-<td>卸载文件系统。</td>
-</tr>
-<tr>
-<td>fsck</td>
-<td>检查并修复 Linux 文件系统。</td>
-</tr>
-<tr>
-<td>dd</td>
-<td>转换或复制文件。</td>
-</tr>
-<tr>
-<td>dumpe2fs</td>
-<td>导出 ext2/ext3/ext4 文件系统信息。</td>
-</tr>
-<tr>
-<td>dump</td>
-<td>ext2/3/4 文件系统备份工具。</td>
-</tr>
-<tr>
-<td>fdisk</td>
-<td>磁盘分区命令，适用于 2TB 以下磁盘分区。</td>
-</tr>
-<tr>
-<td>parted</td>
-<td>磁盘分区命令，没有磁盘大小限制，常用于 2TB 以下磁盘分区。</td>
-</tr>
-<tr>
-<td>mkfs</td>
-<td>格式化创建 Linux 文件系统。</td>
-</tr>
-<tr>
-<td>partprobe</td>
-<td>更新内核的硬盘分区表信息。</td>
-</tr>
-<tr>
-<td>e2fsck</td>
-<td>检查 ext2/ext3/ext4 类型文件系统。</td>
-</tr>
-<tr>
-<td>mkswap</td>
-<td>创建 Linux 交换分区。</td>
-</tr>
-<tr>
-<td>swapon</td>
-<td>启用交换分区。</td>
-</tr>
-<tr>
-<td>swapoff</td>
-<td>关闭交换分区。</td>
-</tr>
-<tr>
-<td>sync</td>
-<td>将内存缓冲区内的数据写入磁盘。</td>
-</tr>
-<tr>
-<td>resize2fs</td>
-<td>调整 ext2/ext3/ext4 文件系统大小。</td>
-</tr>
-<tr>
-<td><strong>系统权限及用户授权相关命令（4 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>chmod</td>
-<td>改变文件或目录权限。</td>
-</tr>
-<tr>
-<td>chown</td>
-<td>改变文件或目录的属主和属组。</td>
-</tr>
-<tr>
-<td>chgrp</td>
-<td>更改文件用户组。</td>
-</tr>
-<tr>
-<td>umask</td>
-<td>显示或设置权限掩码。</td>
-</tr>
-<tr>
-<td><strong>查看系统用户登陆信息的命令（7 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>whoami</td>
-<td>显示当前有效的用户名称，相当于执行 id -un 命令。</td>
-</tr>
-<tr>
-<td>who</td>
-<td>显示目前登录系统的用户信息。</td>
-</tr>
-<tr>
-<td>w</td>
-<td>显示已经登陆系统的用户列表，并显示用户正在执行的指令。</td>
-</tr>
-<tr>
-<td>last</td>
-<td>显示登入系统的用户。</td>
-</tr>
-<tr>
-<td>lastlog</td>
-<td>显示系统中所有用户最近一次登录信息。</td>
-</tr>
-<tr>
-<td>users</td>
-<td>显示当前登录系统的所有用户的用户列表。</td>
-</tr>
-<tr>
-<td>finger</td>
-<td>查找并显示用户信息。</td>
-</tr>
-<tr>
-<td><strong>内置命令及其它（19 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>echo</td>
-<td>打印变量，或直接输出指定的字符串</td>
-</tr>
-<tr>
-<td>printf</td>
-<td>将结果格式化输出到标准输出。</td>
-</tr>
-<tr>
-<td>rpm</td>
-<td>管理 rpm 包的命令。</td>
-</tr>
-<tr>
-<td>yum</td>
-<td>自动化简单化地管理 rpm 包的命令。</td>
-</tr>
-<tr>
-<td>watch</td>
-<td>周期性的执行给定的命令，并将命令的输出以全屏方式显示。</td>
-</tr>
-<tr>
-<td>alias</td>
-<td>设置系统别名。</td>
-</tr>
-<tr>
-<td>unalias</td>
-<td>取消系统别名。</td>
-</tr>
-<tr>
-<td>date</td>
-<td>查看或设置系统时间。</td>
-</tr>
-<tr>
-<td>clear</td>
-<td>清除屏幕，简称清屏。</td>
-</tr>
-<tr>
-<td>history</td>
-<td>查看命令执行的历史纪录。</td>
-</tr>
-<tr>
-<td>eject</td>
-<td>弹出光驱。</td>
-</tr>
-<tr>
-<td>time</td>
-<td>计算命令执行时间。</td>
-</tr>
-<tr>
-<td>nc</td>
-<td>功能强大的网络工具。</td>
-</tr>
-<tr>
-<td>xargs</td>
-<td>将标准输入转换成命令行参数。</td>
-</tr>
-<tr>
-<td>exec</td>
-<td>调用并执行指令的命令。</td>
-</tr>
-<tr>
-<td>export</td>
-<td>设置或者显示环境变量。</td>
-</tr>
-<tr>
-<td>unset</td>
-<td>删除变量或函数。</td>
-</tr>
-<tr>
-<td>type</td>
-<td>用于判断另外一个命令是否是内置命令。</td>
-</tr>
-<tr>
-<td>bc</td>
-<td>命令行科学计算器</td>
-</tr>
-<tr>
-<td><strong>系统管理与性能监视命令 (9 个)</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>chkconfig</td>
-<td>管理 Linux 系统开机启动项。</td>
-</tr>
-<tr>
-<td>vmstat</td>
-<td>虚拟内存统计。</td>
-</tr>
-<tr>
-<td>mpstat</td>
-<td>显示各个可用 CPU 的状态统计。</td>
-</tr>
-<tr>
-<td>iostat</td>
-<td>统计系统 IO。</td>
-</tr>
-<tr>
-<td>sar</td>
-<td>全面地获取系统的 CPU、运行队列、磁盘 I/O、分页（交换区）、内存、 CPU 中断和网络等性能数据。</td>
-</tr>
-<tr>
-<td>ipcs</td>
-<td>用于报告 Linux 中进程间通信设施的状态，显示的信息包括消息列表、共享内存和信号量的信息。</td>
-</tr>
-<tr>
-<td>ipcrm</td>
-<td>用来删除一个或更多的消息队列、信号量集或者共享内存标识。</td>
-</tr>
-<tr>
-<td>strace</td>
-<td>用于诊断、调试 Linux 用户空间跟踪器。我们用它来监控用户空间进程和内核的交互，比如系统调用、信号传递、进程状态变更等。</td>
-</tr>
-<tr>
-<td>ltrace</td>
-<td>命令会跟踪进程的库函数调用, 它会显现出哪个库函数被调用。</td>
-</tr>
-<tr>
-<td><strong>关机 / 重启 / 注销和查看系统信息的命令（6 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>shutdown</td>
-<td>关机。</td>
-</tr>
-<tr>
-<td>halt</td>
-<td>关机。</td>
-</tr>
-<tr>
-<td>poweroff</td>
-<td>关闭电源。</td>
-</tr>
-<tr>
-<td>logout</td>
-<td>退出当前登录的 Shell。</td>
-</tr>
-<tr>
-<td>exit</td>
-<td>退出当前登录的 Shell。</td>
-</tr>
-<tr>
-<td>Ctrl+d</td>
-<td>退出当前登录的 Shell 的快捷键。</td>
-</tr>
-<tr>
-<td><strong>进程管理相关命令（15 个）</strong></td>
-<td></td>
-</tr>
-<tr>
-<td>bg</td>
-<td>将一个在后台暂停的命令，变成继续执行  （在后台执行）。</td>
-</tr>
-<tr>
-<td>fg</td>
-<td>将后台中的命令调至前台继续运行。</td>
-</tr>
-<tr>
-<td>jobs</td>
-<td>查看当前有多少在后台运行的命令。</td>
-</tr>
-<tr>
-<td>kill</td>
-<td>终止进程。</td>
-</tr>
-<tr>
-<td>killall</td>
-<td>通过进程名终止进程。</td>
-</tr>
-<tr>
-<td>pkill</td>
-<td>通过进程名终止进程。</td>
-</tr>
-<tr>
-<td>crontab</td>
-<td>定时任务命令。</td>
-</tr>
-<tr>
-<td>ps</td>
-<td>显示进程的快照。</td>
-</tr>
-<tr>
-<td>pstree</td>
-<td>树形显示进程。</td>
-</tr>
-<tr>
-<td>nice/renice</td>
-<td>调整程序运行的优先级。</td>
-</tr>
-<tr>
-<td>nohup</td>
-<td>忽略挂起信号运行指定的命令。</td>
-</tr>
-<tr>
-<td>pgrep</td>
-<td>查找匹配条件的进程。</td>
-</tr>
-<tr>
-<td>runlevel</td>
-<td>查看系统当前运行级别。</td>
-</tr>
-<tr>
-<td>init</td>
-<td>切换运行级别。</td>
-</tr>
-<tr>
-<td>service</td>
-<td>启动、停止、重新启动和关闭系统服务，还可以显示所有系统服务的当前状态。</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>来源：banana 童<br>www.cnblogs.com/bananaaa/p/7774467.html</p>
-</blockquote>
+        <h3 id="JVM堆的基本结构。"><a href="#JVM堆的基本结构。" class="headerlink" title="JVM堆的基本结构。"></a>JVM堆的基本结构。</h3><p><a href="https://www.cnblogs.com/zwbg/p/6194470.html" target="_blank" rel="noopener">https://www.cnblogs.com/zwbg/p/6194470.html</a></p>
+<h3 id="JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？"><a href="#JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？" class="headerlink" title="JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？"></a>JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？</h3><p><a href="http://blog.csdn.net/itzhangdaopin/article/details/78730106" target="_blank" rel="noopener">http://blog.csdn.net/itzhangdaopin/article/details/78730106</a></p>
+<h3 id="JVM有哪些常用启动参数可以调整，描述几个？"><a href="#JVM有哪些常用启动参数可以调整，描述几个？" class="headerlink" title="JVM有哪些常用启动参数可以调整，描述几个？"></a>JVM有哪些常用启动参数可以调整，描述几个？</h3><p><a href="http://blog.csdn.net/itzhangdaopin/article/details/78730554" target="_blank" rel="noopener">http://blog.csdn.net/itzhangdaopin/article/details/78730554</a></p>
+<h3 id="如何查看JVM的内存使用情况？"><a href="#如何查看JVM的内存使用情况？" class="headerlink" title="如何查看JVM的内存使用情况？"></a>如何查看JVM的内存使用情况？</h3><p><a href="https://www.cnblogs.com/stono/p/6912447.html" target="_blank" rel="noopener">https://www.cnblogs.com/stono/p/6912447.html</a></p>
+<h3 id="Java程序是否会内存溢出，内存泄露情况发生？举几个例子。"><a href="#Java程序是否会内存溢出，内存泄露情况发生？举几个例子。" class="headerlink" title="Java程序是否会内存溢出，内存泄露情况发生？举几个例子。"></a>Java程序是否会内存溢出，内存泄露情况发生？举几个例子。</h3><p><a href="http://blog.csdn.net/shenlei19911210/article/details/39755037" target="_blank" rel="noopener">http://blog.csdn.net/shenlei19911210/article/details/39755037</a><br><a href="http://www.jb51.net/article/49485.htm" target="_blank" rel="noopener">http://www.jb51.net/article/49485.htm</a></p>
+<h3 id="你常用的JVM配置和调优参数都有哪些？分别什么作用？"><a href="#你常用的JVM配置和调优参数都有哪些？分别什么作用？" class="headerlink" title="你常用的JVM配置和调优参数都有哪些？分别什么作用？"></a>你常用的JVM配置和调优参数都有哪些？分别什么作用？</h3><p><a href="https://www.jianshu.com/p/5be9c56171dd" target="_blank" rel="noopener">https://www.jianshu.com/p/5be9c56171dd</a></p>
+<h3 id="JVM的内存结构？"><a href="#JVM的内存结构？" class="headerlink" title="JVM的内存结构？"></a>JVM的内存结构？</h3><p><a href="http://blog.csdn.net/bluetjs/article/details/52874852" target="_blank" rel="noopener">http://blog.csdn.net/bluetjs/article/details/52874852</a></p>
+<h3 id="常用的GC策略，什么时候会触发YGC，什么时候触发FGC？"><a href="#常用的GC策略，什么时候会触发YGC，什么时候触发FGC？" class="headerlink" title="常用的GC策略，什么时候会触发YGC，什么时候触发FGC？"></a>常用的GC策略，什么时候会触发YGC，什么时候触发FGC？</h3><p><a href="http://blog.csdn.net/itzhangdaopin/article/details/78737641" target="_blank" rel="noopener">http://blog.csdn.net/itzhangdaopin/article/details/78737641</a></p>
 
       
     </div>
@@ -1157,7 +424,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
         </div>
       
@@ -1170,8 +437,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/08/Shiro在SpringBoot中配置/" rel="next" title="Shiro在SpringBoot中配置">
-                <i class="fa fa-chevron-left"></i> Shiro在SpringBoot中配置
+              <a href="/2017/02/13/数据结构与算法基础/" rel="next" title="数据结构与算法基础">
+                <i class="fa fa-chevron-left"></i> 数据结构与算法基础
               </a>
             
           </div>
@@ -1180,8 +447,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/09/Linux常用命令进阶/" rel="prev" title="Linux常用命令进阶">
-                Linux常用命令进阶 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/14/java基础/" rel="prev" title="java基础">
+                java基础 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1239,8 +506,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1320,6 +596,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM堆的基本结构。"><span class="nav-number">1.</span> <span class="nav-text">JVM堆的基本结构。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？"><span class="nav-number">2.</span> <span class="nav-text">JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM有哪些常用启动参数可以调整，描述几个？"><span class="nav-number">3.</span> <span class="nav-text">JVM有哪些常用启动参数可以调整，描述几个？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何查看JVM的内存使用情况？"><span class="nav-number">4.</span> <span class="nav-text">如何查看JVM的内存使用情况？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java程序是否会内存溢出，内存泄露情况发生？举几个例子。"><span class="nav-number">5.</span> <span class="nav-text">Java程序是否会内存溢出，内存泄露情况发生？举几个例子。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你常用的JVM配置和调优参数都有哪些？分别什么作用？"><span class="nav-number">6.</span> <span class="nav-text">你常用的JVM配置和调优参数都有哪些？分别什么作用？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM的内存结构？"><span class="nav-number">7.</span> <span class="nav-text">JVM的内存结构？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的GC策略，什么时候会触发YGC，什么时候触发FGC？"><span class="nav-number">8.</span> <span class="nav-text">常用的GC策略，什么时候会触发YGC，什么时候触发FGC？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
