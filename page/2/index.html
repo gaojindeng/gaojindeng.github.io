@@ -75,17 +75,19 @@
 
 
 
-<meta name="description" content="你得拼命奔跑，才能留在原地！">
+<meta name="description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
 <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://gaojindeng.com/categories/index.html">
+<meta property="og:title" content="lightquant.com">
+<meta property="og:url" content="http://gaojindeng.com/about/index.html">
 <meta property="og:site_name" content="lightquant.com">
-<meta property="og:description" content="你得拼命奔跑，才能留在原地！">
+<meta property="og:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-09T14:15:25.215Z">
+<meta property="og:image" content="http://gaojindeng.com/images/weixin.jpg">
+<meta property="og:updated_time" content="2018-02-09T14:59:33.578Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="你得拼命奔跑，才能留在原地！">
+<meta name="twitter:title" content="lightquant.com">
+<meta name="twitter:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
+<meta name="twitter:image" content="http://gaojindeng.com/images/weixin.jpg">
 
 
 
@@ -117,7 +119,7 @@
 
 
 
-  <link rel="canonical" href="http://gaojindeng.com/categories/"/>
+  <link rel="canonical" href="http://gaojindeng.com/about/"/>
 
 
 
@@ -2442,6 +2444,156 @@ attr获取到的是里面的值，而prop是true或者false</code></p>
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2017/02/16/多线程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lightquant">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lightquant.com">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/02/16/多线程/" itemprop="url">多线程/并发</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-16T19:20:10+08:00">2017-02-16</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="如何创建线程？如何保证线程安全？"><a href="#如何创建线程？如何保证线程安全？" class="headerlink" title="如何创建线程？如何保证线程安全？"></a>如何创建线程？如何保证线程安全？</h2><p>创建线程有三种方式：<br>1）是继承Thread类，创建格式如下：<br>Thread thread = new Thread();<br>2）是实现Runnable接口，创建格式如下：<br>Thread thread = new Thread(new Runnable());<br>其实Thread类实现了Runnable接口<br>3）通过线程池方式，获取线程<br>分几种情况：<br>     1）其他方法前是否加了synchronized关键字，如果没加，则能。<br>     2）如果这个方法内部调用了wait，则可以进入其他synchronized方法。<br>     3）如果其他个方法都加了synchronized关键字，并且内部没有调用wait，则不能。<br>     4）如果其他方法是static，它用的同步锁是当前类的字节码，与非静态的方法不能同步，因为非静态的方法用的是this。</p>
+<h2 id="如何实现一个线程安全的数据结构"><a href="#如何实现一个线程安全的数据结构" class="headerlink" title="如何实现一个线程安全的数据结构"></a>如何实现一个线程安全的数据结构</h2><h2 id="如何避免死锁"><a href="#如何避免死锁" class="headerlink" title="如何避免死锁"></a>如何避免死锁</h2><p><a href="https://www.cnblogs.com/vinozly/p/5240204.html" target="_blank" rel="noopener">https://www.cnblogs.com/vinozly/p/5240204.html</a></p>
+<h2 id="Volatile关键字的作用？"><a href="#Volatile关键字的作用？" class="headerlink" title="Volatile关键字的作用？"></a>Volatile关键字的作用？</h2><p>两点：内存可见性（多个线程可以访问该内存）；防止指令重排序；<br><a href="http://blog.csdn.net/it_dx/article/details/70045286?locationNum=4&amp;fps=1" target="_blank" rel="noopener">http://blog.csdn.net/it_dx/article/details/70045286?locationNum=4&amp;fps=1</a></p>
+<h2 id="HashMap在多线程环境下使用需要注意什么？为什么？"><a href="#HashMap在多线程环境下使用需要注意什么？为什么？" class="headerlink" title="HashMap在多线程环境下使用需要注意什么？为什么？"></a>HashMap在多线程环境下使用需要注意什么？为什么？</h2><p><a href="https://www.cnblogs.com/andy-zhou/p/5402984.html" target="_blank" rel="noopener">https://www.cnblogs.com/andy-zhou/p/5402984.html</a></p>
+<h2 id="Java程序中启动一个线程是用run-还是start-？"><a href="#Java程序中启动一个线程是用run-还是start-？" class="headerlink" title="Java程序中启动一个线程是用run()还是start()？"></a>Java程序中启动一个线程是用run()还是start()？</h2><p><a href="http://tomyz0223.iteye.com/blog/1001778" target="_blank" rel="noopener">http://tomyz0223.iteye.com/blog/1001778</a></p>
+<h2 id="什么是守护线程？有什么用？"><a href="#什么是守护线程？有什么用？" class="headerlink" title="什么是守护线程？有什么用？"></a>什么是守护线程？有什么用？</h2><p><a href="http://blog.csdn.net/cbjcry/article/details/70154647" target="_blank" rel="noopener">http://blog.csdn.net/cbjcry/article/details/70154647</a></p>
+<h2 id="什么是死锁？如何避免"><a href="#什么是死锁？如何避免" class="headerlink" title="什么是死锁？如何避免"></a>什么是死锁？如何避免</h2><p><a href="https://www.cnblogs.com/hadoop-dev/p/6899171.html" target="_blank" rel="noopener">https://www.cnblogs.com/hadoop-dev/p/6899171.html</a></p>
+<h2 id="线程和进程的差别是什么？"><a href="#线程和进程的差别是什么？" class="headerlink" title="线程和进程的差别是什么？"></a>线程和进程的差别是什么？</h2><p>程序是一段静态的代码，是应用软件执行的蓝本。<br>进程是程序一次动态执行的过程，它对应了从代码加载、执行完毕的一个完整过程，这也是进程开始到消亡的过程。<br>线程是进程中独立、可调度的执行单元，是执行中最小单位。<br>一个程序一般是一个进程，但可以一个程序中有多个进程。<br>一个进程中可以有多个线程，但只有一个主线程。<br>Java应用程序中默认的主线程是main方法，如果main方法中创建了其他线程，JVM就会执行其他的线程。</p>
+<h2 id="Java里面的Threadlocal是怎样实现的？"><a href="#Java里面的Threadlocal是怎样实现的？" class="headerlink" title="Java里面的Threadlocal是怎样实现的？"></a>Java里面的Threadlocal是怎样实现的？</h2><p><a href="https://mp.weixin.qq.com/s?__biz=MzA3MDExNzcyNA==&amp;mid=2650392118&amp;idx=1&amp;sn=a2144a19bdeba48001f4f76f423e25d9&amp;scene=0#wechat_redirect" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MzA3MDExNzcyNA==&amp;mid=2650392118&amp;idx=1&amp;sn=a2144a19bdeba48001f4f76f423e25d9&amp;scene=0#wechat_redirect</a></p>
+<h2 id="ConcurrentHashMap的实现原理是？"><a href="#ConcurrentHashMap的实现原理是？" class="headerlink" title="ConcurrentHashMap的实现原理是？"></a>ConcurrentHashMap的实现原理是？</h2><p><a href="https://www.cnblogs.com/chengxiao/p/6842045.html" target="_blank" rel="noopener">https://www.cnblogs.com/chengxiao/p/6842045.html</a></p>
+<h2 id="sleep和wait区别"><a href="#sleep和wait区别" class="headerlink" title="sleep和wait区别"></a>sleep和wait区别</h2><h2 id="notify和notifyAll区别"><a href="#notify和notifyAll区别" class="headerlink" title="notify和notifyAll区别"></a>notify和notifyAll区别</h2><p><a href="https://www.zhihu.com/question/37601861" target="_blank" rel="noopener">https://www.zhihu.com/question/37601861</a></p>
+<h2 id="ThreadLocal的作用与实现"><a href="#ThreadLocal的作用与实现" class="headerlink" title="ThreadLocal的作用与实现"></a>ThreadLocal的作用与实现</h2><h2 id="两个线程如何串行执行"><a href="#两个线程如何串行执行" class="headerlink" title="两个线程如何串行执行"></a>两个线程如何串行执行</h2><h2 id="上下文切换是什么含义"><a href="#上下文切换是什么含义" class="headerlink" title="上下文切换是什么含义"></a>上下文切换是什么含义</h2><h2 id="可以运行时kill掉一个线程吗？"><a href="#可以运行时kill掉一个线程吗？" class="headerlink" title="可以运行时kill掉一个线程吗？"></a>可以运行时kill掉一个线程吗？</h2><h2 id="什么是条件锁、读写锁、自旋锁、可重入锁？"><a href="#什么是条件锁、读写锁、自旋锁、可重入锁？" class="headerlink" title="什么是条件锁、读写锁、自旋锁、可重入锁？"></a>什么是条件锁、读写锁、自旋锁、可重入锁？</h2><h2 id="线程池ThreadPoolExecutor的实现原理？"><a href="#线程池ThreadPoolExecutor的实现原理？" class="headerlink" title="线程池ThreadPoolExecutor的实现原理？"></a>线程池ThreadPoolExecutor的实现原理？</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2017/02/14/java基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2596,153 +2748,6 @@ attr获取到的是里面的值，而prop是true或者false</code></p>
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2017/02/14/jvm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lightquant">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lightquant.com">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/02/14/jvm/" itemprop="url">JVM</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-14T19:20:10+08:00">2017-02-14</time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="JVM堆的基本结构。"><a href="#JVM堆的基本结构。" class="headerlink" title="JVM堆的基本结构。"></a>JVM堆的基本结构。</h3><p><a href="https://www.cnblogs.com/zwbg/p/6194470.html" target="_blank" rel="noopener">https://www.cnblogs.com/zwbg/p/6194470.html</a></p>
-<h3 id="JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？"><a href="#JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？" class="headerlink" title="JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？"></a>JVM的垃圾算法有哪几种？CMS垃圾回收的基本流程？</h3><p><a href="http://blog.csdn.net/itzhangdaopin/article/details/78730106" target="_blank" rel="noopener">http://blog.csdn.net/itzhangdaopin/article/details/78730106</a></p>
-<h3 id="JVM有哪些常用启动参数可以调整，描述几个？"><a href="#JVM有哪些常用启动参数可以调整，描述几个？" class="headerlink" title="JVM有哪些常用启动参数可以调整，描述几个？"></a>JVM有哪些常用启动参数可以调整，描述几个？</h3><p><a href="http://blog.csdn.net/itzhangdaopin/article/details/78730554" target="_blank" rel="noopener">http://blog.csdn.net/itzhangdaopin/article/details/78730554</a></p>
-<h3 id="如何查看JVM的内存使用情况？"><a href="#如何查看JVM的内存使用情况？" class="headerlink" title="如何查看JVM的内存使用情况？"></a>如何查看JVM的内存使用情况？</h3><p><a href="https://www.cnblogs.com/stono/p/6912447.html" target="_blank" rel="noopener">https://www.cnblogs.com/stono/p/6912447.html</a></p>
-<h3 id="Java程序是否会内存溢出，内存泄露情况发生？举几个例子。"><a href="#Java程序是否会内存溢出，内存泄露情况发生？举几个例子。" class="headerlink" title="Java程序是否会内存溢出，内存泄露情况发生？举几个例子。"></a>Java程序是否会内存溢出，内存泄露情况发生？举几个例子。</h3><p><a href="http://blog.csdn.net/shenlei19911210/article/details/39755037" target="_blank" rel="noopener">http://blog.csdn.net/shenlei19911210/article/details/39755037</a><br><a href="http://www.jb51.net/article/49485.htm" target="_blank" rel="noopener">http://www.jb51.net/article/49485.htm</a></p>
-<h3 id="你常用的JVM配置和调优参数都有哪些？分别什么作用？"><a href="#你常用的JVM配置和调优参数都有哪些？分别什么作用？" class="headerlink" title="你常用的JVM配置和调优参数都有哪些？分别什么作用？"></a>你常用的JVM配置和调优参数都有哪些？分别什么作用？</h3><p><a href="https://www.jianshu.com/p/5be9c56171dd" target="_blank" rel="noopener">https://www.jianshu.com/p/5be9c56171dd</a></p>
-<h3 id="JVM的内存结构？"><a href="#JVM的内存结构？" class="headerlink" title="JVM的内存结构？"></a>JVM的内存结构？</h3><p><a href="http://blog.csdn.net/bluetjs/article/details/52874852" target="_blank" rel="noopener">http://blog.csdn.net/bluetjs/article/details/52874852</a></p>
-<h3 id="常用的GC策略，什么时候会触发YGC，什么时候触发FGC？"><a href="#常用的GC策略，什么时候会触发YGC，什么时候触发FGC？" class="headerlink" title="常用的GC策略，什么时候会触发YGC，什么时候触发FGC？"></a>常用的GC策略，什么时候会触发YGC，什么时候触发FGC？</h3><p><a href="http://blog.csdn.net/itzhangdaopin/article/details/78737641" target="_blank" rel="noopener">http://blog.csdn.net/itzhangdaopin/article/details/78737641</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2797,7 +2802,7 @@ attr获取到的是里面的值，而prop是true或者false</code></p>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

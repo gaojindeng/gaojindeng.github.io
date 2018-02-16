@@ -42,8 +42,8 @@
         <category>java框架</category>
       </categories>
       <tags>
-        <tag>SSM</tag>
         <tag>Spring</tag>
+        <tag>SSM</tag>
       </tags>
   </entry>
   <entry>
@@ -201,6 +201,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[多线程/并发]]></title>
+    <url>%2F2017%2F02%2F16%2F%E5%A4%9A%E7%BA%BF%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[如何创建线程？如何保证线程安全？创建线程有三种方式：1）是继承Thread类，创建格式如下：Thread thread = new Thread();2）是实现Runnable接口，创建格式如下：Thread thread = new Thread(new Runnable());其实Thread类实现了Runnable接口3）通过线程池方式，获取线程分几种情况： 1）其他方法前是否加了synchronized关键字，如果没加，则能。 2）如果这个方法内部调用了wait，则可以进入其他synchronized方法。 3）如果其他个方法都加了synchronized关键字，并且内部没有调用wait，则不能。 4）如果其他方法是static，它用的同步锁是当前类的字节码，与非静态的方法不能同步，因为非静态的方法用的是this。 如何实现一个线程安全的数据结构如何避免死锁https://www.cnblogs.com/vinozly/p/5240204.html Volatile关键字的作用？两点：内存可见性（多个线程可以访问该内存）；防止指令重排序；http://blog.csdn.net/it_dx/article/details/70045286?locationNum=4&amp;fps=1 HashMap在多线程环境下使用需要注意什么？为什么？https://www.cnblogs.com/andy-zhou/p/5402984.html Java程序中启动一个线程是用run()还是start()？http://tomyz0223.iteye.com/blog/1001778 什么是守护线程？有什么用？http://blog.csdn.net/cbjcry/article/details/70154647 什么是死锁？如何避免https://www.cnblogs.com/hadoop-dev/p/6899171.html 线程和进程的差别是什么？程序是一段静态的代码，是应用软件执行的蓝本。进程是程序一次动态执行的过程，它对应了从代码加载、执行完毕的一个完整过程，这也是进程开始到消亡的过程。线程是进程中独立、可调度的执行单元，是执行中最小单位。一个程序一般是一个进程，但可以一个程序中有多个进程。一个进程中可以有多个线程，但只有一个主线程。Java应用程序中默认的主线程是main方法，如果main方法中创建了其他线程，JVM就会执行其他的线程。 Java里面的Threadlocal是怎样实现的？https://mp.weixin.qq.com/s?__biz=MzA3MDExNzcyNA==&amp;mid=2650392118&amp;idx=1&amp;sn=a2144a19bdeba48001f4f76f423e25d9&amp;scene=0#wechat_redirect ConcurrentHashMap的实现原理是？https://www.cnblogs.com/chengxiao/p/6842045.html sleep和wait区别notify和notifyAll区别https://www.zhihu.com/question/37601861 ThreadLocal的作用与实现两个线程如何串行执行上下文切换是什么含义可以运行时kill掉一个线程吗？什么是条件锁、读写锁、自旋锁、可重入锁？线程池ThreadPoolExecutor的实现原理？]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[java基础]]></title>
     <url>%2F2017%2F02%2F14%2Fjava%E5%9F%BA%E7%A1%80%2F</url>
     <content type="text"><![CDATA[接口与抽象类的区别？ 1）抽象类继承与object接口不继承object.2）抽象类有构造器，接口中没有构造器。3）抽象类中可以有普通成员变量和常量，接口中只能有常量，而且只能是public static final 不写默认。4）抽象类中可以有抽象方法，也可以由普通的方法，接口中只能有抽象的方法而且修饰符只能是public abstract 不写默认。5）抽象类中可以有final的方法,接口中不能有final的方法。6）抽象类只能是单继承，多实现，接口是可以多继承其他接口，但是不能实现接口，和不能继承其他类。7）抽象类中可以有静态的方法，接口中不可以。 Java中的异常有哪几类？分别怎么使用？Throwable包括error和ExceptionError是程序无法处理了,如果OutOfMemoryError, 这些异常发生时, java虚拟机一般会终止线程 .Exception异常又包含了运行时异常(RuntimeException, 又叫非检查异常)和非运行时异常(CheckedException，又叫检查异常) 运行时异常都是RuntimeException类及其子类,如 NullPointerException、IndexOutOfBoundsException等检查异常是运行时异常以外的异常, 也是Exception及其子类, 这些异常从程序的角度来说是必须经过捕捉检查处理的, 否则不能通过编译. 如IOException、SQLException等 常用的集合类有哪些？比如List如何排序？ 常见的集合接口Set、List、Map等，其中Set和List继承自Collection。Collection是一组对象的集合，而Map存储的方式不一样，他是以键值对的形式存放多个对象的。Set和List又有区别，Set中的元素无序且不重复，而List中的元素则是有序且允许重复的。 ArrayList、LinkedList区别这2个应该是很常见的集合实现类了，一个是基于数组的原理存储元素，一个是使用链表的形式存储元素。相同点：ArrayList和Linklist都是接口List的实现类，里面的数据都是有序可重复的。区别：ArrayList: 采用的是数组形式保存对象的，访问速度更快，而Linkedlist的插入和删除元素的速度更快 内存溢出是怎么回事？请举一个例子？https://www.cnblogs.com/lcword/p/5857909.html ==和equals的区别？‘==’比较的是两个变量的内容和在内存中的地址值是否全部相等，如果要比较两个基本数据类型那必须用’==’equals如果没有重写，则和’==’的意义一样，如果重写了，则会会按照重写的内容进行比较 hashCode方法的作用？https://www.cnblogs.com/lchzls/p/6714146.html NIO是什么？适用于何种场景？io最老nio是1.4的特性aio是1.7的特性io是面向流的，是就用多少拿多少。是阻塞的。数据量不大的或者不在意阻塞的时可以用。nio是面向块的，先把数据搬过来，先存到缓存区里面，如果线程要用从缓存区拿。所以线程不需要时刻盯着io了，可以先做一些其他的事情，过几天再来看一下缓存。是同步非阻塞的。因此，nio里有Buffer类作为缓冲区，Channel(通道)相当于io里的steam的抽象，Selector是nio提供的管理多个Channel的工具。nio出现也是因为io渐渐成为一些程序速度的瓶颈。aio加了一个异步的特性。当我们要拿数据花费时间太长的时候，我们可以考虑使用异步的io。异步就是可以理解为，让io先处理者，我线程先去干别的事情了，你io处理完了通知我一下。aio提供的事件处理接口CompletionHandler，定义了回调函数，这些函数再io完成后会被自动的调用。http://blog.csdn.net/wodeyuer125/article/details/39475207 HashMap实现原理，如何保证HashMap的线程安全？http://www.importnew.com/21396.html JVM内存结构，为什么需要GC？https://www.cnblogs.com/nantang/p/5674793.html NIO模型，select/epoll的区别，多路复用的原理http://blog.csdn.net/qq_34309305/article/details/79235395 Java中一个字符占多少个字节，扩展再问int, long, double占多少字节1字节： byte , boolean2字节： short , char4字节： int , float8字节： long , double注：1字节(byte)=8位(bits) 创建一个类的实例都有哪些办法？1）new关键字2）反射3）克隆4）反序列化 final/finally/finalize的区别？final 用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。内部类要访问局部变量，局部变量必须定义成final类型。finally是异常处理语句结构的一部分，表示总是执行。finalize是Object类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法，可以覆盖此方法提供垃圾收集时的其他资源回收，例如关闭文件等。JVM不保证此方法总被调用 Session/Cookie的区别？1）cookie数据存放在客户的浏览器上，session数据放在服务器上。2）cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗考虑到安全应当使用session。3）session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能考虑到减轻服务器性能方面，应当使用COOKIE。 String/StringBuffer/StringBuilder的区别，扩展再问他们的实现？String是不可变的，对String类的任何改变都会返回一个新的String 对象。 StringBuffer是可变的，对StringBuffer中的内容修改都是当前这个对象。 String重写了equals方法和hashCode方法，StringBuffer没有重写equals方法。String是final的类。StringBuffer不是。String创建的字符串是在常量池中，创建的变量初始化一次，如果再对该字符串改变会产生新的字符串地址值，StringBuffer是在堆中创建对象，当对字符串改变时不会产生新的字符串地址值，如果对字符串进行频繁修改的话建议使用StringBuffer，以节省内存。StringBuffer和StringBuilder，StringBuffer是线程安全的，StringBulider是线程不安全的。当不考虑并发问题时候，请使用StringBulider。 Servlet的生命周期？Servlet 通过调用 init () 方法进行初始化。//只调用一次Servlet 调用 service() 方法来处理客户端的请求。Servlet 通过调用 destroy() 方法终止（结束）。 如何用Java分配一段连续的1G的内存空间？需要注意些什么？Java有自己的内存回收机制，但为什么还存在内存泄露的问题呢？http://blog.csdn.net/u013233097/article/details/52270387 什么是java序列化，如何实现java序列化?(写一个实例)？String s = new String(“abc”);创建了几个 String Object?两个对象，一个是”abc”,一个是指向”abc”的引用对象s。 Java中Native关键字的作用https://www.cnblogs.com/Qian123/p/5702574.html 阻塞和非阻塞同步方式：(1)阻塞：调用者什么都不干，就一直在等待，就是停在程序的某条执行语句上。(2)非阻塞：调用者去干别的活，但因为以主动等待结果的方式，所以得时不时的询问任务完成了没有。异步方式：(1)阻塞：调用者什么都不干，直至收到被调用者的通知。(2)非阻塞：调用者去干别的活，当被调用者完成任务后，通知调用者，调用者就可以处理被调用者的返回结果了。（回调就是用来处理此时返回的结果）]]></content>
@@ -263,8 +274,8 @@
         <category>java框架</category>
       </categories>
       <tags>
-        <tag>Spring</tag>
         <tag>SSH</tag>
+        <tag>Spring</tag>
       </tags>
   </entry>
   <entry>
