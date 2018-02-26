@@ -75,19 +75,17 @@
 
 
 
-<meta name="description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
+<meta name="description" content="你得拼命奔跑，才能留在原地！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="lightquant.com">
-<meta property="og:url" content="http://gaojindeng.com/about/index.html">
+<meta property="og:title" content="标签">
+<meta property="og:url" content="http://gaojindeng.com/tags/index.html">
 <meta property="og:site_name" content="lightquant.com">
-<meta property="og:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
+<meta property="og:description" content="你得拼命奔跑，才能留在原地！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://gaojindeng.com/images/weixin.jpg">
-<meta property="og:updated_time" content="2018-02-09T14:59:33.578Z">
+<meta property="og:updated_time" content="2018-02-09T14:15:09.703Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lightquant.com">
-<meta name="twitter:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
-<meta name="twitter:image" content="http://gaojindeng.com/images/weixin.jpg">
+<meta name="twitter:title" content="标签">
+<meta name="twitter:description" content="你得拼命奔跑，才能留在原地！">
 
 
 
@@ -119,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://gaojindeng.com/about/"/>
+  <link rel="canonical" href="http://gaojindeng.com/tags/"/>
 
 
 
@@ -393,63 +391,38 @@
       
 
       
-        <p><strong>FTP??????(???)</strong><br><a href="https://help.aliyun.com/" target="_blank" rel="noopener">https://help.aliyun.com/</a> knowledge_detail/60152.html<br><strong>centos7??yum??JDK1.8(?)</strong></p>
-<p>????????????????open-jdk<br>???<br>rpm -qa |grep java<br>rpm -qa |grep jdk<br>rpm -qa |grep gcj</p>
-<p>???????????????<br>????????rpm -qa | grep java | xargs rpm -e –nodeps ????????Java???  ?????????java<br>??????java???</p>
+        <p><strong>FTP的搭建和使用</strong><br><a href="https://help.aliyun.com/knowledge_detail/60152.html" target="_blank" rel="noopener">https://help.aliyun.com/knowledge_detail/60152.html</a><br><strong>centos7通过yum安装JDK1.8</strong></p>
+<p>安装之前先检查一下系统有没有自带open-jdk<br>命令：<br>rpm -qa |grep java<br>rpm -qa |grep jdk<br>rpm -qa |grep gcj</p>
+<p>如果没有输入信息表示没有安装。<br>如果安装可以使用rpm -qa | grep java | xargs rpm -e –nodeps 批量卸载所有带有Java的文件  这句命令的关键字是java<br>首先检索包含java的列表</p>
 <p>yum list java*</p>
-<p>??1.8???</p>
+<p>检索1.8的列表</p>
 <p>yum list java-1.8*   </p>
-<p>??1.8.0?????</p>
-<p>yum install java-1.8.0-openjdk* -y<br>????????????</p>
-<p>java -version<br>???????????????????????path????????????</p>
-<p><strong>CentOS7??ActiveMQ(?)</strong><br>??activemq??????<a href="http://archive.apache.org/dist/activemq??????apache-activemq-5.14.3?" target="_blank" rel="noopener">http://archive.apache.org/dist/activemq??????apache-activemq-5.14.3?</a><br>2??/ursr/local/?????activemq???????????????????????<br><code>cd /ursr/local</code><br><code>mkdir activemq</code><br>tar -xzvf apache-activemq-5.14.3-bin.tar.gz<br>3??/etc/init.d/??????activemq?????????<br><code>cd /etc/init.d/</code><br><code>vi activemq</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># /etc/init.d/activemq</span></span><br><span class="line"><span class="comment"># chkconfig: 345 63 37</span></span><br><span class="line"><span class="comment"># description: activemq servlet container.</span></span><br><span class="line"><span class="comment"># processname: activemq 5.14.3</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># Source function library.</span></span><br><span class="line"><span class="comment">#. /etc/init.d/functions</span></span><br><span class="line"><span class="comment"># source networking configuration.</span></span><br><span class="line"><span class="comment">#. /etc/sysconfig/network</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#export JAVA_HOME=/usr/local/jdk1.8.0_121</span></span><br><span class="line"><span class="built_in">export</span> CATALINA_HOME=/usr/<span class="built_in">local</span>/activemq/apache-activemq-5.14.3</span><br><span class="line"> </span><br><span class="line"><span class="keyword">case</span> <span class="variable">$1</span> <span class="keyword">in</span></span><br><span class="line"></span><br><span class="line">    start)</span><br><span class="line">        sh <span class="variable">$CATALINA_HOME</span>/bin/activemq start</span><br><span class="line">    ;;</span><br><span class="line">    stop)</span><br><span class="line">        sh <span class="variable">$CATALINA_HOME</span>/bin/activemq stop</span><br><span class="line">    ;;</span><br><span class="line">    restart)</span><br><span class="line">        sh <span class="variable">$CATALINA_HOME</span>/bin/activemq stop</span><br><span class="line">        sleep 1</span><br><span class="line">        sh <span class="variable">$CATALINA_HOME</span>/bin/activemq start</span><br><span class="line">    ;;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure></p>
-<p>4??activemq???????</p>
-<p><code>hmod 777 activemq</code><br>5??????????activemq</p>
+<p>安装1.8.0的所有文件</p>
+<p>yum install java-1.8.0-openjdk* -y</p>
+<p>使用命令检查是否安装成功</p>
+<p>java -version</p>
+<p><strong>CentOS7安装ActiveMQ</strong><br>1、下载activemq，下载地址：<a href="http://archive.apache.org/dist/activemq。测试版本为apache-activemq-5.14.1。" target="_blank" rel="noopener">http://archive.apache.org/dist/activemq。测试版本为apache-activemq-5.14.1。</a></p>
+<p>2、在/ursr/local/目录下新建activemq文件夹，并进入该文件夹，执行如下命令解压文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /ursr/local</span><br><span class="line">mkdir activemq</span><br><span class="line">tar -xzvf apache-activemq-5.14.1-bin.tar.gz</span><br></pre></td></tr></table></figure></p>
+<p>3、在/etc/init.d/目录增加增加activemq文件，文件内容为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/init.d/</span><br><span class="line">vi activemq</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># /etc/init.d/activemq</span></span><br><span class="line"><span class="comment"># chkconfig: 345 63 37</span></span><br><span class="line"><span class="comment"># description: activemq servlet container.</span></span><br><span class="line"><span class="comment"># processname: activemq 5.14.3</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># Source function library.</span></span><br><span class="line"><span class="comment">#. /etc/init.d/functions</span></span><br><span class="line"><span class="comment"># source networking configuration.</span></span><br><span class="line"><span class="comment">#. /etc/sysconfig/network</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#export JAVA_HOME=/usr/local/jdk1.8.0_121</span></span><br><span class="line"><span class="built_in">export</span> CATALINA_HOME=/usr/<span class="built_in">local</span>/activemq/apache-activemq-5.14.3</span><br><span class="line"> </span><br><span class="line"><span class="keyword">case</span> <span class="variable">$1</span> <span class="keyword">in</span></span><br><span class="line"></span><br><span class="line">    start)</span><br><span class="line">        sh <span class="variable">$CATALINA_HOME</span>/bin/activemq start</span><br><span class="line">    ;;</span><br><span class="line">    stop)</span><br><span class="line">        sh <span class="variable">$CATALINA_HOME</span>/bin/activemq stop</span><br><span class="line">    ;;</span><br><span class="line">    restart)</span><br><span class="line">        sh <span class="variable">$CATALINA_HOME</span>/bin/activemq stop</span><br><span class="line">        sleep 1</span><br><span class="line">        sh <span class="variable">$CATALINA_HOME</span>/bin/activemq start</span><br><span class="line">    ;;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure>
+<p>4、对activemq文件授予权限。</p>
+<p><code>hmod 777 activemq</code><br>5、设置开机启动并启动activemq</p>
 <p><code>hkconfig activemq on</code><br><code>ervice activemq start</code></p>
-<p>5??????<a href="http://IP??:8161/?" target="_blank" rel="noopener">http://IP??:8161/?</a></p>
-<p>?????ActiveMQ??????????????admin/admin?</p>
-<p>6???</p>
-<p>????activemq??</p>
-<p>service activemq status<br>???????activemq??</p>
-<p>service activemq start<br>service activemq stop<br> ????????????activemq??</p>
-<p>chkconfig activemq on<br>chkconfig activemq off<br><strong>??yum??????????????</strong><br>??????rpm???<br><code>rpm -qa|grep php-fpm</code><br>?????<br><code>rpm -ql php71-php-fpm-7.1.2-1.el6.remi.x86_64</code></p>
-<p><strong>rpm????</strong><br>???rpm -ivh *.rpm??<br>???rpm -e packgename rpm -q nginx???????? ?<br>???rpm -Uvh xxx????<br>????????? rpm -qa<br>??????rpm -qa | grep xxx<br>rpm -qi xxx<br>??????????rpm -ql xxx<br>rpm -qc xxx<br>?????????rpm????rpm -qf /etc/yum.conf<br>rpm -qpi xxx rpm -qa|grep php ??????RMP?<br>???rpm -ivh xxx<br>???rpm -e xxx<br>???rpm -Uvh xxx???<br>????????? rpm -qa<br>??????rpm -qa | grep xxx<br>rpm -qi xxx<br>??????????rpm -ql xxx<br>rpm -qc xxx<br>?????????rpm????rpm -qf /etc/yum.conf<br>rpm -qpi xxx</p>
-<p><strong>yum????</strong></p>
+<p>5、访问地址：<a href="http://IP地址:8161/。" target="_blank" rel="noopener">http://IP地址:8161/。</a></p>
+<p>访问成功，ActiveMQ安装完毕。默认用户名密码为：admin/admin。</p>
+<p>6、其他</p>
+<p>查看activemq状态<br><code>service activemq status</code><br>其他和关闭activemq服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">service activemq start</span><br><span class="line">service activemq stop</span><br></pre></td></tr></table></figure></p>
+<p>设置开机启动或不启动activemq服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chkconfig activemq on</span><br><span class="line">chkconfig activemq off</span><br></pre></td></tr></table></figure></p>
+<p><strong>Linux系统下yum命令查看安装了哪些软件包：</strong><br>$yum list installed //列出所有已安装的软件包<br>yum针对软件包操作常用命令：<br>1.使用YUM查找软件包<br>命令：yum search<br>2.列出所有可安装的软件包<br>命令：yum list<br>3.列出所有可更新的软件包<br>命令：yum list updates<br>4.列出所有已安装的软件包<br>命令：yum list installed<br>5.列出所有已安装但不在 Yum Repository 内的软件包<br>命令：yum list extras<br>6.列出所指定的软件包<br>命令：yum list<br>7.使用YUM获取软件包信息<br>命令：yum info<br>8.列出所有软件包的信息<br>命令：yum info<br>9.列出所有可更新的软件包信息<br>命令：yum info updates<br>10.列出所有已安装的软件包信息<br>命令：yum info installed<br>11.列出所有已安装但不在 Yum Repository 内的软件包信息<br>命令：yum info extras<br>12.列出软件包提供哪些文件<br>命令：yum provides<br><strong>如何查看yum安装的软件路径</strong></p>
 <ol>
-<li>yum update package1 ???????package1</li>
-<li>yum check-update ????????</li>
-<li>yum upgrade package1 ???????package1</li>
-<li>yum info package1 ???????package1</li>
-<li>yum list ?????????????????</li>
-<li>yum list updates ???????????</li>
-<li>yum list installed ???????????</li>
-<li>yum list package1 ???????????package1</li>
-<li>yum remove package1 ?????package1</li>
+<li>rpm -qa|grep 软件包名</li>
+<li>rpm -ql 软件包名  (l是L的小写,不是坚线)</li>
 </ol>
-<p><strong>apt-get*????</strong></p>
-<ol>
-<li>apt-cache search packagename ???</li>
-<li>apt-cache show packagename ???????????????????</li>
-<li>apt-get install packagename ???</li>
-<li>apt-get install packagename –reinstall ?????</li>
-<li>apt-get -f install ?????-f = ?fix-missing?</li>
-<li>apt-get remove packagename ???</li>
-<li>apt-get remove packagename –purge ?????????????</li>
-<li>apt-get update ???</li>
-<li>apt-get upgrade ???????</li>
-<li>apt-get dist-upgrade ????</li>
-<li>apt-get dselect-upgrade ?? dselect ??</li>
-<li>apt-cache depends packagename ??????</li>
-<li>apt-cache rdepends packagename ???????????</li>
-<li>apt-get build-dep packagename ?????????</li>
-<li>apt-get source packagename ????????</li>
-<li>apt-get clean ??????</li>
-<li>apt-get autoclean ??????</li>
-<li>apt-get check ??????????</li>
-</ol>
-<h3 id=""><a href="#" class="headerlink" title="????"></a>????</h3><p><strong>?? ?????</strong><br>????????.tar.gz<br>?????????<br>1?.configure ???????<br>2?make?????????<br>3?make insall ??????????????????<br><strong>??rpt</strong><br>rpm ?i software.rpm(??)?<br>rpm -e software.rpm(??)?<br>rpm ?U software.rpm(??????)?<br>rpm ?ivh <a href="http://www.linuxcast.net/software.rpm(????http\ftp??????" target="_blank" rel="noopener">http://www.linuxcast.net/software.rpm(????http\ftp??????</a>)<br><strong>??yum</strong><br>yum????????????.rpm?<br>????????????.Rpm???</p>
-<p><strong>??apt-get</strong></p>
-<h3 id="service"><a href="#service" class="headerlink" title="??service ??"></a>??service ??</h3><p>cd /etc/init.d<br>??? ????????</p>
+<p><strong>rpm常用命令</strong><br>1.安装一个包<br><code>rpm -ivh</code><br>2.升级一个包<br><code>rpm -Uvh</code><br>3.移走一个包<br><code>rpm -e</code><br>4.安装参数<br>–force 即使覆盖属于其它包的文件也强迫安装<br>–nodeps 如果该RPM包的安装依赖其它包，即使其它包没装，也强迫安装。<br>5.查询一个包是否被安装<br><code>rpm -q &lt; rpm package name&gt;</code><br>6.得到被安装的包的信息<br><code>rpm -qi &lt; rpm package name&gt;</code><br>7.列出该包中有哪些文件<br><code>rpm -ql &lt; rpm package name&gt;</code><br>8.列出服务器上的一个文件属于哪一个RPM包<br><code>rpm -qf</code><br>9.可综合好几个参数一起用<br><code>rpm -qil &lt; rpm package name&gt;</code><br>10.列出所有被安装的rpm package<br><code>rpm -qa</code><br>11.列出一个未被安装进系统的RPM包文件中包含有哪些文件？<br><code>rpm -qilp &lt; rpm package name&gt;</code></p>
+<p><strong>apt-get常用命令</strong><br>apt-cache search package 搜索软件包<br>apt-cache show package  获取包的相关信息，如说明、大小、版本等<br>sudo apt-get install package 安装包<br>sudo apt-get install package –reinstall   重新安装包<br>sudo apt-get -f install   修复安装<br>sudo apt-get remove package 删除包<br>sudo apt-get remove package –purge 删除包，包括配置文件等<br>sudo apt-get update  更新源<br>sudo apt-get upgrade 更新已安装的包<br>sudo apt-get dist-upgrade 升级系统<br>apt-cache depends package 了解使用该包依赖那些包<br>apt-cache rdepends package 查看该包被哪些包依赖<br>sudo apt-get build-dep package 安装相关的编译环境<br>apt-get source package  下载该包的源代码<br>sudo apt-get clean &amp;&amp; sudo apt-get autoclean 清理无用的包<br>sudo apt-get check 检查是否有损坏的依赖</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><strong>源码安装</strong><br>1 ./configure 相关库文人件以及配置参数并生成make file<br>2 make 对源码进行编译，生成可执行文件<br>3 make install 将生成的可执行文件安装到当前计算机中<br><strong>rpm 基础命令</strong><br>安装软件 ： rpm -i software.rpm<br>卸装软件 : rpm -e software<br>升级形式安装: rpm -U software-new.rpm<br>rpm支持通过http,ftp协议安装软件<br>rpm -lvh <a href="http://www.linuxcast.net/software.rpm" target="_blank" rel="noopener">http://www.linuxcast.net/software.rpm</a><br>可以加入以下参数<br>-v显示相关信息<br>-h显示进度条</p>
+<p>通常都会加上参数<br>eg: rpm -ivh software.rpm</p>
+<h3 id="使用service-管理"><a href="#使用service-管理" class="headerlink" title="使用service 管理"></a>使用service 管理</h3><p>cd /etc/init.d<br>新建 文件</p>
 
       
     </div>
@@ -586,7 +559,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -657,7 +630,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text">????</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#service"><span class="nav-number">2.</span> <span class="nav-text">??service ??</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">1.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用service-管理"><span class="nav-number">2.</span> <span class="nav-text">使用service 管理</span></a></li></ol></div>
             
 
           </div>

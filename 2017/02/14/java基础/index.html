@@ -75,19 +75,17 @@
 
 
 
-<meta name="description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
+<meta name="description" content="你得拼命奔跑，才能留在原地！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="lightquant.com">
-<meta property="og:url" content="http://gaojindeng.com/about/index.html">
+<meta property="og:title" content="标签">
+<meta property="og:url" content="http://gaojindeng.com/tags/index.html">
 <meta property="og:site_name" content="lightquant.com">
-<meta property="og:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
+<meta property="og:description" content="你得拼命奔跑，才能留在原地！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://gaojindeng.com/images/weixin.jpg">
-<meta property="og:updated_time" content="2018-02-09T14:59:33.578Z">
+<meta property="og:updated_time" content="2018-02-09T14:15:09.703Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lightquant.com">
-<meta name="twitter:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#x30;&amp;#51;&amp;#x36;&amp;#x31;&amp;#x30;&amp;#51;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#x71;&amp;#46;&amp;#99;&amp;#">
-<meta name="twitter:image" content="http://gaojindeng.com/images/weixin.jpg">
+<meta name="twitter:title" content="标签">
+<meta name="twitter:description" content="你得拼命奔跑，才能留在原地！">
 
 
 
@@ -119,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://gaojindeng.com/about/"/>
+  <link rel="canonical" href="http://gaojindeng.com/tags/"/>
 
 
 
@@ -415,7 +413,7 @@
 <h3 id="创建一个类的实例都有哪些办法？"><a href="#创建一个类的实例都有哪些办法？" class="headerlink" title="创建一个类的实例都有哪些办法？"></a>创建一个类的实例都有哪些办法？</h3><p>1）new关键字<br>2）反射<br>3）克隆<br>4）反序列化</p>
 <h3 id="final-finally-finalize的区别？"><a href="#final-finally-finalize的区别？" class="headerlink" title="final/finally/finalize的区别？"></a>final/finally/finalize的区别？</h3><p>final 用于声明属性，方法和类，分别表示属性不可变，方法不可覆盖，类不可继承。<br>内部类要访问局部变量，局部变量必须定义成final类型。<br>finally是异常处理语句结构的一部分，表示总是执行。<br>finalize是Object类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法，可以覆盖此方法提供垃圾收集时的其他资源回收，例如关闭文件等。JVM不保证此方法总被调用</p>
 <h3 id="Session-Cookie的区别？"><a href="#Session-Cookie的区别？" class="headerlink" title="Session/Cookie的区别？"></a>Session/Cookie的区别？</h3><p>1）cookie数据存放在客户的浏览器上，session数据放在服务器上。<br>2）cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗考虑到安全应当使用session。<br>3）session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能考虑到减轻服务器性能方面，应当使用COOKIE。</p>
-<h3 id="String-StringBuffer-StringBuilder的区别，扩展再问他们的实现？"><a href="#String-StringBuffer-StringBuilder的区别，扩展再问他们的实现？" class="headerlink" title="String/StringBuffer/StringBuilder的区别，扩展再问他们的实现？"></a>String/StringBuffer/StringBuilder的区别，扩展再问他们的实现？</h3><p>String是不可变的，对String类的任何改变都会返回一个新的String    对象。<br>　　StringBuffer是可变的，对StringBuffer中的内容修改都是当前这个对象。<br>　　String重写了equals方法和hashCode方法，StringBuffer没有重写equals方法。String是final的类。StringBuffer不是。<br>String创建的字符串是在常量池中，创建的变量初始化一次，如果再对该字符串改变会产生新的字符串地址值，StringBuffer是在堆中创建对象，当对字符串改变时不会产生新的字符串地址值，如果对字符串进行频繁修改的话建议使用StringBuffer，以节省内存。<br>StringBuffer和StringBuilder，StringBuffer是线程安全的，StringBulider是线程不安全的。当不考虑并发问题时候，请使用StringBulider。</p>
+<h3 id="String-StringBuffer-StringBuilder的区别，扩展再问他们的实现？"><a href="#String-StringBuffer-StringBuilder的区别，扩展再问他们的实现？" class="headerlink" title="String/StringBuffer/StringBuilder的区别，扩展再问他们的实现？"></a>String/StringBuffer/StringBuilder的区别，扩展再问他们的实现？</h3><p>String是不可变的，对String类的任何改变都会返回一个新的String对象。<br>StringBuffer是可变的，对StringBuffer中的内容修改都是当前这个对象。<br>String重写了equals方法和hashCode方法，StringBuffer没有重写equals方法。String是final的类。StringBuffer不是。<br>String创建的字符串是在常量池中，创建的变量初始化一次，如果再对该字符串改变会产生新的字符串地址值，StringBuffer是在堆中创建对象，当对字符串改变时不会产生新的字符串地址值，如果对字符串进行频繁修改的话建议使用StringBuffer，以节省内存。<br>StringBuffer和StringBuilder，StringBuffer是线程安全的，StringBulider是线程不安全的。当不考虑并发问题时候，请使用StringBulider。</p>
 <h3 id="Servlet的生命周期？"><a href="#Servlet的生命周期？" class="headerlink" title="Servlet的生命周期？"></a>Servlet的生命周期？</h3><p>Servlet 通过调用 init () 方法进行初始化。//只调用一次<br>Servlet 调用 service() 方法来处理客户端的请求。<br>Servlet 通过调用 destroy() 方法终止（结束）。</p>
 <h3 id="如何用Java分配一段连续的1G的内存空间？需要注意些什么？"><a href="#如何用Java分配一段连续的1G的内存空间？需要注意些什么？" class="headerlink" title="如何用Java分配一段连续的1G的内存空间？需要注意些什么？"></a>如何用Java分配一段连续的1G的内存空间？需要注意些什么？</h3><h3 id="Java有自己的内存回收机制，但为什么还存在内存泄露的问题呢？"><a href="#Java有自己的内存回收机制，但为什么还存在内存泄露的问题呢？" class="headerlink" title="Java有自己的内存回收机制，但为什么还存在内存泄露的问题呢？"></a>Java有自己的内存回收机制，但为什么还存在内存泄露的问题呢？</h3><p><a href="http://blog.csdn.net/u013233097/article/details/52270387" target="_blank" rel="noopener">http://blog.csdn.net/u013233097/article/details/52270387</a></p>
 <h3 id="什么是java序列化，如何实现java序列化-写一个实例-？"><a href="#什么是java序列化，如何实现java序列化-写一个实例-？" class="headerlink" title="什么是java序列化，如何实现java序列化?(写一个实例)？"></a>什么是java序列化，如何实现java序列化?(写一个实例)？</h3><h3 id="String-s-new-String-“abc”-创建了几个-String-Object"><a href="#String-s-new-String-“abc”-创建了几个-String-Object" class="headerlink" title="String s = new String(“abc”);创建了几个 String Object?"></a>String s = new String(“abc”);创建了几个 String Object?</h3><p>两个对象，一个是”abc”,一个是指向”abc”的引用对象s。</p>
@@ -557,7 +555,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
