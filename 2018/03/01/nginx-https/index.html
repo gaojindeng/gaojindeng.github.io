@@ -123,7 +123,7 @@
 
 
 
-  <title>数据库事务中的隔离级别 | lightquant.com</title>
+  <title>阿里云nginx配置https | lightquant.com</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/01/21/数据库事务中的隔离级别/">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/03/01/nginx-https/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lightquant">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数据库事务中的隔离级别</h1>
+          <h1 class="post-title" itemprop="name headline">阿里云nginx配置https</h1>
         
 
         <div class="post-meta">
@@ -333,7 +333,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-21T12:07:10+08:00">2018-01-21</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-01T13:33:10+08:00">2018-03-01</time>
             
 
             
@@ -354,8 +354,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据库/" itemprop="url" rel="index">
-                    <span itemprop="name">数据库</span>
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
                   </a>
                 </span>
 
@@ -391,67 +391,10 @@
       
 
       
-        <p><strong>来自：</strong></p>
-<blockquote>
-<p><a href="https://www.cnblogs.com/yldIndex/p/spring_Transactional.html" target="_blank" rel="noopener">数据库事务中的隔离级别和锁+spring Transactional注解</a></p>
-</blockquote>
-<p><strong>数据库事务中的隔离级别和锁</strong></p>
-<p>数据库事务在后端开发中占非常重要的地位，如何确保数据读取的正确性、安全性也是我们需要研究的问题。<br>ACID<br>首先总结一下数据库事务正确执行的四个要素（ACID）：</p>
-<p>原子性（Atomicity）：即事务是不可分割的最小工作单元，事务内的操作要么全做，要么全不做，不能只做一部分；<br>一致性（Consistency）：在事务执行前数据库的数据处于正确的状态，而事务执行完成后数据库的数据还是处于正确的状态，即数据完整性约束没有被破坏；比如我们做银行转账的相关业务，A转账给B，要求A转的钱B一定要收到。如果A转了钱而B没有收到，那么数据库数据的一致性就得不到保障，在做高并发业务时要注意合理的设计。<br>隔离性（Isolation）：并发事务执行之间无影响，在一个事务内部的操作对其他事务是不产生影响，这需要事务隔离级别来指定隔离性；<br>持久性（Durability）：事务一旦执行成功，它对数据库的数据的改变必须是永久的，不会因各种异常导致数据不一致或丢失。<br>事务隔离级别<br>大部分数据库事务操作都是并发执行的，这就可能遇到下面的几种问题：</p>
-<p>丢失更新：两个事务同时更新一行数据，最后一个事务的更新会覆盖掉第一个事务的更新，从而导致第一个事务更新的数据丢失，后果比较严重。一般是由于没加锁的原因造成的。<br>脏读（Dirty reads）：一个事务A读取到了另一个事务B还没有提交的数据，并在此基础上进行操作。如果B事务rollback，那么A事务所读取到的数据就是不正确的，会带来问题。<br>不可重复读（Non-repeatable reads）：在同一事务范围内读取两次相同的数据，所返回的结果不同。比如事务B第一次读数据后，事务A更新数据并commit，那么事务B第二次读取的数据就与第一次是不一样的。<br>幻读（Phantom reads）：一个事务A读取到了另一个事务B新提交的数据。比如，事务A对一个表中所有行的数据按照某规则进行修改（整表操作），同时，事务B向表中插入了一行原始数据，那么后面事务A再对表进行操作时，会发现表中居然还有一行数据没有被修改，就像发生了幻觉，飘飘欲仙一样。<br>注意：不可重复读和幻读的区别是，不可重复读对应的表的操作是更改(UPDATE)，而幻读对应的表的操作是插入(INSERT)，两种的应对策略不一样。对于不可重复读，只需要采用行级锁防止该记录被更新即可，而对于幻读必须加个表级锁，防止在表中插入数据。有关锁的问题，下面会讨论。</p>
-<p><strong>为了处理这几种问题，SQL定义了下面的4个等级的事务隔离级别：</strong></p>
-<p>未提交读（READ UNCOMMITTED ）：最低隔离级别，一个事务能读取到别的事务未提交的更新数据，很不安全，可能出现丢失更新、脏读、不可重复读、幻读；<br>提交读（READ COMMITTED）：一个事务能读取到别的事务提交的更新数据，不能看到未提交的更新数据，不会出现丢失更新、脏读，但可能出现不可重复读、幻读；<br>可重复读（REPEATABLE READ）：保证同一事务中先后执行的多次查询将返回同一结果，不受其他事务影响，不可能出现丢失更新、脏读、不可重复读，但可能出现幻读；<br>序列化（SERIALIZABLE）：最高隔离级别，不允许事务并发执行，而必须串行化执行，最安全，不可能出现更新、脏读、不可重复读、幻读，但是效率最低。<br>隔离级别越高，数据库事务并发执行性能越差，能处理的操作越少。所以一般地，推荐使用REPEATABLE READ级别保证数据的读一致性。对于幻读的问题，可以通过加锁来防止。<br>MySQL支持这四种事务等级，默认事务隔离级别是REPEATABLE READ。Oracle数据库支持READ COMMITTED 和 SERIALIZABLE这两种事务隔离级别，所以Oracle数据库不支持脏读。Oracle数据库默认的事务隔离级别是READ COMMITTED。</p>
-<p><strong>各种锁</strong><br>下面总结一下MySQL中的锁，有好几种分类。其它RDBMS也差不多是这样。<br>首先最重要的分类就是乐观锁(Optimistic Lock)和悲观锁(Pessimistic Lock)，这实际上是两种锁策略。<br>乐观锁，顾名思义就是非常乐观，非常相信真善美，每次去读数据都认为其它事务没有在写数据，所以就不上锁，快乐的读取数据，而只在提交数据的时候判断其它事务是否搞过这个数据了，如果搞过就rollback。乐观锁相当于一种检测冲突的手段，可通过为记录添加版本或添加时间戳来实现。<br>悲观锁，对其它事务抱有保守的态度，每次去读数据都认为其它事务想要作祟，所以每次读数据的时候都会上锁，直到取出数据。悲观锁大多数情况下依靠数据库的锁机制实现，以保证操作最大程度的独占性，但随之而来的是各种开销。悲观锁相当于一种避免冲突的手段。<br>选择标准：如果并发量不大，或数据冲突的后果不严重，则可以使用乐观锁；而如果并发量大或数据冲突后果比较严重（对用户不友好），那么就使用悲观锁。</p>
-<p>从读写角度，分共享锁（S锁，Shared Lock）和排他锁（X锁，Exclusive Lock），也叫读锁（Read Lock）和写锁（Write Lock）。<br>理解：</p>
-<p>持有S锁的事务只读不可写。如果事务A对数据D加上S锁后，其它事务只能对D加上S锁而不能加X锁。<br>持有X锁的事务可读可写。如果事务A对数据D加上X锁后，其它事务不能再对D加锁，直到A对D的锁解除。<br>从锁的粒度角度，主要分为表级锁（Table Lock）和行级锁（Row Lock）。<br>表级锁将整个表加锁，性能开销最小。用户可以同时进行读操作。当一个用户对表进行写操作时，用户可以获得一个写锁，写锁禁止其他的用户读写操作。写锁比读锁的优先级更高，即使有读操作已排在队列中，一个被申请的写锁仍可以排在所队列的前列。<br>行级锁仅对指定的记录进行加锁，这样其它进程可以对同一个表中的其它记录进行读写操作。行级锁粒度最小，开销大，能够支持高并发，可能会出现死锁。</p>
-<p>MySQL的MyISAM引擎使用表级锁，而InnoDB支持表级锁和行级锁，默认是行级锁。<br>还有BDB引擎使用页级锁，即一次锁定一组记录，并发性介于行级锁和表级锁之间。</p>
-<p><strong>三级锁协议</strong><br>三级加锁协议是为了保证正确的事务并发操作，事务在读、写数据库对象是需要遵循的加锁规则。</p>
-<p>一级封锁协议：事务T在修改数据R之前必须对它加X锁，直到事务结束方可释放。而若事务T只是读数据，不进行修改，则不需加锁，因此一级加锁协议下可能会出现脏读和不可重复读。<br>二级加锁协议：在一级加锁协议的基础上，加上这样一条规则——事务T在读取数据R之前必须对它加S锁，直到读取完毕以后释放。二级加锁协议下可能会出现不可重复读。<br>三级加锁协议：在一级加锁协议的基础上，加上这样一条规则——事务T在读取数据R之前必须对它加S锁，直到事务结束方可释放。三级加锁协议避免了脏读和不可重复读的问题。</p>
-<p><strong>spring @Transactional注解参数详解</strong></p>
-<p>事物注解方式: @Transactional</p>
-<p>当标于类前时, 标示类中所有方法都进行事物处理 , 例子:</p>
-<p>1 @Transactional public class TestServiceBean implements TestService {}<br>当类中某些方法不需要事物时:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Transactional</span> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestServiceBean</span> <span class="keyword">implements</span> <span class="title">TestService</span> </span>&#123; </span><br><span class="line"><span class="keyword">private</span> TestDao dao; </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setDao</span><span class="params">(TestDao dao)</span> </span>&#123; </span><br><span class="line"><span class="keyword">this</span>.dao = dao; </span><br><span class="line">&#125; </span><br><span class="line"><span class="meta">@Transactional</span>(propagation =Propagation.NOT_SUPPORTED)</span><br><span class="line"><span class="function"><span class="keyword">public</span> List <span class="title">getAll</span><span class="params">()</span> </span>&#123; </span><br><span class="line"><span class="keyword">return</span> <span class="keyword">null</span>; </span><br><span class="line">&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>事物传播行为介绍:</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Transactional</span>(propagation=Propagation.REQUIRED) ;</span><br><span class="line"><span class="comment">//如果有事务, 那么加入事务, 没有的话新建一个(默认情况下)</span></span><br><span class="line"><span class="meta">@Transactional</span>(propagation=Propagation.NOT_SUPPORTED) ;</span><br><span class="line"><span class="comment">//容器不为这个方法开启事务</span></span><br><span class="line"><span class="meta">@Transactional</span>(propagation=Propagation.REQUIRES_NEW) ;</span><br><span class="line"><span class="comment">//不管是否存在事务,都创建一个新的事务,原来的挂起,新的执行完毕,继续执行老的事务</span></span><br><span class="line"><span class="meta">@Transactional</span>(propagation=Propagation.MANDATORY) ;</span><br><span class="line"><span class="comment">//必须在一个已有的事务中执行,否则抛出异常</span></span><br><span class="line"><span class="meta">@Transactional</span>(propagation=Propagation.NEVER) ;</span><br><span class="line"><span class="comment">//必须在一个没有的事务中执行,否则抛出异常(与Propagation.MANDATORY相反)</span></span><br><span class="line"><span class="meta">@Transactional</span>(propagation=Propagation.SUPPORTS) ;</span><br><span class="line"><span class="comment">//如果其他bean调用这个方法,在其他bean中声明事务,那就用事务.如果其他bean没有声明事务,那就不用事务.</span></span><br></pre></td></tr></table></figure>
-<p><strong>事物超时设置:</strong></p>
-<p>@Transactional(timeout=30) //默认是30秒</p>
-<p><strong>事务隔离级别:</strong></p>
-<p>　　@Transactional(isolation = Isolation.READ_UNCOMMITTED)：读取未提交数据(会出现脏读, 不可重复读) 基本不使用<br>　　@Transactional(isolation = Isolation.READ_COMMITTED)：读取已提交数据(会出现不可重复读和幻读)<br>　　@Transactional(isolation = Isolation.REPEATABLE_READ)：可重复读(会出现幻读)<br>　　@Transactional(isolation = Isolation.SERIALIZABLE)：串行化</p>
-<p>　　MYSQL: 默认为REPEATABLE_READ级别<br>　　SQLSERVER: 默认为READ_COMMITTED</p>
-<p>脏读 : 一个事务读取到另一事务未提交的更新数据<br>不可重复读 : 在同一事务中, 多次读取同一数据返回的结果有所不同, 换句话说,<br>后续读取可以读到另一事务已提交的更新数据. 相反, “可重复读”在同一事务中多次<br>读取数据时, 能够保证所读数据一样, 也就是后续读取不能读到另一事务已提交的更新数据<br>幻读 : 一个事务读到另一个事务已提交的insert数据</p>
-<p><strong>@Transactional注解中常用参数说明</strong></p>
-<p>参数名称</p>
-<p>功能描述</p>
-<p>readOnly</p>
-<p>该属性用于设置当前事务是否为只读事务，设置为true表示只读，false则表示可读写，默认值为false。例如：@Transactional(readOnly=true)</p>
-<p>rollbackFor</p>
-<p>该属性用于设置需要进行回滚的异常类数组，当方法中抛出指定异常数组中的异常时，则进行事务回滚。例如：</p>
-<p>指定单一异常类：@Transactional(rollbackFor=<br>RuntimeException.class)</p>
-<p>指定多个异常类：@Transactional(rollbackFor={RuntimeException.class, Exception.class})</p>
-<p>rollbackForClassName</p>
-<p>该属性用于设置需要进行回滚的异常类名称数组，当方法中抛出指定异常名称数组中的异常时，则进行事务回滚。例如：</p>
-<p>指定单一异常类名称：@Transactional(rollbackForClassName=<br>“RuntimeException”)</p>
-<p>指定多个异常类名称：@Transactional(rollbackForClassName={“RuntimeException”,”Exception”})</p>
-<p>noRollbackFor</p>
-<p>该属性用于设置不需要进行回滚的异常类数组，当方法中抛出指定异常数组中的异常时，不进行事务回滚。例如：</p>
-<p>指定单一异常类：@Transactional(noRollbackFor=<br>RuntimeException.class)</p>
-<p>指定多个异常类：@Transactional(noRollbackFor={RuntimeException.class, Exception.class})</p>
-<p>noRollbackForClassName</p>
-<p>该属性用于设置不需要进行回滚的异常类名称数组，当方法中抛出指定异常名称数组中的异常时，不进行事务回滚。例如：</p>
-<p>指定单一异常类名称：@Transactional(noRollbackForClassName=<br>“RuntimeException”)</p>
-<p>指定多个异常类名称：</p>
-<p>@Transactional(noRollbackForClassName={“RuntimeException”,”Exception”})</p>
-<p>propagation</p>
-<p>该属性用于设置事务的传播行为，具体取值可参考表6-7。</p>
-<p>例如：<br>@Transactional(propagation=<br>Propagation.NOT_SUPPORTED,readOnly=true)</p>
-<p>isolation</p>
-<p>该属性用于设置底层数据库的事务隔离级别，事务隔离级别用于处理多事务并发的情况，通常使用数据库的默认隔离级别即可，基本不需要进行设置</p>
-<p>timeout</p>
-<p>该属性用于设置事务的超时秒数，默认值为-1表示永不超时</p>
-<p>注意的几点:<br>　　1、@Transactional 只能被应用到public方法上, 对于其它非public的方法,如果标记了@Transactional也不会报错,但方法没有事务功能.<br>　　2、用 spring 事务管理器,由spring来负责数据库的打开,提交,回滚.默认遇到运行期例外(throw new RuntimeException(“注释”);)会回滚，即遇到不受检查（unchecked）的例外时回滚；而遇到需要捕获的例外(throw new Exception(“注释”);)不会回滚,即遇到受检查的例外（就是非运行时抛出的异常，编译器会检查到的异常叫受检查例外或说受检查异常）时，需我们指定方式来让事务回滚要想所有异常都回滚,要加上 @Transactional( rollbackFor={Exception.class,其它异常}) .如果让unchecked例外不回滚：<br>@Transactional(notRollbackFor=<br>RunTimeException.class)<br>如下:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Transactional</span>(rollbackFor=Exception.class) <span class="comment">//指定回滚,遇到异常Exception时回滚</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">methodName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">　　　<span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"注释"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Transactional</span>(noRollbackFor=Exception.class)<span class="comment">//指定不回滚,遇到运行期例外(throw new RuntimeException("注释");)会回滚</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ItimDaoImpl <span class="title">getItemDaoImpl</span><span class="params">()</span> </span>&#123;</span><br><span class="line">　　　<span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"注释"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>3、@Transactional 注解应该只被应用到 public 可见度的方法上。 如果你在 protected、private 或者 package-visible 的方法上使用 @Transactional 注解，它也不会报错， 但是这个被注解的方法将不会展示已配置的事务设置。<br>　　4、@Transactional 注解可以被应用于接口定义和接口方法、类定义和类的 public 方法上。然而，请注意仅仅 @Transactional 注解的出现不足于开启事务行为，它仅仅 是一种元数据，能够被可以识别 @Transactional 注解和上述的配置适当的具有事务行为的beans所使用。上面的例子中，其实正是 元素的出现 开启 了事务行为。<br>　　5、Spring团队的建议是你在具体的类（或类的方法）上使用 @Transactional 注解，而不要使用在类所要实现的任何接口上。你当然可以在接口上使用 @Transactional 注解，但是这将只能当你设置了基于接口的代理时它才生效。因为注解是不能继承的，这就意味着如果你正在使用基于类的代理时，那么事务的设置将不能被基于类的代理所识别，而且对象也将不会被事务代理所包装（将被确认为严重的）。因此，请接受Spring团队的建议并且在具体的类上使用 @Transactional 注解。</p>
+        <h2 id="一、阿里云申请免费证书"><a href="#一、阿里云申请免费证书" class="headerlink" title="一、阿里云申请免费证书"></a>一、阿里云申请免费证书</h2><p><img src="/images/https2.jpg" alt="申请证书"><br>这里有个坑，找这个免费证书要先选择保护类型为“一个域名”，然后选择品牌为“Symantec”，证书类型中才会出现免费的选项。</p>
+<h2 id="二、下载证书"><a href="#二、下载证书" class="headerlink" title="二、下载证书"></a>二、下载证书</h2><p><img src="/images/https1.jpg" alt="证书列表"><br>申请要过一段时间，才能在我的列表中看到，然后补全信息，过几分钟审核通过了，就可以下载了。<br>下载好了，上传到服务器解压，有两个文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/cert/214524977110083.pem</span><br><span class="line">/usr/local/nginx/cert/214524977110083.key</span><br></pre></td></tr></table></figure></p>
+<h2 id="三、配置-NGINX-的-HTTPS"><a href="#三、配置-NGINX-的-HTTPS" class="headerlink" title="三、配置 NGINX 的 HTTPS"></a>三、配置 NGINX 的 HTTPS</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  listen       443;</span><br><span class="line">  server_name  www.lightquant.com;</span><br><span class="line">  ssl          on;</span><br><span class="line">  root 		   html;</span><br><span class="line">  index        index.html; </span><br><span class="line"></span><br><span class="line">  ssl_certificate   /usr/<span class="built_in">local</span>/nginx/cert/214524977110083.pem</span><br><span class="line">  ssl_certificate_key /usr/<span class="built_in">local</span>/nginx/cert/214524977110083.pem</span><br><span class="line">  ssl_session_timeout 5m;</span><br><span class="line">  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">  ssl_ciphers AESGCM:ALL:!DH:!EXPORT:!RC4:+HIGH:!MEDIUM:!LOW:!aNULL:!eNULL;</span><br><span class="line">  ssl_prefer_server_ciphers on;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen        80;</span><br><span class="line">  server_name   lightquant.com;</span><br><span class="line">  <span class="built_in">return</span> 301    https://<span class="variable">$server_name</span><span class="variable">$request_uri</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>完成！</strong></p>
 
       
     </div>
@@ -477,7 +420,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Spring/" rel="tag"># Spring</a>
+            <a href="/tags/nginx/" rel="tag"># nginx</a>
           
         </div>
       
@@ -490,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/19/centOs7/" rel="next" title="centOS 7">
-                <i class="fa fa-chevron-left"></i> centOS 7
+              <a href="/2018/02/12/activeMQ/" rel="next" title="activeMQ">
+                <i class="fa fa-chevron-left"></i> activeMQ
               </a>
             
           </div>
@@ -499,10 +442,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/10/SSM框架整合/" rel="prev" title="SSM框架整合">
-                SSM框架整合 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -559,8 +498,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -640,6 +588,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、阿里云申请免费证书"><span class="nav-number">1.</span> <span class="nav-text">一、阿里云申请免费证书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、下载证书"><span class="nav-number">2.</span> <span class="nav-text">二、下载证书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、配置-NGINX-的-HTTPS"><span class="nav-number">3.</span> <span class="nav-text">三、配置 NGINX 的 HTTPS</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
