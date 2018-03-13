@@ -305,6 +305,182 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/03/13/python3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lightquant">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lightquant.com">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/13/python3/" itemprop="url">python3</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-13T23:49:10+08:00">2018-03-13</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><ol>
+<li><p>注释</p>
+<ul>
+<li>单行注释：#号</li>
+<li>多行注释：<code>&#39;&#39;&#39;</code>和<code>&quot;&quot;&quot;</code></li>
+</ul>
+</li>
+<li><p>行与缩进</p>
+<blockquote>
+<p>使用缩进来表示代码块，不需要使用大括号<code>{}</code>。同一个代码块的语句必须包含相同的缩进空格数</p>
+</blockquote>
+</li>
+<li><p>多行语句</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用反斜杠(\)来实现多行语句</span></span><br><span class="line">total = item_one + \</span><br><span class="line">        item_two + \</span><br><span class="line">        item_three</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在 [], &#123;&#125;, 或 () 中的多行语句，不需要使用反斜杠(\)  </span></span><br><span class="line">total = [<span class="string">'item_one'</span>, <span class="string">'item_two'</span>, <span class="string">'item_three'</span>,</span><br><span class="line">        <span class="string">'item_four'</span>, <span class="string">'item_five'</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数字(Number)类型<br>python中数字有四种类型：整数、长整数、浮点数和复数。</p>
+</li>
+</ol>
+<ul>
+<li>int (整数), 如 1, 只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。</li>
+<li>bool (布尔),如 true。</li>
+<li>float (浮点数), 如 1.23、3E-2</li>
+<li>complex (复数), 如 1 + 2j、 1.1 + 2.2j</li>
+</ul>
+<ol>
+<li><p>字符串(String)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># python中单引号和双引号使用完全相同。</span></span><br><span class="line">word = <span class="string">'字符串'</span></span><br><span class="line">sentence = <span class="string">"这是一个句子。"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用三引号('''或""")可以指定一个多行字符串。</span></span><br><span class="line">paragraph = <span class="string">"""这是一个段落，</span></span><br><span class="line"><span class="string">可以由多行组成"""</span></span><br><span class="line"></span><br><span class="line">str=<span class="string">'Runoob'</span></span><br><span class="line"></span><br><span class="line">print(str)                 <span class="comment"># 输出字符串</span></span><br><span class="line">print(str[<span class="number">0</span>:<span class="number">-1</span>])           <span class="comment"># 输出第一个到倒数第二个的所有字符</span></span><br><span class="line">print(str[<span class="number">0</span>])              <span class="comment"># 输出字符串第一个字符</span></span><br><span class="line">print(str[<span class="number">2</span>:<span class="number">5</span>])            <span class="comment"># 输出从第三个开始到第五个的字符</span></span><br><span class="line">print(str[<span class="number">2</span>:])             <span class="comment"># 输出从第三个开始的后的所有字符</span></span><br><span class="line">print(str * <span class="number">2</span>)             <span class="comment"># 输出字符串两次</span></span><br><span class="line">print(str + <span class="string">'你好'</span>)        <span class="comment"># 连接字符串</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">'------------------------------'</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'hello\nrunoob'</span>)      <span class="comment"># 使用反斜杠(\)+n转义特殊字符</span></span><br><span class="line">print(<span class="string">r'hello\nrunoob'</span>)     <span class="comment"># 在字符串前面添加一个 r，表示原始字符串，不会发生转义</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>等待用户输入<br><code>input(&quot;\n\n按下 enter 键后退出。&quot;)</code></p>
+</li>
+<li><p>Print 输出</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">y=<span class="string">"b"</span></span><br><span class="line"><span class="comment"># 换行输出</span></span><br><span class="line">print( y )</span><br><span class="line">print(<span class="string">'---------'</span>)</span><br><span class="line"><span class="comment"># 不换行输出</span></span><br><span class="line">print( y, end=<span class="string">" "</span> )</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>import 与 from…import</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">将整个模块(somemodule)导入，格式为： import somemodule</span><br><span class="line">从某个模块中导入某个函数,格式为： from somemodule import somefunction</span><br><span class="line">从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc</span><br><span class="line">将某个模块中的全部函数导入，格式为： from somemodule import *</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/03/01/nginx-https/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1819,194 +1995,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/01/11/MySql常用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lightquant">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lightquant.com">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/11/MySql常用/" itemprop="url">MySql常用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-11T11:50:10+08:00">2018-01-11</time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据库/" itemprop="url" rel="index">
-                    <span itemprop="name">数据库</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><h3 id="1-常用函数"><a href="#1-常用函数" class="headerlink" title="1. 常用函数"></a>1. 常用函数</h3><blockquote>
-<p>DATE_ADD(date,INTERVAL i keyword)<br>返回date加上 i 时期<br>keyword可以为：<br>SECOND<br>MINUTE<br>HOUR<br>DAY<br>WEEK<br>MONTH<br>QUARTER<br>YEAR</p>
-<p>DATE_SUB(date,INTERVAL i keyword)  与上面相反</p>
-<p>DATE_FORMAT(create_date,’%H%i’)<br>时间格式化：<br>%Y %D %M %h:%i:%s    %Y%m%d</p>
-<p>MONTHNAME(date)       返回date的月份名(英语月份，如October)<br>DAYNAME(date)       返回date的星期名(英语星期几，如Saturday)<br>NOW()        返回当前的日期和时间 如：2016-10-08 18:57:39<br>CURDATE()或CURRENT_DATE()     返回当前的日期<br>CURTIME()或CURRENT_TIME()     返回当前的时间<br>QUARTER(date)       返回date在一年中的季度(1~4)<br>WEEK(date)       返回日期date为一年中第几周(0~53)<br>DAYOFYEAR(date)       返回date是一年的第几天(1~366)<br>DAYOFMONTH(date)      返回date是一个月的第几天(1~31)<br>DAYOFWEEK(date)       返回date所代表的一星期中的第几天(1~7)<br>YEAR(date)       返回日期date的年份(1000~9999)<br>MONTH(date)       返回date的月份值(1~12)<br>DAY(date)     返回date的天数部分<br>HOUR(time)     返回time的小时值(0~23)<br>MINUTE(time)       返回time的分钟值(0~59)<br>SECOND(time)     返回time的秒值（0-59）<br>DATE(datetime)     返回datetime的日期值<br>TIME(datetime)     返回datetime的时间值</p>
-<p>TO_DAYS(create_date)<br>返回从0年开始 到date之间的天数</p>
-</blockquote>
-<h3 id="2-系统表"><a href="#2-系统表" class="headerlink" title="2.系统表"></a>2.系统表</h3><blockquote>
-<p>DATABASE()     返回当前数据库名<br>BENCHMARK(count,expr)    将表达式expr重复运行count次<br>CONNECTION_ID()     返回当前客户的连接ID<br>FOUND_ROWS()     返回最后一个SELECT查询进行检索的总行数<br>USER()或SYSTEM_USER()    返回当前登陆用户名<br>VERSION()     返回MySQL服务器的版本</p>
-</blockquote>
-<p>MySQL常用系统表大全：<br><a href="http://blog.csdn.net/xlxxcc/article/details/51754524" target="_blank" rel="noopener">http://blog.csdn.net/xlxxcc/article/details/51754524</a></p>
-<h3 id="3-连接查询"><a href="#3-连接查询" class="headerlink" title="3.连接查询"></a>3.连接查询</h3><blockquote>
-<p>INNER JOIN：如果表中有至少一个匹配，则返回行<br>LEFT JOIN：即使右表中没有匹配，也从左表返回所有的行<br>RIGHT JOIN：即使左表中没有匹配，也从右表返回所有的行<br>FULL JOIN：只要其中一个表中存在匹配，则返回行</p>
-</blockquote>
-<h3 id="4-优化速度"><a href="#4-优化速度" class="headerlink" title="4.优化速度"></a>4.优化速度</h3><p>MySQL数据库优化的八种方式(经典必看)<br><a href="https://www.cnblogs.com/zhyunfe/p/6209074.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhyunfe/p/6209074.html</a></p>
-<h2 id="centOS-7-安装mysql"><a href="#centOS-7-安装mysql" class="headerlink" title="centOS 7 安装mysql"></a>centOS 7 安装mysql</h2><p>1.使用安装命令 ：yum -y install mysql mysql-server mysql-devel<br>安装完成却发现Myserver安装缺失，在网上找原因，原来是因为CentOS 7上把MySQL从默认软件列表中移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开：</p>
-<p>a. wget <a href="http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm" target="_blank" rel="noopener">http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm</a> </p>
-<p>b. rpm -ivh mysql-community-release-el7-5.noarch.rpm</p>
-<p>c. yum -y install mysql mysql-server mysql-devel，安装成功。</p>
-<p><strong>启动服务</strong><br>service mysqld start</p>
-<p><strong>进入客户端</strong><br>mysql -u root -p 输入密</p>
-<p><strong>常用数据库操作</strong></p>
-<blockquote>
-<p>mysql数据库使用总结<br>本文主要记录一些mysql日常使用的命令，供以后查询。<br>1.更改root密码<br>mysqladmin -uroot password ‘yourpassword’<br>2.远程登陆mysql服务器<br>mysql -uroot -p -h192.168.137.10 -P3306<br>3.查询数据库<br>show databases;<br>4.进入某个数据库<br>use databasename;<br>5.列出数据库中的表<br>show tables;<br>6.查看某个表全部字段<br>desc slow_log;<br>show create table slow_log\G; （不仅可以显示表信息，还可以显示建表语句）<br>7.查看当前用户<br>select user();<br>8.查看当前所在数据库<br>select database();<br>9.创建新数据库（可以指定字符集）<br>create database db1 charset utf8;<br>10.创建新表<br>create table t1 (<code>id</code> int(4), <code>name</code> char(40));<br>11.查看数据库版本<br>select version();<br>12.查看数据库状态<br>show status;         当前会话状态<br>show global status;  全局数据库状态<br>show slave status\G;   查看主从数据库状态信息<br>13.查询数据库参数<br>show variables;<br>14.修改数据库参数<br>show variables like ‘max_connect%’;<br>set global max_connect_errors = 1000;（重启数据库会失效，要在配置文件中修改）<br>15.查看当前数据库队列<br>show processlist;<br>16.创建普通用户并授权给某个数据库<br>grant all on databasename.<em> to ‘user1’@’localhost’ identified by ‘123456’;<br>17.查询表数据<br>select </em> from mysql.db;           //查询该表中的所有字段<br>select count(<em>) from mysql.user;  //count(</em>)表示表中有多少行<br>select db,user  from mysql.db;    //查询表中的多个字段<br>select * from mysql.db where host like ‘10.0.%’;在查询语句中可以使用万能匹配 “%”<br>18.插入一行数据<br>insert into db1.t1 values (1, ‘abc’);<br>19.更改表的某一行数据<br>update db1.t1 set name=’aaa’ where id=1;<br>20.清空表数据<br>truncate table db1.t1;<br>21.删除表<br>drop table db1.t1;<br>22.清空数据库中的所有表（数据库名是eab12）<br>mysql -N -s information_schema -e “SELECT CONCAT(‘TRUNCATE TABLE ‘,TABLE_NAME,’;’) FROM TABLES WHERE TABLE_SCHEMA=’eab12’” | mysql -f eab12<br>23.删除数据库<br>drop database db1;<br>24.数据库备份<br>mysqldump  -uroot -p’yourpassword’ mysql &gt;/tmp/mysql.sql<br>25.数据库恢复<br>mysql -uroot -p’yourpassword’ mysql &lt;/tmp/mysql.sql<br>26.新建普通用户<br>CREATE USER name IDENTIFIED BY ‘ssapdrow’;<br>27.更改普通用户密码<br>SET PASSWORD FOR name=PASSWORD(‘fdddfd’);<br>28.查看name用户权限<br>SHOW GRANTS FOR name;<br>29.脚本中执行mysql命令<br>mysql -uuser -ppasswd -e”show databases”<br>echo “show databases”|mysql -uuser -ppassword<br>以下是执行大量mysql语句采用的方式<br>mysql -uuser -hhostname -ppasswd &lt;&lt; EOF<br>mysql语句<br>EOF</p>
-</blockquote>
-<p>原文链接：<br><a href="https://www.cnblogs.com/suxiaoman/p/7693066.html" target="_blank" rel="noopener">https://www.cnblogs.com/suxiaoman/p/7693066.html</a></p>
-<h2 id="MySQL创建用户与授权"><a href="#MySQL创建用户与授权" class="headerlink" title="MySQL创建用户与授权"></a>MySQL创建用户与授权</h2><h3 id="一-创建用户"><a href="#一-创建用户" class="headerlink" title="一. 创建用户"></a>一. 创建用户</h3><p>命令:</p>
-<p><code>CREATE USER &#39;username&#39;@&#39;host&#39; IDENTIFIED BY &#39;password&#39;;</code><br>说明：</p>
-<p>username：你将创建的用户名<br>host：指定该用户在哪个主机上可以登陆，如果是本地用户可用localhost，如果想让该用户可以从任意远程主机登陆，可以使用通配符%<br>password：该用户的登陆密码，密码可以为空，如果为空则该用户可以不需要密码登陆服务器<br>例子：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">'dog'</span>@<span class="string">'localhost'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'123456'</span>;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">'pig'</span>@<span class="string">'192.168.1.101_'</span> IDENDIFIED <span class="keyword">BY</span> <span class="string">'123456'</span>;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">'pig'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'123456'</span>;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">'pig'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">''</span>;</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">'pig'</span>@<span class="string">'%'</span>;</span><br></pre></td></tr></table></figure></p>
-<h3 id="二-授权"><a href="#二-授权" class="headerlink" title="二. 授权:"></a>二. 授权:</h3><p>命令:</p>
-<p><code>GRANT privileges ON databasename.tablename TO &#39;username&#39;@&#39;host&#39;</code><br>说明:</p>
-<p>privileges：用户的操作权限，如SELECT，INSERT，UPDATE等，如果要授予所的权限则使用ALL<br>databasename：数据库名<br>tablename：表名，如果要授予该用户对所有数据库和表的相应操作权限则可用<em>表示，如</em>.*<br>例子:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">GRANT SELECT, INSERT ON test.user TO &apos;pig&apos;@&apos;%&apos;;</span><br><span class="line">GRANT ALL ON *.* TO &apos;pig&apos;@&apos;%&apos;;</span><br></pre></td></tr></table></figure></p>
-<p>注意:</p>
-<p>用以上命令授权的用户不能给其它用户授权，如果想让该用户可以授权，用以下命令:</p>
-<p><code>GRANT privileges ON databasename.tablename TO &#39;username&#39;@&#39;host&#39; WITH GRANT OPTION;</code></p>
-<h3 id="三-设置与更改用户密码"><a href="#三-设置与更改用户密码" class="headerlink" title="三.设置与更改用户密码"></a>三.设置与更改用户密码</h3><p>命令:</p>
-<p><code>SET PASSWORD FOR &#39;username&#39;@&#39;host&#39; = PASSWORD(&#39;newpassword&#39;);</code><br>如果是当前登陆用户用:</p>
-<p>SET PASSWORD = PASSWORD(“newpassword”);<br>例子:</p>
-<p><code>SET PASSWORD FOR &#39;pig&#39;@&#39;%&#39; = PASSWORD(&quot;123456&quot;);</code></p>
-<h3 id="四-撤销用户权限"><a href="#四-撤销用户权限" class="headerlink" title="四. 撤销用户权限"></a>四. 撤销用户权限</h3><p>命令:</p>
-<p><code>REVOKE privilege ON databasename.tablename FROM &#39;username&#39;@&#39;host&#39;;</code><br>说明:</p>
-<p>privilege, databasename, tablename：同授权部分</p>
-<p>例子:</p>
-<p><code>REVOKE SELECT ON *.* FROM &#39;pig&#39;@&#39;%&#39;;</code><br>注意:</p>
-<p>假如你在给用户’pig’@’%’授权的时候是这样的（或类似的）：GRANT SELECT ON test.user TO ‘pig’@’%’，则在使用REVOKE SELECT ON <em>.</em> FROM ‘pig’@’%’;命令并不能撤销该用户对test数据库中user表的SELECT 操作。相反，如果授权使用的是GRANT SELECT ON <em>.</em> TO ‘pig’@’%’;则REVOKE SELECT ON test.user FROM ‘pig’@’%’;命令也不能撤销该用户对test数据库中user表的Select权限。</p>
-<p>具体信息可以用命令SHOW GRANTS FOR ‘pig’@’%’; 查看。</p>
-<h3 id="五-删除用户"><a href="#五-删除用户" class="headerlink" title="五.删除用户"></a>五.删除用户</h3><p>命令:</p>
-<p><code>DROP USER &#39;username&#39;@&#39;host&#39;;</code></p>
-<p>原文链接：<br><a href="https://www.jianshu.com/p/d7b9c468f20d" target="_blank" rel="noopener">https://www.jianshu.com/p/d7b9c468f20d</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2061,7 +2049,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2072,7 +2060,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2083,7 +2071,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python3]]></title>
+    <url>%2F2018%2F03%2F13%2Fpython3%2F</url>
+    <content type="text"><![CDATA[基础语法 注释 单行注释：#号 多行注释：&#39;&#39;&#39;和&quot;&quot;&quot; 行与缩进 使用缩进来表示代码块，不需要使用大括号{}。同一个代码块的语句必须包含相同的缩进空格数 多行语句 12345678# 使用反斜杠(\)来实现多行语句total = item_one + \ item_two + \ item_three# 在 [], &#123;&#125;, 或 () 中的多行语句，不需要使用反斜杠(\) total = ['item_one', 'item_two', 'item_three', 'item_four', 'item_five'] 数字(Number)类型python中数字有四种类型：整数、长整数、浮点数和复数。 int (整数), 如 1, 只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。 bool (布尔),如 true。 float (浮点数), 如 1.23、3E-2 complex (复数), 如 1 + 2j、 1.1 + 2.2j 字符串(String) 12345678910111213141516171819202122# python中单引号和双引号使用完全相同。word = '字符串'sentence = "这是一个句子。"# 使用三引号('''或""")可以指定一个多行字符串。paragraph = """这是一个段落，可以由多行组成"""str='Runoob'print(str) # 输出字符串print(str[0:-1]) # 输出第一个到倒数第二个的所有字符print(str[0]) # 输出字符串第一个字符print(str[2:5]) # 输出从第三个开始到第五个的字符print(str[2:]) # 输出从第三个开始的后的所有字符print(str * 2) # 输出字符串两次print(str + '你好') # 连接字符串print('------------------------------')print('hello\nrunoob') # 使用反斜杠(\)+n转义特殊字符print(r'hello\nrunoob') # 在字符串前面添加一个 r，表示原始字符串，不会发生转义 等待用户输入input(&quot;\n\n按下 enter 键后退出。&quot;) Print 输出 123456y="b"# 换行输出print( y )print('---------')# 不换行输出print( y, end=" " ) import 与 from…import 1234将整个模块(somemodule)导入，格式为： import somemodule从某个模块中导入某个函数,格式为： from somemodule import somefunction从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc将某个模块中的全部函数导入，格式为： from somemodule import *]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[阿里云nginx配置https]]></title>
     <url>%2F2018%2F03%2F01%2Fnginx-https%2F</url>
     <content type="text"><![CDATA[一、阿里云申请免费证书这里有个坑，找这个免费证书要先选择保护类型为“一个域名”，然后选择品牌为“Symantec”，证书类型中才会出现免费的选项。 二、下载证书申请要过一段时间，才能在我的列表中看到，然后补全信息，过几分钟审核通过了，就可以下载了。下载好了，上传到服务器解压，有两个文件：12/usr/local/nginx/cert/214524977110083.pem/usr/local/nginx/cert/214524977110083.key 三、配置 NGINX 的 HTTPS1234567891011121314151617181920server &#123; listen 443; server_name www.lightquant.com; ssl on; root html; index index.html; ssl_certificate /usr/local/nginx/cert/214524977110083.pem ssl_certificate_key /usr/local/nginx/cert/214524977110083.pem ssl_session_timeout 5m; ssl_protocols TLSv1 TLSv1.1 TLSv1.2; ssl_ciphers AESGCM:ALL:!DH:!EXPORT:!RC4:+HIGH:!MEDIUM:!LOW:!aNULL:!eNULL; ssl_prefer_server_ciphers on;&#125;server &#123; listen 80; server_name lightquant.com; return 301 https://$server_name$request_uri;&#125; 完成！]]></content>
@@ -53,8 +64,8 @@
         <category>java框架</category>
       </categories>
       <tags>
-        <tag>SSM</tag>
         <tag>Spring</tag>
+        <tag>SSM</tag>
       </tags>
   </entry>
   <entry>
@@ -241,8 +252,8 @@
         <category>java框架</category>
       </categories>
       <tags>
-        <tag>Spring</tag>
         <tag>SSH</tag>
+        <tag>Spring</tag>
       </tags>
   </entry>
   <entry>
