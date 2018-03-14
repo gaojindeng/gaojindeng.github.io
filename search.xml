@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[python3]]></title>
     <url>%2F2018%2F03%2F13%2Fpython3%2F</url>
-    <content type="text"><![CDATA[基础语法 注释 单行注释：#号 多行注释：&#39;&#39;&#39;和&quot;&quot;&quot; 行与缩进 使用缩进来表示代码块，不需要使用大括号{}。同一个代码块的语句必须包含相同的缩进空格数 多行语句 12345678# 使用反斜杠(\)来实现多行语句total = item_one + \ item_two + \ item_three# 在 [], &#123;&#125;, 或 () 中的多行语句，不需要使用反斜杠(\) total = ['item_one', 'item_two', 'item_three', 'item_four', 'item_five'] 数字(Number)类型python中数字有四种类型：整数、长整数、浮点数和复数。 int (整数), 如 1, 只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。 bool (布尔),如 true。 float (浮点数), 如 1.23、3E-2 complex (复数), 如 1 + 2j、 1.1 + 2.2j 字符串(String) 12345678910111213141516171819202122# python中单引号和双引号使用完全相同。word = '字符串'sentence = "这是一个句子。"# 使用三引号('''或""")可以指定一个多行字符串。paragraph = """这是一个段落，可以由多行组成"""str='Runoob'print(str) # 输出字符串print(str[0:-1]) # 输出第一个到倒数第二个的所有字符print(str[0]) # 输出字符串第一个字符print(str[2:5]) # 输出从第三个开始到第五个的字符print(str[2:]) # 输出从第三个开始的后的所有字符print(str * 2) # 输出字符串两次print(str + '你好') # 连接字符串print('------------------------------')print('hello\nrunoob') # 使用反斜杠(\)+n转义特殊字符print(r'hello\nrunoob') # 在字符串前面添加一个 r，表示原始字符串，不会发生转义 等待用户输入input(&quot;\n\n按下 enter 键后退出。&quot;) Print 输出 123456y="b"# 换行输出print( y )print('---------')# 不换行输出print( y, end=" " ) import 与 from…import 1234将整个模块(somemodule)导入，格式为： import somemodule从某个模块中导入某个函数,格式为： from somemodule import somefunction从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc将某个模块中的全部函数导入，格式为： from somemodule import *]]></content>
+    <content type="text"><![CDATA[基础语法1. 注释 - 单行注释：#号 - 多行注释：`&apos;&apos;&apos;` 和 `&quot;&quot;&quot;` 2. 行与缩进 使用缩进来表示代码块，不需要使用大括号{}。同一个代码块的语句必须包含相同的缩进空格数3. 多行语句1234567# 使用反斜杠(\)来实现多行语句total = item_one + \ item_two + \ item_three# 在 [], &#123;&#125;, 或 () 中的多行语句，不需要使用反斜杠(\) total = ['item_one', 'item_two', 'item_three', 'item_four', 'item_five'] 4. 数字(Number)类型python中数字有四种类型：整数、长整数、浮点数和复数。 int (整数), 如 1, 只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。 bool (布尔),如 true。 float (浮点数), 如 1.23、3E-2 complex (复数), 如 1 + 2j、 1.1 + 2.2j 5. 字符串(String)12345678910111213141516171819202122# python中单引号和双引号使用完全相同。word = '字符串'sentence = "这是一个句子。"# 使用三引号('''或""")可以指定一个多行字符串。paragraph = """这是一个段落，可以由多行组成"""str='Runoob'print(str) # 输出字符串print(str[0:-1]) # 输出第一个到倒数第二个的所有字符print(str[0]) # 输出字符串第一个字符print(str[2:5]) # 输出从第三个开始到第五个的字符print(str[2:]) # 输出从第三个开始的后的所有字符print(str * 2) # 输出字符串两次print(str + '你好') # 连接字符串print('------------------------------')print('hello\nrunoob') # 使用反斜杠(\)+n转义特殊字符print(r'hello\nrunoob') # 在字符串前面添加一个 r，表示原始字符串，不会发生转义 6. 等待用户输入input(&quot;\n\n按下 enter 键后退出。&quot;)7. Print 输出123456y="b"# 换行输出print( y )print('---------')# 不换行输出print( y, end=" " ) 8. import 与 from…import1234将整个模块(somemodule)导入，格式为： import somemodule从某个模块中导入某个函数,格式为： from somemodule import somefunction从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc将某个模块中的全部函数导入，格式为： from somemodule import * 基本数据类型1. 多个变量赋值 a,b,c = 1 ,3, &#39;sdf&#39; 2. 标准数据类型 Number（数字） String（字符串） List（列表） Tuple（元组） Sets（集合） Dictionary（字典） type() 函数和isinstance()可以用来查询变量所指的对象类型 1234a = 1# 返回 &lt;class &apos;int&apos;&gt;isinstance(a, int)# 返回 True 两者区别： type()不会认为子类是一种父类类型。 isinstance()会认为子类是一种父类类型。 注意：在 Python2 中是没有布尔型的，它用数字 0 表示 False，用 1 表示 True。到 Python3 中，把 True 和 False 定义成关键字了，但它们的值还是 1 和 0，它们可以和数字相加。 3. del语句del语句删除单个或多个对象del a4. 次方计算用**表示2 ** 3返回85. List（列表）list = [ &#39;abcd&#39;, 786 , 2.23, &#39;lightquant&#39;, 70.2 ] 与Python字符串不一样的是，列表中的元素是可以改变的。list[0] = a 6. Tuple（元组）tuple = ( &#39;abcd&#39;, 786 , 2.23, &#39;lightquant&#39;, 70.2 ) 元组（tuple）与列表类似，不同之处在于元组的元素不能修改。 7. Set（集合）集合（set）是一个无序不重复元素的序列。基本功能是进行成员关系测试和删除重复元素。可以使用大括号 { } 或者 set() 函数创建集合，注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。 1234567891011student = &#123;'Tom', 'Jim', 'Mary', 'Tom', 'Jack', 'Rose'&#125;student2 = set('asd')# set可以进行集合运算a = set('abracadabra')b = set('alacazam')print(a)print(a - b) # a和b的差集print(a | b) # a和b的并集print(a &amp; b) # a和b的交集print(a ^ b) # a和b中不同时存在的元素 8. Dictionary（字典）类似与java的map keys()输出所有的key values()输入所有的值 1234567891011dict = &#123;&#125;dict['one'] = "1 - 灯塔量化"dict[2] = "2 - lightquant" tinydict = &#123;'name': 'lightquant','code':1, 'site': 'www.runoob.com'&#125;print (dict['one']) # 输出键为 'one' 的值print (dict[2]) # 输出键为 2 的值print (tinydict) # 输出完整的字典print (tinydict.keys()) # 输出所有键print (tinydict.values()) # 输出所有值 9. Python数据类型转换 1234567891011121314151617181920212223242526272829303132333435363738# 1、int(n,base)函数a = int('110',2) # 二进制转换10进制，必须是字符串类型b = int(3.6) # 向下取整# 2、float() 可是是字符串，也可以是数字，转换为浮点类型# 3、complex() 函数 返回复数表达式（复数是什么？有什么用呢？）complex(1, 2) # return (1 + 2j)complex(1) # return (1 + 0j)complex("1+2j") # return (1 + 2j)# 4、str() 函数 将对象转化为适于人阅读的形式。dict = &#123;'light': 'lightquant.com', 'google': 'google.com'&#125;# return "&#123;'light': 'lightquant.com', 'google': 'google.com'&#125;"# 5、repr() 函数 与str() 类似# 6、eval() 函数x = 2 ; eval('x * 2') # return 4# 7、tuple()函数 将列表转换为元组。。# 8、list()方法 将元组转换为列表。# 9、dict() 函数 用于创建一个字典。# 10、frozenset() 函数 返回一个冻结的集合，冻结后集合不能再添加或删除任何元素。# 11、chr() 函数 返回值是当前整数对应的ascii字符。print chr(0x30) # return 0print chr(48) # return 0# 12、ord() 函数 与chr()相反print chr(0) # return 0# 13、hex() 函数 返回16进制# 14、oct() 函数 返回8进制]]></content>
       <categories>
         <category>python</category>
       </categories>
@@ -75,8 +75,8 @@
         <category>java框架</category>
       </categories>
       <tags>
-        <tag>SSM</tag>
         <tag>Spring</tag>
+        <tag>SSM</tag>
       </tags>
   </entry>
   <entry>
@@ -263,8 +263,8 @@
         <category>java框架</category>
       </categories>
       <tags>
-        <tag>Spring</tag>
         <tag>SSH</tag>
+        <tag>Spring</tag>
       </tags>
   </entry>
   <entry>
