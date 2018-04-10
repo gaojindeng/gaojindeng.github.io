@@ -125,7 +125,7 @@
 
 
 
-  <title>js常用和AJAX | lightquant.com</title>
+  <title>标签: SpringCloud | lightquant.com</title>
   
 
 
@@ -154,7 +154,7 @@
     
   
 
-  <div class="container sidebar-position-right page-post-detail">
+  <div class="container sidebar-position-right ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -292,246 +292,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>SpringCloud<small>标签</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2017/12/30/js和JQuery常用/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lightquant">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lightquant.com">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/04/10/SpringCloud/" itemprop="url">
+              
+                <span itemprop="name">SpringCloud</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">js常用和AJAX</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-30T16:07:10+08:00">2017-12-30</time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h2 id="JS项目常用"><a href="#JS项目常用" class="headerlink" title="JS项目常用"></a>JS项目常用</h2><ol>
-<li><p>判断数据类型<br><code>typeof(s)  字符串：&quot;string&quot;，数字：&quot;number&quot;；</code></p>
-</li>
-<li><p>找指定的子标签<br>单个：<code>$(order).find(&quot;i&quot;);</code><br>多个：<code>$(order).find(&quot;i&quot;).each (function(i,data) ....)；</code></p>
-</li>
-<li><p>遍历指定class 元素<br><code>$(&quot;.capital-order&quot;).each(function(i, data) {...}</code></p>
-</li>
-<li><p>DOM获取value和name<br><code>data.value  data.name</code></p>
-</li>
-<li><p>jquery获取value和name<br><code>$().val() ；$().attr(&quot;name&quot;)</code></p>
-</li>
-<li><p>jquery中attr和prop的区别<br><code>对应DOM中attribute()和properties()
-attr获取的是原始的值，prop是结果，比如checked、selected、disabled
-attr获取到的是里面的值，而prop是true或者false</code></p>
-</li>
-<li><p>设置标签属性的值<br><code>$().attr(&quot;key&quot;,&quot;value&quot;);</code></p>
-</li>
-<li><p>修改css的值<br><code>$(&quot;&quot;).css(&quot;key&quot;,&quot;value&quot;);</code><br><code>dom.style.${css名称}</code></p>
-</li>
-<li><p>获取/设置标签内容<br><code>$(&quot;&quot;).html(&quot;&quot;);$(&quot;&quot;).text()</code><br><code>dom.innerHTML  dom.innerText</code></p>
-</li>
-<li><p>四舍五入<br><code>Number(数值).toFixed(2)</code></p>
-</li>
-<li><p>转int<br><code>parseInt(s)</code></p>
-</li>
-<li><p>跳转页面<br><code>window.location.href=url;</code></p>
-</li>
-<li><p>追加<br><code>append(text);</code></p>
-</li>
-<li><p>找出其他同类元素，除了自己<br><code>$(&quot;&quot;).siblings()</code></p>
-</li>
-<li><p>把from里的有name标签的封装成对象<br><code>$(&quot;form表单&quot;).serialize()</code></p>
-</li>
-<li><p>判断标签是否存在某个class<br><code>$(i).hasClass(&quot;c-red&quot;)</code></p>
-</li>
-<li><p>隐藏光标，设置字体为红色<br><code>text-shadow:0 0 0 red;color:transparent;</code></p>
-</li>
-<li><p>触发按钮事件<br><code>$(&quot;#close&quot;).trigger(&quot;click&quot;);</code></p>
-</li>
-<li><p>显示/隐藏切换<br>jq：<code>$(&quot;p&quot;).hide(); $(&quot;p&quot;).show();</code><br>js：<code>ui.style.display=&quot;none&quot;; ui.style.display=&quot;&quot;;</code><br>其他：<code>ui.style.visibility= &quot;visible/hidden&quot;;</code></p>
-</li>
-<li><p>查询父标签<br><code>$(&#39;#items1&#39;).closest(&#39;.parent1&#39;);</code><br><code>$(&#39;#items1&#39;).parents(&#39;.parent1&#39;);</code></p>
-</li>
-<li><p>点击事件<br><code>$(&quot;#strategy&quot;).trigger(&quot;click&quot;);</code></p>
-</li>
-<li><p>添加/删除class<br><code>$(&quot;#&quot;).addClass();</code><br><code>$(&quot;#&quot;).removeClass();</code></p>
-</li>
-<li><p>AJAX</p>
-</li>
-</ol>
-<h3 id="js原生方式："><a href="#js原生方式：" class="headerlink" title="js原生方式："></a>js原生方式：</h3><ol>
-<li><p>创建XMLHttpRequest对象</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="built_in">window</span>.ActiveXObject) &#123;</span><br><span class="line">	req = <span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	req = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>与服务器建立连</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//method:get|post url:服务器相对或绝对路径  asynch:true|false 默认为true;</span></span><br><span class="line">req.open(<span class="string">"post"</span>, <span class="string">"user"</span>,<span class="literal">true</span>);</span><br><span class="line"><span class="comment">//Post提交方式需要设置Request头部信息</span></span><br><span class="line">req.setRequestHeader(<span class="string">"Content-type"</span>,<span class="string">"application/x-www-form-urlencoded"</span>);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>发送请求</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">req.send(<span class="string">"name="</span> + name + <span class="string">"&amp;pwd="</span> + pwd);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置回调函数</p>
-<p>​            </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//readyState 0未初始化 1正在加载 2已加载 3交互中 4响应完成  </span></span><br><span class="line">req.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (req.readyState == <span class="number">4</span> &amp;&amp; req.status == <span class="number">200</span>) &#123;</span><br><span class="line">		<span class="keyword">var</span> text = req.responseText;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="JQuery方式"><a href="#JQuery方式" class="headerlink" title="JQuery方式"></a>JQuery方式</h3><h4 id="方式1："><a href="#方式1：" class="headerlink" title="方式1："></a>方式1：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">		type:<span class="string">"get"</span>,				<span class="comment">//请求类型get/post</span></span><br><span class="line">		url:<span class="string">"goods"</span>,			<span class="comment">//待载入页面的URL地址</span></span><br><span class="line">		data:&#123;<span class="string">"uId"</span>:v&#125;,			<span class="comment">//待发送 Key/value 参数。</span></span><br><span class="line">		dataType:<span class="string">"json"</span>,		<span class="comment">//数据类型</span></span><br><span class="line">	error:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">		alert(<span class="string">"出现错误"</span>+data);</span><br><span class="line">	&#125;,</span><br><span class="line">	success:<span class="function"><span class="keyword">function</span>(<span class="params">data,status</span>)</span>&#123;</span><br><span class="line">		<span class="comment">//alert("调用成功");</span></span><br><span class="line">	&#125;,</span><br><span class="line">	beforeSend:<span class="function"><span class="keyword">function</span>(<span class="params">req</span>)</span>&#123;</span><br><span class="line">		<span class="comment">//alert("发送之前");</span></span><br><span class="line">	&#125;</span><br><span class="line">		</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h4 id="方式2："><a href="#方式2：" class="headerlink" title="方式2："></a>方式2：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$.get(url, [data], [callback], [type]);</span><br><span class="line"><span class="comment">//$.post()同上</span></span><br><span class="line"><span class="comment">//url:待载入页面的URL地址</span></span><br><span class="line"><span class="comment">//data:待发送 Key/value 参数。</span></span><br><span class="line"><span class="comment">//callback:载入成功时回调函数。</span></span><br><span class="line"><span class="comment">//timeout:超时时间</span></span><br><span class="line"><span class="comment">//type:返回内容格式，xml, html, script, json, text, _default。</span></span><br></pre></td></tr></table></figure>
-<h4 id="方式3："><a href="#方式3：" class="headerlink" title="方式3："></a>方式3：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.getJSON(url).done(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">	alert(<span class="string">'请求成功！json数据：'</span>+data);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    
-    
-
-    
-      <div>
-        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
-    <img id="wechat_subscriber_qcode" src="/uploads/weixin.jpg" alt="lightquant wechat" style="width: 200px; max-width: 100%;"/>
-    <div>欢迎您订阅灯塔量化公众号！</div>
-</div>
-
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-04-10T00:00:00+08:00"
+              content="2018-04-10" >
+          04-10
+        </time>
       </div>
-    
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/js/" rel="tag"># js</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/12/30/redis/" rel="next" title="redis">
-                <i class="fa fa-chevron-left"></i> redis
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/07/MyBatis多对一、多对多注解方式/" rel="prev" title="MyBatis多对一、多对多注解方式实现">
-                MyBatis多对一、多对多注解方式实现 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -539,15 +347,6 @@ attr获取到的是里面的值，而prop是true或者false</code></p>
 
 
           
-
-  
-    <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDA1MC8xMDU4OA"></div>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -568,17 +367,8 @@ attr获取到的是里面的值，而prop是true或者false</code></p>
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -658,22 +448,6 @@ attr获取到的是里面的值，而prop是true或者false</code></p>
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS项目常用"><span class="nav-number">1.</span> <span class="nav-text">JS项目常用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#js原生方式："><span class="nav-number">1.1.</span> <span class="nav-text">js原生方式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JQuery方式"><span class="nav-number">1.2.</span> <span class="nav-text">JQuery方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方式1："><span class="nav-number">1.2.1.</span> <span class="nav-text">方式1：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方式2："><span class="nav-number">1.2.2.</span> <span class="nav-text">方式2：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方式3："><span class="nav-number">1.2.3.</span> <span class="nav-text">方式3：</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -810,10 +584,6 @@ attr获取到的是里面的值，而prop是true或者false</code></p>
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
-
-
 
   
 
@@ -842,17 +612,6 @@ attr获取到的是里面的值，而prop是true或者false</code></p>
 
 
 
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
   
 
 
