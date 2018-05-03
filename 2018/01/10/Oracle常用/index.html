@@ -75,18 +75,18 @@
 
 
 
-<meta name="description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#48;&amp;#51;&amp;#x36;&amp;#x31;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#64;&amp;#x71;&amp;#x71;&amp;#46;&amp;#x63;&amp;#">
+<meta name="description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#53;&amp;#48;&amp;#51;&amp;#54;&amp;#x31;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#113;&amp;#x2e;&amp;#99;&amp;#x6">
 <meta property="og:type" content="website">
 <meta property="og:title" content="lightquant.com">
 <meta property="og:url" content="http://gaojindeng.com/about/index.html">
 <meta property="og:site_name" content="lightquant.com">
-<meta property="og:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#48;&amp;#51;&amp;#x36;&amp;#x31;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#64;&amp;#x71;&amp;#x71;&amp;#46;&amp;#x63;&amp;#">
+<meta property="og:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#53;&amp;#48;&amp;#51;&amp;#54;&amp;#x31;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#113;&amp;#x2e;&amp;#99;&amp;#x6">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://gaojindeng.com/images/weixin.jpg">
 <meta property="og:updated_time" content="2018-02-09T14:59:33.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lightquant.com">
-<meta name="twitter:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#x35;&amp;#48;&amp;#51;&amp;#x36;&amp;#x31;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#64;&amp;#x71;&amp;#x71;&amp;#46;&amp;#x63;&amp;#">
+<meta name="twitter:description" content="关于我 爱编程：再也找不到比编程更有趣更有创造性的事情了！ 爱游戏：喜欢和朋友在一起打游戏，没有什么比打游戏更放松了。 爱理财：实现财富自由才是我的终极梦想！   联系我 网站：http://www.lightquant.com/ 邮箱：&amp;#53;&amp;#48;&amp;#51;&amp;#54;&amp;#x31;&amp;#48;&amp;#x33;&amp;#x32;&amp;#x36;&amp;#64;&amp;#113;&amp;#113;&amp;#x2e;&amp;#99;&amp;#x6">
 <meta name="twitter:image" content="http://gaojindeng.com/images/weixin.jpg">
 
 
@@ -396,7 +396,7 @@
         <h2 id="一、基本常用语句"><a href="#一、基本常用语句" class="headerlink" title="一、基本常用语句"></a>一、基本常用语句</h2><h4 id="1-索引、主键、序列、权限"><a href="#1-索引、主键、序列、权限" class="headerlink" title="1. 索引、主键、序列、权限"></a>1. 索引、主键、序列、权限</h4><blockquote>
 <ol>
 <li>索引<br>新建索引：create index 索引名 on 表名(列名,……)<br>删除索引：drop index ttt;<br>新建唯一索引：create unique index 索引名 on 表名（列名……）<br>唯一索引用途：一个数据列，不能作为主键，而且允许为空，但是业务上要求唯一特性，这个时候用唯一性索引就是最好的旋转</li>
-<li>主键<br>新建主键：<br>alter table 表名 add constraint 主键名 primary key(主键列)<br>删除主键/外键：<br>alter table drop constraint 主键名<br>新建外键：<br>alter table add constraint 外键名 foreign key(外键列) </li>
+<li>主键<br>新建主键：<br>alter table 表名 add constraint 主键名 primary key(主键列)<br>删除主键/外键：<br>alter table drop constraint 主键名<br>新建外键：<br>alter table add constraint 外键名 foreign key(外键列) references 表名(列名)  </li>
 <li>序列<br>创建序列：<br>create sequence squ_t<br>start with 1<br>minvalue 1<br>maxvalue 999<br>increment by 1<br>nocycle               //是否循环，建议不使用<br>nocache;          //是否启用缓存。使用缓存可以提高sequence的访问效率<br>序列属性：<br>1.nextval : 返回下一个可用的序列值。<br>就算是被不同的用户调用，每次也返回一个唯一的值。<br>2.currval ：获取序列当前的值。<br>在currval调用之前，必须保证nextval已经获取过一次值。<br>删除序列：<br>drop sequence squ_t</li>
 <li>权限：<br>grant 权限等级(select,insert,update,delete) on 权限内容（table,视图，sequence,index） to (aaaaa)<br>aaaaaa:<br>public:对所有用户开放权限<br>group 分组名:对该组所有用户开放权限<br>username:对指定用户开放权限<br>grant select on tablename to scott<br>回收权限：<br>revoke select on tablename from scott</li>
 <li>exists in区别：<br>IN适合于外表大而内表小的情况；EXISTS适合于外表小而内表大的情</li>
@@ -560,7 +560,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -582,7 +582,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
