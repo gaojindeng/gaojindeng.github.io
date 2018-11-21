@@ -77,14 +77,14 @@
 
 <meta name="description" content="你得拼命奔跑，才能留在原地！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://gaojindeng.com/tags/index.html">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://gaojindeng.com/categories/index.html">
 <meta property="og:site_name" content="lightquant.com">
 <meta property="og:description" content="你得拼命奔跑，才能留在原地！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-09T14:15:09.703Z">
+<meta property="og:updated_time" content="2018-02-09T14:15:25.215Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
+<meta name="twitter:title" content="分类">
 <meta name="twitter:description" content="你得拼命奔跑，才能留在原地！">
 
 
@@ -117,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://gaojindeng.com/tags/"/>
+  <link rel="canonical" href="http://gaojindeng.com/categories/"/>
 
 
 
@@ -394,8 +394,11 @@
         <h2 id="一、Activiti表单"><a href="#一、Activiti表单" class="headerlink" title="一、Activiti表单"></a>一、Activiti表单</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">startEvent</span> <span class="attr">id</span>=<span class="string">"startevent1"</span> <span class="attr">name</span>=<span class="string">"Start"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">extensionElements</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activiti:formProperty</span> <span class="attr">id</span>=<span class="string">"userName"</span> <span class="attr">name</span>=<span class="string">"userName"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">variable</span>=<span class="string">"userName"</span> <span class="attr">type</span>=<span class="string">"string"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activiti:formProperty</span> <span class="attr">id</span>=<span class="string">"age"</span> <span class="attr">name</span>=<span class="string">"age"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">variable</span>=<span class="string">"age"</span> <span class="attr">type</span>=<span class="string">"string"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">extensionElements</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">startEvent</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">FormService formService = engine.getFormService();</span><br><span class="line">StartFormData sfd = formService.getStartFormData(pd.getId());</span><br><span class="line">List&lt;FormProperty&gt; formProps = sfd.getFormProperties();</span><br><span class="line">Map&lt;String, Object&gt; variables = Maps.newHashMap();</span><br><span class="line"><span class="keyword">for</span>(FormProperty fp : formProps) &#123;</span><br><span class="line">    System.out.println(fp.getName() + <span class="string">"--"</span> + fp.getType());</span><br><span class="line">	<span class="keyword">if</span> (StringFormType.class.isInstance(formProperty.getType())) &#123;</span><br><span class="line">		variables.put(formProperty.getId(), <span class="string">"1"</span>);</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (DateFormType.class.isInstance(formProperty.getType())) &#123;</span><br><span class="line">		variables.put(formProperty.getId(), <span class="string">"1"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	taskService.complete(task.getId(), variables);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="执行任务"><a href="#执行任务" class="headerlink" title="执行任务"></a>执行任务</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这样也会执行任务到下一个任务节点</span></span><br><span class="line">proccessEngine.getFormService().submitTaskFormData(task.getId(),map);</span><br></pre></td></tr></table></figure>
+<h2 id="二、事件监听"><a href="#二、事件监听" class="headerlink" title="二、事件监听"></a>二、事件监听</h2><h4 id="配置监听"><a href="#配置监听" class="headerlink" title="配置监听"></a>配置监听</h4><p><strong>activiti.cfg.xml配置文件添加配置：</strong><br>添加一个bean实现ActivitiEventListener接口<br>根据ActivitiEventType枚举判断监听的类型</p>
+<p><strong>程序添加</strong><br><code>runtimeService.addEventListener(new MyEventListenner());</code></p>
+<h4 id="主动触发监听自定义类型"><a href="#主动触发监听自定义类型" class="headerlink" title="主动触发监听自定义类型"></a>主动触发监听自定义类型</h4><p><code>runtimeService.dispatchEvent(new ActivitiEventImpl(ActivitiEventType.CUSTOM));</code></p>
 <h2 id="会签"><a href="#会签" class="headerlink" title="会签"></a>会签</h2><p>利用多实例，实现多个审核通过</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>taskAssignee 优先 taskCandidateGroup<br>delegate &gt; setAssignee &gt; claim  后两者都是设置Assignee</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>taskAssignee 优先 taskCandidateGroup<br>delegate &gt; setAssignee &gt; claim  后两者都是设置Assignee(代理人)，设置claim时，存在就会抛出异常不会设置成功</p>
 
       
     </div>
@@ -543,7 +546,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -554,7 +557,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -603,7 +606,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、Activiti表单"><span class="nav-number">1.</span> <span class="nav-text">一、Activiti表单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#执行任务"><span class="nav-number">1.0.1.</span> <span class="nav-text">执行任务</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#会签"><span class="nav-number">2.</span> <span class="nav-text">会签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">3.</span> <span class="nav-text">其他</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、Activiti表单"><span class="nav-number">1.</span> <span class="nav-text">一、Activiti表单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#执行任务"><span class="nav-number">1.0.1.</span> <span class="nav-text">执行任务</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、事件监听"><span class="nav-number">2.</span> <span class="nav-text">二、事件监听</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#配置监听"><span class="nav-number">2.0.1.</span> <span class="nav-text">配置监听</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主动触发监听自定义类型"><span class="nav-number">2.0.2.</span> <span class="nav-text">主动触发监听自定义类型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#会签"><span class="nav-number">3.</span> <span class="nav-text">会签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">4.</span> <span class="nav-text">其他</span></a></li></ol></div>
             
 
           </div>

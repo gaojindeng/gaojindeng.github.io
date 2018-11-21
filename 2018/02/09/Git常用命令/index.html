@@ -123,7 +123,7 @@
 
 
 
-  <title>阿里云nginx配置https | lightquant.com</title>
+  <title> | lightquant.com</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/03/01/nginx-https/">
+    <link itemprop="mainEntityOfPage" href="http://gaojindeng.com/2018/02/09/Git常用命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lightquant">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">阿里云nginx配置https</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -333,7 +333,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-01T13:33:10+08:00">2018-03-01</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-09T23:00:20+08:00">2018-02-09</time>
             
 
             
@@ -341,28 +341,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -391,10 +369,25 @@
       
 
       
-        <h2 id="一、阿里云申请免费证书"><a href="#一、阿里云申请免费证书" class="headerlink" title="一、阿里云申请免费证书"></a>一、阿里云申请免费证书</h2><p><img src="/images/https2.jpg" alt="申请证书"><br>这里有个坑，找这个免费证书要先选择保护类型为“一个域名”，然后选择品牌为“Symantec”，证书类型中才会出现免费的选项。</p>
-<h2 id="二、下载证书"><a href="#二、下载证书" class="headerlink" title="二、下载证书"></a>二、下载证书</h2><p><img src="/images/https1.jpg" alt="证书列表"><br>申请要过一段时间，才能在我的列表中看到，然后补全信息，过几分钟审核通过了，就可以下载了。<br>下载好了，上传到服务器解压，有两个文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/nginx/cert/214524977110083.pem</span><br><span class="line">/usr/local/nginx/cert/214524977110083.key</span><br></pre></td></tr></table></figure></p>
-<h2 id="三、配置-NGINX-的-HTTPS"><a href="#三、配置-NGINX-的-HTTPS" class="headerlink" title="三、配置 NGINX 的 HTTPS"></a>三、配置 NGINX 的 HTTPS</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  listen       443;</span><br><span class="line">  server_name  www.lightquant.com;</span><br><span class="line">  ssl          on;</span><br><span class="line">  root 		   html;</span><br><span class="line">  index        index.html; </span><br><span class="line"></span><br><span class="line">  ssl_certificate   /usr/<span class="built_in">local</span>/nginx/cert/214524977110083.pem</span><br><span class="line">  ssl_certificate_key /usr/<span class="built_in">local</span>/nginx/cert/214524977110083.pem</span><br><span class="line">  ssl_session_timeout 5m;</span><br><span class="line">  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">  ssl_ciphers AESGCM:ALL:!DH:!EXPORT:!RC4:+HIGH:!MEDIUM:!LOW:!aNULL:!eNULL;</span><br><span class="line">  ssl_prefer_server_ciphers on;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen        80;</span><br><span class="line">  server_name   lightquant.com;</span><br><span class="line">  <span class="built_in">return</span> 301    https://<span class="variable">$server_name</span><span class="variable">$request_uri</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>完成！</strong></p>
+        <hr>
+<p>title: Git常用命令<br>date: 2016-07-09 16:07:10<br>tags: GitHub</p>
+<h2 id="categories-GitHub"><a href="#categories-GitHub" class="headerlink" title="categories: GitHub"></a>categories: GitHub</h2><h2 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h2><p>1.<code>pwd</code> 显示当前目录<br>2.<code>git init</code> 把当前目录变成git可以管理的仓库</p>
+<h2 id="配置-Git"><a href="#配置-Git" class="headerlink" title="配置 Git"></a>配置 Git</h2><ul>
+<li><code>$ git config --global user.name &quot;John Doe&quot;</code></li>
+<li><code>$ git config --global user.email johndoe@example.com</code><h2 id="提交文件到仓库"><a href="#提交文件到仓库" class="headerlink" title="提交文件到仓库"></a>提交文件到仓库</h2>1.<code>git add</code> 文件名.后缀<br>2.<code>git commit -m</code> “描述文字 注释”<br>3.<code>git status</code> 查看文件是否提交<br>4.<code>git diff file</code> 查看文件对比<br>5.<code>git log</code> 查看git提交日志，<code>git log --pretty=oneline</code> 简化输出<h2 id="版本回退和撤消"><a href="#版本回退和撤消" class="headerlink" title="版本回退和撤消"></a>版本回退和撤消</h2></li>
+</ul>
+<p>1.<code>git reset --hard HEAD^</code> 回退上一个版本<br>2.<code>git reset --hard HEAD^^</code>回退上上一个版本<br>3.<code>git reset --hard HEAD~100</code> 回退前100个版本<br>4.<code>git reflog</code> 获取版本号<br>5.<code>git reset --hard</code> 版本号    恢复这个版本<br>6.<code>git checkout -- file</code> 丢弃工作区的修改<br>7.<code>git reset HEAD file</code>  可以把暂存区的修改撤销掉，重新放回工作区</p>
+<h2 id="理解工作区与暂存区的区别？"><a href="#理解工作区与暂存区的区别？" class="headerlink" title="理解工作区与暂存区的区别？"></a>理解工作区与暂存区的区别？</h2><p>1.工作区：就是你在电脑上看到的目录，比如目录下testgit里的文件(.git隐藏目录    版本库除外)。或者以后需要再新建的目录文件等等都属于工作区范畴。<br>2.版本库(Repository)：工作区有一个隐藏目录.git,这个不属于工作区，这是版本      库。其中版本库里面存了很多东西，其中最重要的就是stage(暂存区)，还有Git为我     们自动创建了第一个分支master,以及指向master的一个指针HEAD。</p>
+<blockquote>
+<p>git add  就是把文件从工作区修改添加到暂存区；</p>
+<h2 id="远程仓库-SSH-Keys"><a href="#远程仓库-SSH-Keys" class="headerlink" title="远程仓库 SSH Keys"></a>远程仓库 SSH Keys</h2><p>1.<code>ssh-keygen -t rsa -C &quot;503610326@qq.com&quot;</code> 用户目录会多一个.ssh目    录。id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。<br>2.登录github,打开” settings”中的SSH Keys页面，然后点击“Add SSH Key”,    填上任意title，在Key文本框里黏贴id_rsa.pub文件的内容。</p>
+<h2 id="关联和提交文件到远程仓库"><a href="#关联和提交文件到远程仓库" class="headerlink" title="关联和提交文件到远程仓库"></a>关联和提交文件到远程仓库</h2><p>1.登录github，创建一个与本地同名的仓库<br>2.在本地仓库运行命令<code>git remote add origin http://...</code>远程仓库的地址<br>3.本地库的内容推送到远程，使用 <code>git push</code>命令，实际上是把当前分支master推送    到远程。<br>4.<code>git push -u origin master</code> 第一次要加-u 然后输入用户名，密码<br>5.<code>git push origin master</code> 以后每一次提交到服务器<br>6.<code>git remote -v</code>查看远程库信息</p>
+<h2 id="如何从远程库克隆"><a href="#如何从远程库克隆" class="headerlink" title="如何从远程库克隆"></a>如何从远程库克隆</h2><p>1.在github上创建一个仓库<br>2.本地 <code>git clone https://...</code>仓库名 本地就会生成目录了</p>
+<h2 id="管理分支"><a href="#管理分支" class="headerlink" title="管理分支"></a>管理分支</h2><p>1.<code>git checkout -b dev</code> 创建并切换分支 也可以分两步：<code>git branch dev</code>+<code>git checkout dev</code><br>2.<code>git branch</code> 查看当前分支<br>3.<code>git merge dev</code> 合并分支 指定分支合并到当前分支<br>4.<code>git branch -d name</code> 删除分支<br>5.<code>git merge --no-ff -m &quot;描述&quot; dev</code>   用普通模式合并，合并后的历史有分支，能看出来曾经做过合并。<br>6.<code>git stash</code> 隐藏分支<br>7.<code>git stash list</code> 查看隐藏分支<br>8.<code>git stash apply</code> 恢复隐藏分支 但不会删除 <code>git stash drop</code> 删除隐藏分支<br>9.<code>git stash pop</code> 恢复隐藏分支并且删除<br>10.<code>git branch -D &lt;name&gt;</code>  删除没有合并的分支<br>11.<code>git push origin branch-name</code> 把本地分支推送到远程仓库<br>12.推送失败，<code>git pull origin branch-name</code>拉去远程分支与本地合并，解决分支，继续提交<br>13.<code>git checkout -b dev origin/dev</code>   在本地创建和远程分支对应的分支</p>
+<h2 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h2><p>1.<code>git merge -no-ff -m &quot;注释&quot; dev</code> 合并dev分支 保留dev分支信息(删除该分 区信息还可以查看到)<br>2.分支策略：首先master主分支应该是非常稳定的，也就是用来发布新版本，一般情况下不允许在上面干活，干活一般情况下在新建的dev分支上干活，干完后，比如上要发 布，或者说dev分支代码稳定后可以合并到主分支master上来。</p>
+<h2 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h2><p>1.每个bug都可以通过一个临时分支来修复，修复完成后，合并分支，然后将临时的分    支删除掉。<br>2.<code>git stash</code> 将当前的工作现场隐藏起来 等Bug分区修复好BUG。<br>3.<code>git stash list</code>查看<br>4.<code>git stash apply</code>恢复<code>git stash drop</code> 删除stash内容<br>5.<code>git stash pop</code>回复并删除stash内容</p>
+<h2 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h2><p>1.当你从远程库克隆时候，实际上Git自动把本地的master分支和远程的master分支     对应起来了，并且远程库的默认名称是origin。<br>2.<code>git remote</code> 查看远程库的信息 -v 查看详细信息<br>3.<code>git push origin master</code> 推送到远程的分支上去<br>4.一般是主分支推送到远程的</p>
+</blockquote>
 
       
     </div>
@@ -418,12 +411,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/nginx/" rel="tag"># nginx</a>
-          
-        </div>
-      
 
       
       
@@ -433,8 +420,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/12/activeMQ/" rel="next" title="activeMQ">
-                <i class="fa fa-chevron-left"></i> activeMQ
+              <a href="/2018/01/21/数据库事务中的隔离级别/" rel="next" title="数据库事务中的隔离级别">
+                <i class="fa fa-chevron-left"></i> 数据库事务中的隔离级别
               </a>
             
           </div>
@@ -443,8 +430,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/13/python3/" rel="prev" title="python基本语法">
-                python基本语法 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/10/SSM框架整合/" rel="prev" title="SSM框架整合">
+                SSM框架整合 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -602,7 +589,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、阿里云申请免费证书"><span class="nav-number">1.</span> <span class="nav-text">一、阿里云申请免费证书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、下载证书"><span class="nav-number">2.</span> <span class="nav-text">二、下载证书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、配置-NGINX-的-HTTPS"><span class="nav-number">3.</span> <span class="nav-text">三、配置 NGINX 的 HTTPS</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#categories-GitHub"><span class="nav-number">1.</span> <span class="nav-text">categories: GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建版本库"><span class="nav-number">2.</span> <span class="nav-text">创建版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-Git"><span class="nav-number">3.</span> <span class="nav-text">配置 Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提交文件到仓库"><span class="nav-number">4.</span> <span class="nav-text">提交文件到仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本回退和撤消"><span class="nav-number">5.</span> <span class="nav-text">版本回退和撤消</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#理解工作区与暂存区的区别？"><span class="nav-number">6.</span> <span class="nav-text">理解工作区与暂存区的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库-SSH-Keys"><span class="nav-number">7.</span> <span class="nav-text">远程仓库 SSH Keys</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联和提交文件到远程仓库"><span class="nav-number">8.</span> <span class="nav-text">关联和提交文件到远程仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何从远程库克隆"><span class="nav-number">9.</span> <span class="nav-text">如何从远程库克隆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管理分支"><span class="nav-number">10.</span> <span class="nav-text">管理分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支管理策略"><span class="nav-number">11.</span> <span class="nav-text">分支管理策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bug分支"><span class="nav-number">12.</span> <span class="nav-text">Bug分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多人协作"><span class="nav-number">13.</span> <span class="nav-text">多人协作</span></a></li></ol></div>
             
 
           </div>

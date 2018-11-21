@@ -77,14 +77,14 @@
 
 <meta name="description" content="你得拼命奔跑，才能留在原地！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://gaojindeng.com/tags/index.html">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://gaojindeng.com/categories/index.html">
 <meta property="og:site_name" content="lightquant.com">
 <meta property="og:description" content="你得拼命奔跑，才能留在原地！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-09T14:15:09.703Z">
+<meta property="og:updated_time" content="2018-02-09T14:15:25.215Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
+<meta name="twitter:title" content="分类">
 <meta name="twitter:description" content="你得拼命奔跑，才能留在原地！">
 
 
@@ -117,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://gaojindeng.com/tags/"/>
+  <link rel="canonical" href="http://gaojindeng.com/categories/"/>
 
 
 
@@ -498,7 +498,7 @@
 </li>
 <li><p>错误结束事件</p>
 <blockquote>
-<p>流程以错误事件结束，然后事务子流程中就会捕获，从而执行子流程</p>
+<p>流程以错误事件结束，然后事务子流程中就会捕获，从而执行子流程。或者触发边界错误捕获流程。</p>
 </blockquote>
 </li>
 <li><p>取消结束事件</p>
@@ -645,6 +645,7 @@
 </ul>
 </li>
 </ul>
+<p>JavaDelegate 会自动执行，ActivityBehavior 会等待</p>
 <ul>
 <li>Shell Task<blockquote>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">serviceTask</span> <span class="attr">id</span>=<span class="string">"servicetask1"</span> <span class="attr">name</span>=<span class="string">"Service Task"</span> <span class="attr">activiti:type</span>=<span class="string">"shell"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">extensionElements</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activiti:field</span> <span class="attr">name</span>=<span class="string">"command"</span> <span class="attr">stringValue</span>=<span class="string">"cmd"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activiti:field</span> <span class="attr">name</span>=<span class="string">"arg1"</span> <span class="attr">stringValue</span>=<span class="string">"/c"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activiti:field</span> <span class="attr">name</span>=<span class="string">"arg2"</span> <span class="attr">stringValue</span>=<span class="string">"echo"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activiti:field</span> <span class="attr">name</span>=<span class="string">"arg3"</span> <span class="attr">stringValue</span>=<span class="string">"%JAVA_HOME%"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">activiti:field</span> <span class="attr">name</span>=<span class="string">"outputVariable"</span> <span class="attr">stringValue</span>=<span class="string">"javaHome"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">extensionElements</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">serviceTask</span>&gt;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
@@ -754,7 +755,7 @@ superProcessInstanceId(pi.getId()).singleResult();</code><br>传递参数：</p>
 </blockquote>
 </li>
 </ul>
-<h4 id="2、顺序流与网关"><a href="#2、顺序流与网关" class="headerlink" title="2、顺序流与网关"></a>2、顺序流与网关</h4><p><strong>条件顺序流</strong><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">sequenceFlow</span> <span class="attr">id</span>=<span class="string">"flow3"</span> <span class="attr">sourceRef</span>=<span class="string">"exclusivegateway1"</span> <span class="attr">targetRef</span>=<span class="string">"usertask2"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">conditionExpression</span> <span class="attr">xsi:type</span>=<span class="string">"tFormalExpression"</span>&gt;</span></span><br><span class="line">    &lt;![CDATA[$&#123;days &lt;= 3&#125;]]&gt;<span class="tag">&lt;/<span class="name">conditionExpression</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sequenceFlow</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="2、顺序流与网关"><a href="#2、顺序流与网关" class="headerlink" title="2、顺序流与网关"></a>2、顺序流与网关</h4><p><strong>条件顺序流</strong><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">sequenceFlow</span> <span class="attr">id</span>=<span class="string">"flow3"</span> <span class="attr">sourceRef</span>=<span class="string">"exclusivegateway1"</span> <span class="attr">targetRef</span>=<span class="string">"usertask2"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">conditionExpression</span> <span class="attr">xsi:type</span>=<span class="string">"tFormalExpression"</span>&gt;</span></span><br><span class="line">    &lt;![CDATA[$&#123;days &lt;= 3 || day == 5&#125;]]&gt;<span class="tag">&lt;/<span class="name">conditionExpression</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">sequenceFlow</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>如果是条件网关的话，不满足条件会报错。多条满足，会默认走第一个<br><strong>普通顺序流</strong></p>
 <blockquote>
 <p>一个任务不能出现多条普通顺序流吧</p>
@@ -974,7 +975,7 @@ parameter(&quot;name&quot;, &quot;Group_2&quot;).list();</code><br><strong>保�
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -985,7 +986,7 @@ parameter(&quot;name&quot;, &quot;Group_2&quot;).list();</code><br><strong>保�
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
